@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cap Expertises">
+<meta property="og:title" content="CPF & Financement — Cap Expertises">
+<meta property="og:description" content="CPF, OPCO, France Travail, FAF : on identifie le bon dispositif et on monte le dossier avec vous. Inscription sur Mon Compte Formation.">
+<meta property="og:image" content="assets/og-cap-competences.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Public Sans',system-ui,-apple-system,sans-serif;color:#14202B;background:#FBFCFD;-webkit-font-smoothing:antialiased;line-height:1.55}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none}
+  input,select{font-family:inherit}
+  ::selection{background:#F6C445;color:#14202B}
+  :focus-visible{outline:3px solid #F6C445;outline-offset:2px;border-radius:4px}
+  .serif{font-family:'Source Serif 4',Georgia,serif}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</helmet>
+
+<div data-screen-label="CPF & Financement" style="min-height:100vh;background:#FBFCFD">
+
+  <!-- ============ HEADER ============ -->
+  <header style="position:sticky;top:0;z-index:60;background:rgba(251,252,253,.9);backdrop-filter:blur(12px);border-bottom:1px solid #E6ECF2">
+    <div style="max-width:1200px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;gap:24px">
+      <a href="Accueil%20-%20Cap%20Expertises.dc.html" style="display:flex;align-items:center;gap:12px;flex-shrink:0">
+        <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="18.5" fill="none" stroke="#0F3D66" stroke-width="1.6"/>
+          <circle cx="20" cy="20" r="13" fill="none" stroke="#0F3D66" stroke-width="1" opacity=".35"/>
+          <polygon points="20,4 24,20 20,36 16,20" fill="#0F3D66"/>
+          <polygon points="20,4 24,20 16,20" fill="#F6C445"/>
+          <circle cx="20" cy="20" r="2.4" fill="#FBFCFD" stroke="#0F3D66" stroke-width="1.4"/>
+        </svg>
+        <span style="display:flex;flex-direction:column;line-height:1.05">
+          <span class="serif" style="font-size:19px;font-weight:700;color:#0F3D66;letter-spacing:-.2px;white-space:nowrap">Cap Expertises</span>
+          <span style="font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:#5A6B7A;font-weight:600">Trouvez votre cap</span>
+        </span>
+      </a>
+      <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ true }}">
+      <nav style="display:flex;align-items:center;gap:2px;margin-left:6px">
+        <a href="Catalogue.dc.html" style="padding:9px 12px;border-radius:9px;font-size:15px;font-weight:600">Formations</a>
+        <a href="CPF%20et%20Financement.dc.html" style="padding:9px 12px;border-radius:9px;font-size:15px;font-weight:700;color:#0F3D66">CPF &amp; Financement</a>
+        <a href="Entreprises.dc.html" style="padding:9px 12px;border-radius:9px;font-size:15px;font-weight:600">Entreprises</a>
+        <a href="#" style="padding:9px 12px;border-radius:9px;font-size:15px;font-weight:600">Actualités</a>
+      </nav>
+      </sc-if>
+      <div style="margin-left:auto;display:flex;align-items:center;gap:11px">
+        <button onClick="{{ openCallback }}" style="display:flex;align-items:center;gap:8px;background:#F6C445;color:#14202B;font-weight:700;font-size:14.5px;padding:10px 17px;border-radius:11px;box-shadow:0 8px 20px -10px rgba(246,196,69,.9)" style-hover="{{ ctaHoverStyle }}">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 5c0 8.3 6.7 15 15 15a2 2 0 0 0 2-2v-2.3a1 1 0 0 0-.8-1l-3.6-.7a1 1 0 0 0-1 .4l-.9 1.2a12 12 0 0 1-5.2-5.2l1.2-.9a1 1 0 0 0 .4-1L9.3 4.8a1 1 0 0 0-1-.8H6a2 2 0 0 0-2 2z"/></svg>
+          Être rappelé
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ BREADCRUMB ============ -->
+  <div style="border-bottom:1px solid #E6ECF2;background:#fff">
+    <div style="max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:9px;font-size:13px;color:#5A6B7A">
+      <a href="Accueil%20-%20Cap%20Expertises.dc.html" style="font-weight:600">Accueil</a>
+      <span style="opacity:.5">/</span>
+      <span style="font-weight:600;color:#0F3D66">CPF &amp; Financement</span>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section style="background:linear-gradient(170deg,#F6F2EA 0%,#EDF2F7 100%);border-bottom:1px solid #E6ECF2;position:relative;overflow:hidden">
+    <svg viewBox="0 0 200 200" aria-hidden="true" style="position:absolute;right:-50px;top:-60px;width:380px;height:380px;color:rgba(15,61,102,.06)"><g fill="none" stroke="currentColor" stroke-width="1"><circle cx="100" cy="100" r="92"/><circle cx="100" cy="100" r="62"/><line x1="100" y1="8" x2="100" y2="192"/><line x1="8" y1="100" x2="192" y2="100"/><line x1="35" y1="35" x2="165" y2="165"/><line x1="165" y1="35" x2="35" y2="165"/></g></svg>
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(34px,4vw,56px) 24px;position:relative;max-width:1200px">
+      <div style="max-width:720px">
+        <span style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:#0F3D66;background:rgba(15,61,102,.07);padding:7px 13px;border-radius:100px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M21 7v6"/></svg>CPF &amp; Financement
+        </span>
+        <h1 class="serif" style="font-size:clamp(32px,4.4vw,52px);font-weight:700;letter-spacing:-1px;line-height:1.05;margin-top:18px">Le financement&nbsp;? On tient la barre avec vous.</h1>
+        <p style="font-size:clamp(16px,1.6vw,19px);line-height:1.6;color:#3C566D;margin-top:18px">CPF, OPCO, France Travail, fonds des indépendants… Les dispositifs sont nombreux et le vocabulaire décourageant. Notre métier&nbsp;: identifier le bon, monter le dossier avec vous, et vous laisser vous concentrer sur l'essentiel — vous former.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+          <button onClick="{{ openCallback }}" style="background:#F6C445;color:#14202B;font-weight:700;font-size:15.5px;padding:14px 24px;border-radius:12px;box-shadow:0 10px 24px -12px rgba(246,196,69,.9)" style-hover="{{ ctaHoverStyle }}">Vérifier mes droits gratuitement</button>
+          <a href="#dispositifs" style="display:inline-flex;align-items:center;gap:9px;background:#fff;border:1.5px solid #E6ECF2;color:#0F3D66;font-weight:700;font-size:15.5px;padding:14px 24px;border-radius:12px">Comprendre les dispositifs ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MON COMPTE FORMATION (TRUST) ============ -->
+  <section style="max-width:1200px;margin:0 auto;padding:clamp(36px,4.5vw,60px) 24px clamp(8px,2vw,16px)">
+    <div style="background:#0F3D66;border-radius:24px;overflow:hidden;color:#fff;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))">
+      <div style="padding:clamp(28px,3.4vw,44px)">
+        <div style="display:inline-flex;align-items:center;gap:9px;background:rgba(246,196,69,.16);border:1px solid rgba(246,196,69,.4);border-radius:100px;padding:7px 14px">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F6C445" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <span style="font-size:12.5px;font-weight:700;color:#F6C445;text-transform:uppercase;letter-spacing:.6px">La règle, dès le départ</span>
+        </div>
+        <h2 class="serif" style="font-size:clamp(26px,3vw,36px);font-weight:700;line-height:1.12;margin-top:18px">Votre CPF reste entre vous et l'État.</h2>
+        <p style="font-size:16px;line-height:1.65;color:#C3D6E8;margin-top:16px">L'inscription et le paiement d'une formation via le CPF se font <strong style="color:#fff">exclusivement sur la plateforme officielle Mon Compte Formation</strong>. Cap Expertises vérifie vos droits, cible une formation éligible et vous accompagne pas à pas dans le montage du dossier — mais <strong style="color:#fff">ne reçoit jamais votre CPF à votre place et n'encaisse aucun crédit</strong>.</p>
+        <a href="https://www.moncompteformation.gouv.fr" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;margin-top:22px;background:#F6C445;color:#14202B;font-weight:700;font-size:15px;padding:13px 20px;border-radius:11px" style-hover="{{ ctaHoverStyle }}">Aller sur moncompteformation.gouv.fr <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+      <div style="background:rgba(255,255,255,.05);border-left:1px solid rgba(255,255,255,.12);padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;justify-content:center;gap:16px">
+        <div style="display:flex;gap:13px;align-items:flex-start">
+          <span style="flex-shrink:0;width:34px;height:34px;border-radius:9px;background:rgba(46,158,107,.18);display:grid;place-items:center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5FCF9A" stroke-width="2.4"><path d="M5 12l4.5 4.5L19 7"/></svg></span>
+          <div><div style="font-weight:700;font-size:15px">Ce que nous faisons</div><div style="font-size:13.5px;color:#B9CDE0;margin-top:2px;line-height:1.5">Vérifier vos droits, choisir une formation éligible, préparer le devis et les justificatifs, vous guider jusqu'à la validation.</div></div>
+        </div>
+        <div style="display:flex;gap:13px;align-items:flex-start">
+          <span style="flex-shrink:0;width:34px;height:34px;border-radius:9px;background:rgba(229,115,98,.18);display:grid;place-items:center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#F0A18F" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+          <div><div style="font-weight:700;font-size:15px">Ce que nous ne faisons jamais</div><div style="font-size:13.5px;color:#B9CDE0;margin-top:2px;line-height:1.5">Encaisser votre CPF, vous demander vos identifiants, ou promettre de « débloquer » vos droits en espèces. Ces pratiques sont illégales.</div></div>
+        </div>
+        <div style="background:rgba(246,196,69,.1);border:1px dashed rgba(246,196,69,.4);border-radius:12px;padding:13px 15px;font-size:12.5px;color:#D9C28A;line-height:1.5">Un démarchage qui promet de l'argent contre votre CPF&nbsp;? C'est une arnaque. Avec nous, tout passe par la plateforme officielle de l'État.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SITUATION ROUTER ============ -->
+  <section style="max-width:1200px;margin:0 auto;padding:clamp(40px,5vw,64px) 24px">
+    <div style="text-align:center;max-width:640px;margin:0 auto 32px">
+      <span style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:#2E9E6B">Votre situation, vos droits</span>
+      <h2 class="serif" style="font-size:clamp(28px,3.4vw,40px);font-weight:700;letter-spacing:-.6px;margin-top:8px;line-height:1.1">Quel dispositif est fait pour vous&nbsp;?</h2>
+      <p style="font-size:16px;color:#5A6B7A;margin-top:12px">Sélectionnez votre profil&nbsp;: on met en avant les financements que vous pouvez mobiliser.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px;max-width:960px;margin:0 auto">
+      <sc-for list="{{ situations }}" as="s" hint-placeholder-count="4">
+        <button onClick="{{ s.onSelect }}" style="{{ s.cardStyle }}">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#0F3D66" stroke-width="1" opacity=".3"/><g transform="rotate({{ s.angle }} 16 16)"><polygon points="16,4 19.5,16 12.5,16" fill="#F6C445"/><polygon points="16,28 19.5,16 12.5,16" fill="#0F3D66"/></g><circle cx="16" cy="16" r="2" fill="#fff" stroke="#0F3D66" stroke-width="1.2"/></svg>
+            <sc-if value="{{ s.selected }}" hint-placeholder-val="{{ false }}"><span style="width:21px;height:21px;border-radius:50%;background:#2E9E6B;display:grid;place-items:center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span></sc-if>
+          </div>
+          <div style="font-weight:700;font-size:16px;color:#14202B;margin-top:12px">{{ s.label }}</div>
+          <div style="font-size:13px;color:#5A6B7A;margin-top:3px">{{ s.desc }}</div>
+        </button>
+      </sc-for>
+    </div>
+    <sc-if value="{{ activeSituation }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width:960px;margin:18px auto 0;background:#E7F0F8;border:1px solid #D2E0EE;border-radius:16px;padding:18px 22px;display:flex;gap:13px;align-items:center;flex-wrap:wrap">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F3D66" stroke-width="2" style="flex-shrink:0"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+      <span style="font-size:14.5px;color:#14202B;flex:1;min-width:240px;line-height:1.55">{{ sit.note }}</span>
+    </div>
+    </sc-if>
+  </section>
+
+  <!-- ============ DISPOSITIFS DETAIL ============ -->
+  <section id="dispositifs" style="background:#F4F7FB;border-top:1px solid #E6ECF2;border-bottom:1px solid #E6ECF2">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(40px,5vw,68px) 24px">
+      <div style="margin-bottom:30px">
+        <span style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:#2E9E6B">Les dispositifs</span>
+        <h2 class="serif" style="font-size:clamp(28px,3.4vw,40px);font-weight:700;letter-spacing:-.6px;margin-top:8px;line-height:1.1">Chaque financement, expliqué simplement.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+        <sc-for list="{{ dispositifs }}" as="d" hint-placeholder-count="5">
+          <div style="{{ d.cardStyle }}">
+            <div style="display:flex;align-items:center;gap:13px">
+              <span style="flex-shrink:0;width:54px;height:54px;border-radius:13px;background:#0F3D66;color:#F6C445;display:grid;place-items:center;font-weight:800;font-size:14px;letter-spacing:.3px">{{ d.tag }}</span>
+              <div style="flex:1;min-width:0">
+                <h3 style="font-weight:700;font-size:17.5px;color:#14202B;line-height:1.15">{{ d.name }}</h3>
+                <span style="font-size:12.5px;color:#5A6B7A">{{ d.full }}</span>
+              </div>
+              <sc-if value="{{ d.relevant }}" hint-placeholder-val="{{ false }}"><span style="flex-shrink:0;font-size:10.5px;font-weight:800;color:#1F7A52;background:rgba(46,158,107,.13);border-radius:100px;padding:5px 10px;text-transform:uppercase;letter-spacing:.3px">Pour vous</span></sc-if>
+            </div>
+            <div style="margin-top:15px;padding:11px 14px;background:#F4F7FB;border-radius:11px">
+              <span style="font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#5A6B7A">Pour qui</span>
+              <p style="font-size:13.5px;color:#14202B;margin-top:3px;line-height:1.45">{{ d.who }}</p>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:9px;margin-top:15px">
+              <sc-for list="{{ d.how }}" as="hw" hint-placeholder-count="3">
+                <div style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:#3C566D;line-height:1.5"><span style="flex-shrink:0;width:6px;height:6px;border-radius:50%;background:#F6C445;margin-top:7px"></span>{{ hw }}</div>
+              </sc-for>
+            </div>
+            <div style="margin-top:15px;padding-top:14px;border-top:1px solid #EEF2F6;display:flex;gap:10px;align-items:flex-start">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#2E9E6B" stroke-width="2" style="flex-shrink:0;margin-top:1px"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M7 10v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4"/></svg>
+              <span style="font-size:13px;color:#14202B;line-height:1.5"><strong style="font-weight:700">Notre accompagnement&nbsp;:</strong> {{ d.accompagnement }}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:22px;display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px dashed #C9D6E2;border-radius:14px;padding:16px 18px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A6400" stroke-width="2" style="flex-shrink:0;margin-top:1px"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        <p style="font-size:13px;color:#5A6B7A;line-height:1.55"><strong style="color:#14202B;font-weight:700">Information à vérifier&nbsp;:</strong> les montants CPF et les conditions de prise en charge (AIF France Travail, FAF des indépendants, OPCO) sont donnés à titre indicatif et évoluent régulièrement. Ils doivent être confirmés auprès des sources officielles (moncompteformation.gouv.fr, France Travail, votre OPCO ou votre fonds) avant mise en ligne.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section style="max-width:1200px;margin:0 auto;padding:clamp(40px,5vw,68px) 24px">
+    <div style="text-align:center;max-width:620px;margin:0 auto 40px">
+      <span style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:#2E9E6B">La marche à suivre</span>
+      <h2 class="serif" style="font-size:clamp(28px,3.4vw,40px);font-weight:700;letter-spacing:-.6px;margin-top:8px;line-height:1.1">Du premier doute à la formation financée.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px">
+      <sc-for list="{{ steps }}" as="st" hint-placeholder-count="5">
+        <div style="background:#fff;border:1px solid #E6ECF2;border-radius:16px;padding:22px">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:13px">
+            <span class="serif" style="width:40px;height:40px;border-radius:50%;background:#0F3D66;color:#fff;display:grid;place-items:center;font-weight:700;font-size:17px">{{ st.n }}</span>
+            <span style="height:2px;flex:1;background:repeating-linear-gradient(90deg,#F6C445 0 7px,transparent 7px 13px)"></span>
+          </div>
+          <h3 style="font-weight:700;font-size:16px;color:#14202B;line-height:1.2">{{ st.title }}</h3>
+          <p style="font-size:13.5px;color:#5A6B7A;margin-top:7px;line-height:1.5">{{ st.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section style="background:#F4F7FB;border-top:1px solid #E6ECF2">
+    <div style="max-width:880px;margin:0 auto;padding:clamp(40px,5vw,68px) 24px">
+      <div style="text-align:center;margin-bottom:32px">
+        <span style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:#2E9E6B">Questions fréquentes</span>
+        <h2 class="serif" style="font-size:clamp(28px,3.4vw,40px);font-weight:700;letter-spacing:-.6px;margin-top:8px;line-height:1.1">On vous dit tout, sans jargon.</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <sc-for list="{{ faqItems }}" as="f" hint-placeholder-count="5">
+          <div style="background:#fff;border:1px solid #E6ECF2;border-radius:14px;overflow:hidden">
+            <button onClick="{{ f.onToggle }}" style="width:100%;display:flex;align-items:center;gap:14px;padding:18px 20px;text-align:left">
+              <span style="flex:1;font-weight:700;font-size:16px;color:#14202B">{{ f.q }}</span>
+              <svg width="18" height="18" viewBox="0 0 12 12" fill="none" stroke="#0F3D66" stroke-width="2" style="flex-shrink:0;transform:rotate({{ f.caret }}deg);transition:transform .25s"><path d="M2 4l4 4 4-4"/></svg>
+            </button>
+            <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+              <p style="padding:0 20px 20px;font-size:14.5px;color:#3C566D;line-height:1.6">{{ f.a }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section style="max-width:1200px;margin:0 auto;padding:clamp(44px,5.5vw,80px) 24px">
+    <div style="background:#E7F0F8;border:1px solid #E6ECF2;border-radius:26px;padding:clamp(34px,4.5vw,60px);text-align:center">
+      <svg width="52" height="52" viewBox="0 0 40 40" aria-hidden="true" style="margin:0 auto 16px;display:block"><circle cx="20" cy="20" r="18.5" fill="none" stroke="#0F3D66" stroke-width="1.6"/><polygon points="20,4 24,20 20,36 16,20" fill="#0F3D66"/><polygon points="20,4 24,20 16,20" fill="#F6C445"/><circle cx="20" cy="20" r="2.4" fill="#E7F0F8" stroke="#0F3D66" stroke-width="1.4"/></svg>
+      <h2 class="serif" style="font-size:clamp(28px,3.6vw,44px);font-weight:700;letter-spacing:-.7px;line-height:1.08;max-width:600px;margin:0 auto">Un doute sur vos droits&nbsp;? On fait le point, gratuitement.</h2>
+      <p style="font-size:16.5px;color:#5A6B7A;margin:16px auto 0;max-width:480px">15 minutes pour y voir clair sur votre financement, sans engagement.</p>
+      <div style="display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin-top:28px">
+        <button onClick="{{ openCallback }}" style="background:#F6C445;color:#14202B;font-weight:700;font-size:16px;padding:15px 26px;border-radius:13px;box-shadow:0 12px 26px -12px rgba(246,196,69,.9)" style-hover="{{ ctaHoverStyle }}">Être rappelé gratuitement</button>
+        <a href="https://www.moncompteformation.gouv.fr" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;background:#0F3D66;color:#fff;font-weight:700;font-size:16px;padding:15px 26px;border-radius:13px" style-hover="{{ darkBtnHoverStyle }}">Mon Compte Formation <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#0F3D66;color:#D6E4F0">
+    <div style="max-width:1200px;margin:0 auto;padding:36px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+      <a href="Accueil%20-%20Cap%20Expertises.dc.html" style="display:flex;align-items:center;gap:11px">
+        <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18.5" fill="none" stroke="#fff" stroke-width="1.6"/><polygon points="20,4 24,20 20,36 16,20" fill="#fff"/><polygon points="20,4 24,20 16,20" fill="#F6C445"/><circle cx="20" cy="20" r="2.4" fill="#0F3D66" stroke="#fff" stroke-width="1.4"/></svg>
+        <span class="serif" style="font-size:18px;font-weight:700;color:#fff">Cap Expertises</span>
+      </a>
+      <div style="display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:#A9C2D9">
+        <a href="Catalogue.dc.html">Catalogue</a><a href="Entreprises.dc.html">Entreprises</a><a href="#">Certifications Qualiopi</a><a href="#">Accessibilité</a><a href="#">Mentions légales</a><a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ CALLBACK MODAL ============ -->
+  <sc-if value="{{ callbackOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeCallback }}" style="position:fixed;inset:0;z-index:120;background:rgba(11,32,46,.55);backdrop-filter:blur(4px);display:grid;place-items:center;padding:20px">
+    <div onClick="{{ stop }}" style="width:440px;max-width:100%;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.5)">
+      <div style="background:#0F3D66;color:#fff;padding:24px 26px;position:relative">
+        <button onClick="{{ closeCallback }}" aria-label="Fermer" style="position:absolute;top:18px;right:18px;width:32px;height:32px;border-radius:9px;background:rgba(255,255,255,.14);color:#fff;font-size:18px">×</button>
+        <span style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#F6C445">Sans engagement</span>
+        <h3 class="serif" style="font-size:23px;font-weight:700;margin-top:6px">Vérifier mes droits</h3>
+        <p style="font-size:14px;opacity:.85;margin-top:4px">On fait le point sur votre financement.</p>
+      </div>
+      <div style="padding:24px 26px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#14202B">Prénom<input placeholder="Camille" style="border:1px solid #E6ECF2;border-radius:11px;padding:11px 13px;font-size:14.5px;outline:none"/></label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#14202B">Téléphone<input placeholder="06 12 34 56 78" style="border:1px solid #E6ECF2;border-radius:11px;padding:11px 13px;font-size:14.5px;outline:none"/></label>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#14202B">Votre situation
+          <select style="border:1px solid #E6ECF2;border-radius:11px;padding:11px 13px;font-size:14.5px;outline:none;background:#fff;color:#14202B"><option>Salarié(e)</option><option>Demandeur d'emploi</option><option>Indépendant / Freelance</option><option>Entreprise</option></select>
+        </label>
+        <label style="display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:#5A6B7A;line-height:1.45;margin-top:2px"><input type="checkbox" style="margin-top:2px;width:16px;height:16px;accent-color:#0F3D66"/>J'accepte d'être recontacté(e) et la <a href="#" style="color:#0F3D66;font-weight:600;text-decoration:underline">politique de confidentialité</a>.</label>
+        <button style="background:#F6C445;color:#14202B;font-weight:700;font-size:15.5px;padding:14px;border-radius:12px;margin-top:2px" style-hover="{{ ctaHoverStyle }}">Demander mon rappel →</button>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { activeSituation: null, openFaq: 0, callbackOpen: false, isMobile: false };
+
+  situationsData() {
+    return [
+      { id: 'salarie', label: 'Salarié', angle: 0, desc: 'En poste, en CDI ou CDD', disp: ['cpf', 'plan', 'opco'], note: 'En tant que salarié, votre CPF se cumule chaque année. Vous pouvez le mobiliser seul, ou le compléter par le plan de développement de votre employeur — voire un abondement de votre OPCO.' },
+      { id: 'demandeur', label: "Demandeur d'emploi", angle: 270, desc: 'Inscrit à France Travail', disp: ['cpf', 'francetravail'], note: 'Inscrit comme demandeur d\u2019emploi, vous combinez votre CPF avec l\u2019Aide Individuelle à la Formation (AIF) de France Travail, souvent pour couvrir le reste à charge.' },
+      { id: 'independant', label: 'Indépendant', angle: 45, desc: 'Freelance, libéral, gérant', disp: ['cpf', 'faf'], note: 'Indépendant, vous disposez d\u2019un CPF et d\u2019un fonds d\u2019assurance formation (FAF / FIF-PL / AGEFICE selon votre activité), qui peuvent se compléter.' },
+      { id: 'entreprise', label: 'Entreprise', angle: 135, desc: 'Former vos équipes', disp: ['opco', 'plan'], note: 'Pour former vos équipes, votre OPCO prend en charge tout ou partie du coût, dans le cadre de votre plan de développement des compétences. On monte le dossier avec vous — voir la page Entreprises.' }
+    ];
+  }
+
+  dispositifsData() {
+    return [
+      { id: 'cpf', tag: 'CPF', name: 'Compte Personnel de Formation', full: 'Pour tous les actifs', who: 'Tous les actifs : salariés, indépendants et demandeurs d\u2019emploi disposent d\u2019un CPF.', how: ['Chaque année d\u2019activité crédite votre compte en euros (jusqu\u2019à 500 €/an pour un salarié à temps plein, plafonné à 5 000 €).', 'Vous mobilisez ces droits pour une formation certifiante éligible.', 'Tout se gère sur Mon Compte Formation, avec votre identité numérique.'], accompagnement: 'On vérifie vos droits, on cible une formation éligible et on vous guide jusqu\u2019à la validation sur la plateforme.' },
+      { id: 'opco', tag: 'OPCO', name: 'Opérateurs de compétences', full: 'Salariés & entreprises', who: 'Salariés et entreprises, selon la branche professionnelle et la convention collective.', how: ['Votre entreprise cotise auprès d\u2019un OPCO qui peut financer tout ou partie de la formation.', 'Particulièrement adapté aux parcours collectifs ou sur-mesure (intra).', 'La prise en charge dépend de votre branche.'], accompagnement: 'Pour les entreprises, on prépare le dossier OPCO et le devis adapté. Voir la page Entreprises.' },
+      { id: 'francetravail', tag: 'AIF', name: 'France Travail', full: 'Demandeurs d\u2019emploi', who: 'Demandeurs d\u2019emploi inscrits, via l\u2019Aide Individuelle à la Formation (AIF).', how: ['En complément ou à la place du CPF, France Travail peut financer une formation liée à votre projet de retour à l\u2019emploi.', 'La demande se monte avec votre conseiller France Travail.', 'Souvent combinée au CPF pour couvrir le reste à charge.'], accompagnement: 'On vous aide à articuler CPF et AIF et à préparer les justificatifs attendus.' },
+      { id: 'faf', tag: 'FAF', name: 'Fonds des indépendants', full: 'FIF-PL · AGEFICE · FAFCEA', who: 'Indépendants, professions libérales et micro-entrepreneurs, selon votre fonds de rattachement.', how: ['Vous cotisez à un fonds via votre contribution à la formation professionnelle.', 'Ce fonds peut financer vos formations, en complément du CPF.', 'Plafonds annuels variables selon le fonds.'], accompagnement: 'On identifie votre fonds (FIF-PL, AGEFICE, FAFCEA…) et on prépare la demande de prise en charge.' },
+      { id: 'plan', tag: 'PLAN', name: 'Plan de développement', full: 'À l\u2019initiative de l\u2019employeur', who: 'Salariés, lorsque la formation est décidée par l\u2019employeur.', how: ['Votre employeur finance la formation dans le cadre de son plan de développement des compétences.', 'Idéal pour une montée en compétences alignée sur votre poste.', 'Peut se co-construire avec votre CPF.'], accompagnement: 'On fournit à votre employeur le programme, le devis et les éléments Qualiopi nécessaires.' }
+    ];
+  }
+
+  componentDidMount() {
+    this._mq = () => this.setState({ isMobile: window.innerWidth < 760 });
+    this._mq();
+    window.addEventListener('resize', this._mq);
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this._mq); }
+
+  renderVals() {
+    const act = this.state.activeSituation;
+    const situationsRaw = this.situationsData();
+    const sit = act ? situationsRaw.find(s => s.id === act) : null;
+    const relevantIds = sit ? sit.disp : [];
+
+    const situations = situationsRaw.map(s => {
+      const selected = s.id === act;
+      return {
+        ...s, selected,
+        cardStyle: { textAlign: 'left', border: '1.5px solid ' + (selected ? '#2E9E6B' : '#E6ECF2'), background: selected ? 'rgba(46,158,107,.06)' : '#fff', borderRadius: '16px', padding: '18px', transition: 'border-color .18s, background .18s, transform .18s', cursor: 'pointer' },
+        onSelect: () => this.setState(st => ({ activeSituation: st.activeSituation === s.id ? null : s.id }))
+      };
+    });
+
+    const dispositifs = this.dispositifsData().map(d => {
+      const relevant = relevantIds.includes(d.id);
+      const dim = act && !relevant;
+      return {
+        ...d, relevant,
+        cardStyle: { background: '#fff', border: '1px solid ' + (relevant ? '#2E9E6B' : '#E6ECF2'), borderRadius: '18px', padding: '24px', transition: 'opacity .2s, border-color .2s, box-shadow .2s', opacity: dim ? 0.5 : 1, boxShadow: relevant ? '0 16px 36px -22px rgba(46,158,107,.5)' : 'none' }
+      };
+    });
+
+    const faqRaw = [
+      { q: 'Une formation peut-elle être financée à 100 %\u00a0?', a: 'Oui, souvent. Selon vos droits CPF et les dispositifs mobilisables (AIF, OPCO, fonds des indépendants), le reste à charge peut être nul. On vous le dit clairement, chiffres à l\u2019appui, avant tout engagement.' },
+      { q: 'Cap Expertises encaisse-t-il mon CPF\u00a0?', a: 'Non, jamais. Le paiement CPF se fait sur Mon Compte Formation, directement entre vous et l\u2019État. Nous accompagnons le montage du dossier, mais nous n\u2019encaissons aucun crédit à votre place et ne vous demandons jamais vos identifiants.' },
+      { q: 'Combien de temps pour monter un dossier\u00a0?', a: 'Quelques jours en général. À noter\u00a0: l\u2019inscription via le CPF impose un délai minimum de 11 jours ouvrés entre la validation et le début de la formation.' },
+      { q: 'Et si mes droits CPF ne suffisent pas\u00a0?', a: 'On cherche un complément\u00a0: abondement de l\u2019employeur, OPCO, France Travail, fonds des indépendants, ou paiement personnel échelonné. L\u2019objectif est toujours de lever le frein du budget.' },
+      { q: 'Faut-il l\u2019accord de mon employeur\u00a0?', a: 'Pour une formation hors temps de travail financée par votre CPF, non\u00a0: c\u2019est votre droit personnel. Sur le temps de travail ou via le plan de développement, oui — et on vous aide à la présenter à votre employeur.' },
+      { q: 'Comment accéder à Mon Compte Formation\u00a0?', a: 'Avec votre identité numérique (via FranceConnect+). Si la création de compte ou la validation vous bloque, on vous guide pas à pas, sans jamais manipuler vos identifiants à votre place.' }
+    ];
+    const faqItems = faqRaw.map((f, i) => ({ ...f, open: i === this.state.openFaq, caret: i === this.state.openFaq ? 180 : 0, onToggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i })) }));
+
+    return {
+      showDesktopNav: !this.state.isMobile,
+      situations, dispositifs, faqItems,
+      activeSituation: act, sit: sit || {},
+      callbackOpen: this.state.callbackOpen,
+      steps: [
+        { n: '1', title: 'On vérifie vos droits', text: 'Un échange court pour faire le point sur votre situation et vos crédits disponibles.' },
+        { n: '2', title: 'On choisit le bon dispositif', text: 'CPF seul ou combiné (AIF, OPCO, FAF) pour viser le reste à charge le plus bas possible.' },
+        { n: '3', title: 'On monte le dossier ensemble', text: 'Devis, programme, justificatifs Qualiopi\u00a0: on prépare tout, vous n\u2019avez qu\u2019à valider.' },
+        { n: '4', title: 'Vous validez sur la plateforme', text: 'Pour le CPF, vous confirmez l\u2019inscription sur Mon Compte Formation. Rien ne passe par nous.' },
+        { n: '5', title: 'Vous vous formez, on suit', text: 'Convocation, attestation, accompagnement\u00a0: on reste à vos côtés jusqu\u2019à la certification.' }
+      ],
+      openCallback: () => this.setState({ callbackOpen: true }),
+      closeCallback: () => this.setState({ callbackOpen: false }),
+      stop: (e) => e.stopPropagation(),
+      ctaHoverStyle: { transform: 'translateY(-1px)', filter: 'brightness(1.03)' },
+      darkBtnHoverStyle: { filter: 'brightness(1.13)' }
+    };
+  }
+}
+</script>
+</body>
+</html>

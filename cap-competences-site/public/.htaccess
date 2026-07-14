@@ -1,0 +1,10 @@
+# Cap Expertises — hébergement statique Apache (OVH mutualisé)
+# Le site est entièrement statique (export Next.js). Chaque page est un dossier
+# contenant un index.html (URLs propres grâce à trailingSlash).
+
+# Sert index.html comme page par défaut de chaque dossier, et le rend PRIORITAIRE
+# sur un éventuel index.php résiduel (ancien WordPress).
+DirectoryIndex index.html index.htm
+
+# Page 404 personnalisée (générée par Next.js).
+ErrorDocument 404 /404.html

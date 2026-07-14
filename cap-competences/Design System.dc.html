@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Public Sans',system-ui,sans-serif;color:#14202B;background:#EEF1F4;-webkit-font-smoothing:antialiased;line-height:1.55}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none}
+  ::selection{background:#F6C445;color:#14202B}
+  :focus-visible{outline:3px solid #F6C445;outline-offset:2px;border-radius:4px}
+  .serif{font-family:'Source Serif 4',Georgia,serif}
+  .mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+  code{font-family:'JetBrains Mono',monospace;font-size:.85em;background:#F4F7FB;border:1px solid #E6ECF2;border-radius:5px;padding:1px 6px;color:#0F3D66}
+</style>
+</helmet>
+
+<div data-screen-label="Design System" style="min-height:100vh;background:#EEF1F4">
+
+  <!-- ===== TOP BAR ===== -->
+  <header style="position:sticky;top:0;z-index:60;background:#0F3D66;color:#fff">
+    <div style="max-width:1180px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:12px">
+        <img src="assets/logo.svg" width="34" height="34" alt="Cap Expertises"/>
+        <div style="line-height:1.1"><div class="serif" style="font-size:18px;font-weight:700;white-space:nowrap">Cap Expertises</div><div style="font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;color:#F6C445;font-weight:700">Design System · v1</div></div>
+      </div>
+      <nav style="margin-left:auto;display:flex;gap:4px;flex-wrap:wrap;font-size:13px;font-weight:600">
+        <sc-for list="{{ anchors }}" as="a" hint-placeholder-count="7">
+          <a href="{{ a.href }}" style="padding:7px 12px;border-radius:8px;color:#C3D6E8" style-hover="{{ navHover }}">{{ a.label }}</a>
+        </sc-for>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width:1180px;margin:0 auto;padding:36px 28px 80px">
+
+    <!-- INTRO -->
+    <div style="background:#fff;border:1px solid #E0E6EC;border-radius:22px;padding:clamp(28px,3vw,44px);margin-bottom:34px">
+      <span style="font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:#2E9E6B">Cahier des charges visuel · handoff Claude Code</span>
+      <h1 class="serif" style="font-size:clamp(30px,4vw,46px);font-weight:700;letter-spacing:-.8px;line-height:1.05;margin-top:10px">Le système « Le Cap ».</h1>
+      <p style="font-size:16.5px;color:#3C566D;line-height:1.6;margin-top:14px;max-width:720px">Direction visuelle figée&nbsp;: horizon, confiance posée, clarté. La boussole reste la signature, en intensité maîtrisée. Cette page documente tokens, composants et assets pour une implémentation <strong>Next.js + Tailwind</strong> sans perte de fidélité.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
+        <span style="display:inline-flex;align-items:center;gap:7px;background:#F4F7FB;border:1px solid #E6ECF2;border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600"><code>tokens.css</code> variables CSS</span>
+        <span style="display:inline-flex;align-items:center;gap:7px;background:#F4F7FB;border:1px solid #E6ECF2;border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600"><code>tailwind.config.js</code></span>
+        <span style="display:inline-flex;align-items:center;gap:7px;background:#F4F7FB;border:1px solid #E6ECF2;border-radius:100px;padding:7px 14px;font-size:13px;font-weight:600"><code>/assets</code> · 13 fichiers SVG/PNG</span>
+      </div>
+    </div>
+
+    <!-- ============ BRAND ============ -->
+    <section id="brand" style="margin-bottom:40px">
+      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px"><h2 class="serif" style="font-size:26px;font-weight:700">Marque &amp; logo</h2><span style="font-size:13px;color:#5A6B7A">Assets exportables — dossier <code>/assets</code></span></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px">
+        <sc-for list="{{ brand }}" as="b" hint-placeholder-count="4">
+          <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:22px;text-align:center">
+            <div style="background:#F4F7FB;border-radius:14px;padding:22px;display:grid;place-items:center;margin-bottom:14px">{{ b.img }}</div>
+            <div style="font-weight:700;font-size:15px">{{ b.name }}</div>
+            <div class="mono" style="font-size:11.5px;color:#5A6B7A;margin-top:4px">{{ b.file }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:22px;margin-top:16px;display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;gap:12px"><img src="assets/logo.svg" width="44" height="44" alt=""/><div style="line-height:1.05"><div class="serif" style="font-size:22px;font-weight:700;color:#0F3D66;letter-spacing:-.2px">Cap Expertises</div><div style="font-size:11px;letter-spacing:2.2px;text-transform:uppercase;color:#5A6B7A;font-weight:600">Trouvez votre cap</div></div></div>
+        <div style="flex:1;min-width:220px;font-size:13.5px;color:#5A6B7A;line-height:1.5"><strong style="color:#14202B">Lockup horizontal.</strong> Marque-boussole + nom en Source Serif 4. L'étoile du Nord (pointe jaune) signale toujours le « cap ». Taille mini du symbole&nbsp;: 28&nbsp;px. Zone de protection&nbsp;: ½ du diamètre.</div>
+      </div>
+    </section>
+
+    <!-- ============ COLORS ============ -->
+    <section id="colors" style="margin-bottom:40px">
+      <h2 class="serif" style="font-size:26px;font-weight:700;margin-bottom:16px">Couleurs</h2>
+      <sc-for list="{{ colorGroups }}" as="g" hint-placeholder-count="3">
+        <div style="margin-bottom:16px">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#5A6B7A;margin-bottom:10px">{{ g.group }}</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:12px">
+            <sc-for list="{{ g.items }}" as="c" hint-placeholder-count="5">
+              <div style="background:#fff;border:1px solid #E0E6EC;border-radius:14px;overflow:hidden">
+                <div style="height:74px;background:{{ c.hex }};border-bottom:1px solid #E6ECF2"></div>
+                <div style="padding:11px 13px">
+                  <div style="font-weight:700;font-size:13.5px">{{ c.name }}</div>
+                  <div class="mono" style="font-size:11.5px;color:#5A6B7A;margin-top:3px">{{ c.hex }}</div>
+                  <div class="mono" style="font-size:10.5px;color:#9DB1C2;margin-top:2px">{{ c.token }}</div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+      <div style="background:#fff;border:1px solid #E0E6EC;border-radius:14px;padding:16px 18px;font-size:13.5px;color:#3C566D;line-height:1.55"><strong style="color:#14202B">Règle du jaune&nbsp;:</strong> le jaune-boussole signale la direction (CTA principal, étape active, repère). À utiliser avec parcimonie — jamais en aplat de fond large. Le vert = progression/validation. Contrastes vérifiés AA pour le texte.</div>
+    </section>
+
+    <!-- ============ TYPOGRAPHY ============ -->
+    <section id="type" style="margin-bottom:40px">
+      <h2 class="serif" style="font-size:26px;font-weight:700;margin-bottom:16px">Typographie</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:16px">
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#2E9E6B">Display</div>
+          <div class="serif" style="font-size:44px;font-weight:700;letter-spacing:-.8px;margin-top:8px;line-height:1.05">Source Serif 4</div>
+          <p style="font-size:13.5px;color:#5A6B7A;margin-top:10px">Titres, chiffres-clés, citations. Chaleureux et crédible. Poids 400–700.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#2E9E6B">Corps &amp; UI</div>
+          <div style="font-size:40px;font-weight:700;letter-spacing:-.4px;margin-top:8px;line-height:1.05">Public Sans</div>
+          <p style="font-size:13.5px;color:#5A6B7A;margin-top:10px">Corps de texte, interface, formulaires. Très lisible. Poids 400–800.</p>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px">
+        <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#5A6B7A;margin-bottom:14px">Échelle</div>
+        <sc-for list="{{ typeScale }}" as="t" hint-placeholder-count="6">
+          <div style="display:flex;align-items:baseline;gap:18px;padding:11px 0;border-top:1px solid #EEF2F6">
+            <span class="mono" style="flex-shrink:0;width:130px;font-size:11.5px;color:#5A6B7A">{{ t.token }} · {{ t.px }}</span>
+            <span class="{{ t.cls }}" style="font-size:{{ t.px }};font-weight:{{ t.weight }};letter-spacing:{{ t.ls }};line-height:1.1;color:#14202B">{{ t.sample }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- ============ SPACING / RADII / SHADOWS ============ -->
+    <section id="tokens" style="margin-bottom:40px">
+      <h2 class="serif" style="font-size:26px;font-weight:700;margin-bottom:16px">Espacements, rayons &amp; ombres</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#5A6B7A;margin-bottom:14px">Espacements · base 4px</div>
+          <sc-for list="{{ spacing }}" as="s" hint-placeholder-count="6">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:9px"><span class="mono" style="width:62px;font-size:11.5px;color:#5A6B7A">{{ s.token }}</span><span style="height:14px;width:{{ s.px }};background:#F6C445;border-radius:3px"></span><span class="mono" style="font-size:11.5px;color:#9DB1C2">{{ s.px }}</span></div>
+          </sc-for>
+        </div>
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#5A6B7A;margin-bottom:14px">Rayons</div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <sc-for list="{{ radii }}" as="r" hint-placeholder-count="5">
+              <div style="text-align:center"><div style="width:64px;height:64px;background:#E7F0F8;border:1.5px solid #0F3D66;border-radius:{{ r.px }}"></div><div class="mono" style="font-size:10.5px;color:#5A6B7A;margin-top:6px">{{ r.name }}</div><div class="mono" style="font-size:10.5px;color:#9DB1C2">{{ r.px }}</div></div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#5A6B7A;margin-bottom:16px">Ombres</div>
+          <div style="display:flex;gap:18px;flex-wrap:wrap">
+            <sc-for list="{{ shadows }}" as="sh" hint-placeholder-count="3">
+              <div style="text-align:center"><div style="width:78px;height:56px;background:#fff;border-radius:12px;box-shadow:{{ sh.css }}"></div><div class="mono" style="font-size:10.5px;color:#5A6B7A;margin-top:10px">{{ sh.name }}</div></div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ICONOGRAPHY ============ -->
+    <section id="icons" style="margin-bottom:40px">
+      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px"><h2 class="serif" style="font-size:26px;font-weight:700">Iconographie</h2><span style="font-size:13px;color:#5A6B7A">Pictos de catégories « en aiguilles » — chaque domaine pointe une direction</span></div>
+      <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:16px">
+        <sc-for list="{{ catIcons }}" as="i" hint-placeholder-count="8">
+          <div style="text-align:center">{{ i.img }}<div style="font-weight:600;font-size:12.5px;margin-top:8px">{{ i.name }}</div></div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- ============ COMPONENTS ============ -->
+    <section id="components" style="margin-bottom:40px">
+      <h2 class="serif" style="font-size:26px;font-weight:700;margin-bottom:16px">Composants</h2>
+
+      <!-- Buttons + badges -->
+      <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:26px;margin-bottom:16px">
+        <div style="font-size:13px;font-weight:700;color:#0F3D66;margin-bottom:16px">Boutons &amp; badges</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+          <button style="background:#F6C445;color:#14202B;font-weight:700;font-size:14.5px;padding:12px 20px;border-radius:11px;box-shadow:0 10px 24px -12px rgba(246,196,69,.9)">Être rappelé</button>
+          <button style="background:#0F3D66;color:#fff;font-weight:700;font-size:14.5px;padding:12px 20px;border-radius:11px">Monter mon dossier</button>
+          <button style="background:#fff;color:#0F3D66;font-weight:700;font-size:14.5px;padding:12px 20px;border-radius:11px;border:1.5px solid #E6ECF2">Télécharger le PDF</button>
+          <button style="color:#0F3D66;font-weight:700;font-size:14.5px;padding:12px 6px">Voir la fiche →</button>
+        </div>
+        <div style="display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-top:18px;padding-top:18px;border-top:1px solid #EEF2F6">
+          <span style="font-size:11px;font-weight:800;color:#8A6400;background:rgba(246,196,69,.2);border-radius:100px;padding:5px 11px">Éligible CPF</span>
+          <span style="font-size:11.5px;font-weight:700;color:#1F7A52;background:rgba(46,158,107,.13);border-radius:8px;padding:5px 11px">Intermédiaire</span>
+          <span style="font-size:11px;font-weight:800;color:#1F7A52;background:rgba(46,158,107,.13);border-radius:100px;padding:5px 11px">CPF</span>
+          <span style="font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:#8A6400;background:rgba(246,196,69,.2);border:1px solid rgba(246,196,69,.5);border-radius:100px;padding:4px 10px">Exemple · à confirmer</span>
+          <span style="font-size:12px;font-weight:700;color:#0F3D66;background:#E7F0F8;border-radius:8px;padding:6px 11px">CPF</span>
+        </div>
+      </div>
+
+      <!-- Card formation + profile selector -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:16px">
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:22px">
+          <div style="font-size:13px;font-weight:700;color:#0F3D66;margin-bottom:14px">Carte formation</div>
+          <div style="background:#fff;border:1px solid #E6ECF2;border-radius:18px;padding:20px;box-shadow:0 1px 2px rgba(20,32,43,.04)">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:13px">
+              <span style="display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:#0F3D66"><img src="assets/icon-bureautique.svg" width="22" height="22" alt=""/>Bureautique</span>
+              <span style="font-size:11.5px;font-weight:700;color:#1F7A52;background:rgba(46,158,107,.1);border-radius:7px;padding:4px 9px">Intermédiaire</span>
+            </div>
+            <h3 class="serif" style="font-size:18.5px;font-weight:700;line-height:1.2">Excel — du tableau au pilotage</h3>
+            <div style="display:flex;gap:13px;margin-top:12px;font-size:12.5px;color:#5A6B7A;font-weight:500"><span>⏱ 21 h</span><span>🖥 Présentiel · Visio</span></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:16px;padding-top:14px;border-top:1px solid #EEF2F6"><span style="white-space:nowrap"><span style="font-size:11.5px;color:#5A6B7A">à partir de </span><span class="serif" style="font-size:18px;font-weight:700;color:#0F3D66">1 290 €</span></span><span style="font-size:11px;font-weight:800;color:#8A6400;background:rgba(246,196,69,.2);border-radius:100px;padding:4px 10px">CPF</span></div>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:22px">
+          <div style="font-size:13px;font-weight:700;color:#0F3D66;margin-bottom:14px">Sélecteur de profil (aiguillage)</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px">
+            <div style="border:1.5px solid #2E9E6B;background:rgba(46,158,107,.06);border-radius:16px;padding:15px;position:relative"><img src="assets/icon-bureautique.svg" width="34" height="34" alt=""/><div style="font-weight:700;font-size:14.5px;margin-top:9px">Salarié</div><div style="font-size:12px;color:#5A6B7A">Monter en compétences</div><span style="position:absolute;top:11px;right:11px;width:20px;height:20px;border-radius:50%;background:#2E9E6B;display:grid;place-items:center;color:#fff;font-size:11px">✓</span></div>
+            <div style="border:1.5px solid #E6ECF2;background:#fff;border-radius:16px;padding:15px"><img src="assets/icon-management.svg" width="34" height="34" alt=""/><div style="font-weight:700;font-size:14.5px;margin-top:9px">Demandeur</div><div style="font-size:12px;color:#5A6B7A">Retrouver le bon poste</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search + breadcrumb + fields -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:16px">
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:22px">
+          <div style="font-size:13px;font-weight:700;color:#0F3D66;margin-bottom:14px">Recherche &amp; fil d'Ariane</div>
+          <div style="display:flex;align-items:center;gap:10px;background:#F4F7FB;border:1px solid #E6ECF2;border-radius:11px;padding:11px 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A6B7A" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg><span style="font-size:14.5px;color:#9DB1C2">Une formation, un métier…</span></div>
+          <div style="display:flex;align-items:center;gap:9px;font-size:13px;color:#5A6B7A;margin-top:16px"><span style="font-weight:600">Accueil</span><span style="opacity:.5">/</span><span style="font-weight:600">Formations</span><span style="opacity:.5">/</span><span style="font-weight:600;color:#0F3D66">Bureautique</span></div>
+        </div>
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:22px">
+          <div style="font-size:13px;font-weight:700;color:#0F3D66;margin-bottom:14px">Champ de formulaire</div>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600">E-mail professionnel *<input placeholder="vous@société.fr" style="border:1px solid #E6ECF2;border-radius:11px;padding:11px 13px;font-size:14.5px;outline:none"/></label>
+          <label style="display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:#5A6B7A;line-height:1.45;margin-top:12px"><input type="checkbox" style="margin-top:2px;width:16px;height:16px;accent-color:#0F3D66"/>J'accepte d'être recontacté(e) · anti-spam actif</label>
+        </div>
+      </div>
+
+      <!-- Floating + social + share -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:22px">
+          <div style="font-size:13px;font-weight:700;color:#0F3D66;margin-bottom:16px">Actions flottantes</div>
+          <div style="display:flex;gap:14px;align-items:center">
+            <span style="width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(37,211,102,.7)"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg></span>
+            <span style="width:60px;height:60px;border-radius:50%;background:#0F3D66;display:grid;place-items:center;box-shadow:0 16px 34px -12px rgba(15,61,102,.8)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/></svg></span>
+            <span style="font-size:13px;color:#5A6B7A;line-height:1.4">WhatsApp flottant<br>+ bulle chatbot (qualification &amp; orientation)</span>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:22px">
+          <div style="font-size:13px;font-weight:700;color:#0F3D66;margin-bottom:16px">Réseaux sociaux &amp; partage</div>
+          <div style="display:flex;gap:9px;align-items:center;margin-bottom:14px">
+            <a href="#" aria-label="LinkedIn" style="width:38px;height:38px;border-radius:9px;background:#0F3D66;color:#fff;display:grid;place-items:center"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21h-4z"/></svg></a>
+            <a href="#" aria-label="Instagram" style="width:38px;height:38px;border-radius:9px;background:#0F3D66;color:#fff;display:grid;place-items:center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="Facebook" style="width:38px;height:38px;border-radius:9px;background:#0F3D66;color:#fff;display:grid;place-items:center"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.4c0-.87.3-1.4 1.6-1.4H17.6V.3C17.1.2 16 0 14.8 0 12.1 0 10 1.6 10 4.1V6H7v3h3v9h4z"/></svg></a>
+            <span style="font-size:12.5px;color:#5A6B7A;margin-left:4px">Header secondaire + footer</span>
+          </div>
+          <div style="display:flex;gap:8px">
+            <span style="display:inline-flex;align-items:center;gap:7px;border:1px solid #E6ECF2;border-radius:10px;padding:8px 13px;font-size:12.5px;font-weight:600;color:#0F3D66">Partager</span>
+            <span style="width:38px;height:38px;border:1px solid #E6ECF2;border-radius:10px;display:grid;place-items:center;color:#0F3D66"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21h-4z"/></svg></span>
+            <span style="width:38px;height:38px;border:1px solid #E6ECF2;border-radius:10px;display:grid;place-items:center;color:#0F3D66"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg></span>
+            <span style="font-size:12.5px;color:#5A6B7A;align-self:center">Sur fiches &amp; articles</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OPEN GRAPH ============ -->
+    <section id="og" style="margin-bottom:40px">
+      <h2 class="serif" style="font-size:26px;font-weight:700;margin-bottom:16px">Partage social · Open Graph</h2>
+      <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;align-items:center">
+        <div><img src="assets/og-cap-competences.png" alt="Aperçu Open Graph" style="width:100%;border-radius:12px;border:1px solid #E6ECF2"/><div class="mono" style="font-size:11px;color:#5A6B7A;margin-top:8px">assets/og-cap-competences.png · 1200×630</div></div>
+        <div>
+          <p style="font-size:14px;color:#3C566D;line-height:1.6;margin-bottom:12px">Chaque page porte ses balises <code>og:</code> (titre, description, image) + <code>twitter:card</code>. Côté Next.js, rendre <strong>og:title / og:description / og:url dynamiques par fiche &amp; article</strong> (Metadata API).</p>
+          <pre class="mono" style="font-size:11.5px;background:#0F3D66;color:#C3D6E8;border-radius:11px;padding:16px;overflow:auto;line-height:1.6">&lt;meta property="og:type" content="website"&gt;
+&lt;meta property="og:site_name" content="Cap Expertises"&gt;
+&lt;meta property="og:title" content="…"&gt;
+&lt;meta property="og:description" content="…"&gt;
+&lt;meta property="og:image" content="/assets/og-…png"&gt;
+&lt;meta name="twitter:card" content="summary_large_image"&gt;</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INVENTORY ============ -->
+    <section id="inventory" style="margin-bottom:20px">
+      <h2 class="serif" style="font-size:26px;font-weight:700;margin-bottom:16px">Inventaire · pages, composants &amp; tokens</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#2E9E6B;margin-bottom:14px">Pages maquettées</div>
+          <div style="display:flex;flex-direction:column;gap:3px">
+            <sc-for list="{{ pages }}" as="p" hint-placeholder-count="5">
+              <a href="{{ p.file }}" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 12px;border-radius:10px" style-hover="{{ rowHover }}">
+                <span><span style="display:block;font-weight:700;font-size:14.5px;color:#14202B">{{ p.name }}</span><span style="display:block;font-size:12px;color:#5A6B7A">{{ p.desc }}</span></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F3D66" stroke-width="2.2" style="flex-shrink:0;opacity:.5"><path d="M9 6l6 6-6 6"/></svg>
+              </a>
+            </sc-for>
+          </div>
+          <p style="font-size:12px;color:#9DB1C2;margin-top:12px;line-height:1.5">Pages standard (À propos, Contact, Indicateurs, Accessibilité, Mentions, CGV) : non maquettées — composées par Claude Code à partir de ce système.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#2E9E6B;margin-bottom:14px">Composants</div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px">
+            <sc-for list="{{ componentsList }}" as="c" hint-placeholder-count="12">
+              <span style="font-size:12.5px;font-weight:600;color:#0F3D66;background:#F4F7FB;border:1px solid #E6ECF2;border-radius:100px;padding:6px 12px">{{ c }}</span>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid #E0E6EC;border-radius:18px;padding:24px">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#2E9E6B;margin-bottom:14px">Fichiers de référence</div>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="display:flex;align-items:center;gap:10px"><code>tokens.css</code><span style="font-size:12.5px;color:#5A6B7A">Variables CSS</span></div>
+            <div style="display:flex;align-items:center;gap:10px"><code>tailwind.config.js</code><span style="font-size:12.5px;color:#5A6B7A">Thème Tailwind</span></div>
+            <div style="display:flex;align-items:center;gap:10px"><code>/assets/*.svg</code><span style="font-size:12.5px;color:#5A6B7A">Logo, boussole, rose, étoile, 8 icônes</span></div>
+            <div style="display:flex;align-items:center;gap:10px"><code>DESIGN-SYSTEM.md</code><span style="font-size:12.5px;color:#5A6B7A">Récap handoff</span></div>
+          </div>
+          <div style="margin-top:16px;padding-top:14px;border-top:1px solid #EEF2F6;display:flex;gap:9px;align-items:flex-start"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8A6400" stroke-width="2" style="flex-shrink:0;margin-top:1px"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg><span style="font-size:12px;color:#5A6B7A;line-height:1.5">Tout contenu de preuve (témoignages, logos clients, chiffres, certifications) est marqué <strong style="color:#14202B">« exemple · à confirmer »</strong> et doit être remplacé par du réel avant mise en ligne.</span></div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      navHover: { background: 'rgba(255,255,255,.1)', color: '#fff' },
+      rowHover: { background: '#F4F7FB' },
+      anchors: [
+        { label: 'Marque', href: '#brand' }, { label: 'Couleurs', href: '#colors' }, { label: 'Typo', href: '#type' },
+        { label: 'Tokens', href: '#tokens' }, { label: 'Icônes', href: '#icons' }, { label: 'Composants', href: '#components' },
+        { label: 'Inventaire', href: '#inventory' }
+      ],
+      brand: [
+        { name: 'Logo / marque', file: 'assets/logo.svg' },
+        { name: 'Boussole', file: 'assets/boussole.svg' },
+        { name: 'Rose des vents', file: 'assets/rose-des-vents.svg' },
+        { name: 'Étoile du Nord', file: 'assets/etoile-du-nord.svg' }
+      ].map(b => ({ ...b, img: React.createElement('img', { src: b.file, width: 72, height: 72, alt: b.name, style: { display: 'block' } }) })),
+      colorGroups: [
+        { group: 'Marque', items: [
+          { name: 'Bleu cap', hex: '#0F3D66', token: '--cap-navy' },
+          { name: 'Marine profond', hex: '#0B2E4D', token: '--cap-navy-700' },
+          { name: 'Jaune boussole', hex: '#F6C445', token: '--cap-accent' },
+          { name: 'Vert progression', hex: '#2E9E6B', token: '--cap-green' }
+        ] },
+        { group: 'Surfaces', items: [
+          { name: 'Fond de page', hex: '#FBFCFD', token: '--cap-bg' },
+          { name: 'Surface', hex: '#FFFFFF', token: '--cap-surface' },
+          { name: 'Surface 2', hex: '#F4F7FB', token: '--cap-surface-2' },
+          { name: 'Bleu doux', hex: '#E7F0F8', token: '--cap-soft' },
+          { name: 'Papier chaud', hex: '#F6F2EA', token: '--cap-paper' }
+        ] },
+        { group: 'Texte & bordures', items: [
+          { name: 'Encre', hex: '#14202B', token: '--cap-ink' },
+          { name: 'Encre secondaire', hex: '#3C566D', token: '--cap-ink-muted' },
+          { name: 'Texte tertiaire', hex: '#5A6B7A', token: '--cap-muted' },
+          { name: 'Bordure', hex: '#E6ECF2', token: '--cap-border' }
+        ] }
+      ],
+      typeScale: [
+        { token: '--cap-text-4xl', px: '52px', sample: 'Trouvez votre cap', cls: 'serif', weight: 700, ls: '-.8px' },
+        { token: '--cap-text-3xl', px: '40px', sample: 'Titre de section', cls: 'serif', weight: 700, ls: '-.6px' },
+        { token: '--cap-text-xl', px: '24px', sample: 'Sous-titre', cls: 'serif', weight: 700, ls: '-.2px' },
+        { token: '--cap-text-lg', px: '19px', sample: 'Chapô d’introduction lisible', cls: '', weight: 500, ls: '0' },
+        { token: '--cap-text-base', px: '15px', sample: 'Corps de texte courant pour les paragraphes.', cls: '', weight: 400, ls: '0' },
+        { token: '--cap-text-sm', px: '13.5px', sample: 'Légende, méta, mentions.', cls: '', weight: 500, ls: '0' }
+      ],
+      spacing: [
+        { token: '--cap-space-2', px: '8px' }, { token: '--cap-space-3', px: '12px' }, { token: '--cap-space-4', px: '16px' },
+        { token: '--cap-space-6', px: '24px' }, { token: '--cap-space-8', px: '32px' }, { token: '--cap-space-12', px: '48px' }
+      ],
+      radii: [
+        { name: 'md', px: '11px' }, { name: 'lg', px: '14px' }, { name: 'xl', px: '18px' }, { name: '2xl', px: '24px' }, { name: 'pill', px: '100px' }
+      ],
+      shadows: [
+        { name: 'sm', css: '0 1px 2px rgba(20,32,43,.08)' },
+        { name: 'card', css: '0 1px 2px rgba(20,32,43,.05), 0 24px 50px -28px rgba(15,61,102,.30)' },
+        { name: 'cta', css: '0 10px 24px -12px rgba(246,196,69,.90)' }
+      ],
+      catIcons: [
+        { name: 'Bureautique', file: 'assets/icon-bureautique.svg' }, { name: 'Langues', file: 'assets/icon-langues.svg' },
+        { name: 'PAO & Infographie', file: 'assets/icon-pao.svg' }, { name: 'CAO-DAO & 3D', file: 'assets/icon-cao.svg' },
+        { name: 'Web', file: 'assets/icon-web.svg' }, { name: 'Marketing digital', file: 'assets/icon-marketing.svg' },
+        { name: 'Management', file: 'assets/icon-management.svg' }, { name: 'Bilan de compétences', file: 'assets/icon-bilan.svg' }
+      ].map(i => ({ ...i, img: React.createElement('img', { src: i.file, width: 56, height: 56, alt: i.name, style: { display: 'inline-block' } }) })),
+      pages: [
+        { name: 'Accueil', file: 'Accueil%20-%20Cap%20Expertises.dc.html', desc: 'Hero, sélecteur de profil, catégories, preuves' },
+        { name: 'Catalogue', file: 'Catalogue.dc.html', desc: 'Liste filtrable + branchement profil' },
+        { name: 'Fiche formation', file: 'Fiche%20Formation.dc.html', desc: 'Gabarit réutilisable · 8 exemples' },
+        { name: 'CPF & Financement', file: 'CPF%20et%20Financement.dc.html', desc: 'Dispositifs + Mon Compte Formation' },
+        { name: 'Entreprises', file: 'Entreprises.dc.html', desc: 'B2B intra + demande de devis' }
+      ],
+      componentsList: [
+        'Header + nav', 'Méga-menu', 'Connexion (apprenant/formateur)', 'Sélecteur de profil', 'Carte formation',
+        'Filtres catalogue', 'Champ de recherche', 'Fil d’Ariane', 'Boutons', 'Badges', 'Accordéon', 'Formulaires',
+        'Modale de rappel', 'Bulle chatbot', 'Bouton WhatsApp', 'Bandeau cookies', 'Icônes sociales', 'Boutons de partage', 'Footer'
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

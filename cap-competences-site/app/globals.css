@@ -1,0 +1,57 @@
+/* Tokens de la maquette (couleurs, espacements, rayons, ombres, dégradés). */
+@import "./tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pont next/font -> tokens.css : la maquette référence "Source Serif 4" / "Public
+   Sans" par leur nom ; next/font expose des familles hachées via des variables CSS.
+   On remappe donc les tokens de police sur ces variables. */
+:root {
+  --cap-font-display: var(--font-serif), Georgia, "Times New Roman", serif;
+  --cap-font-body: var(--font-sans), system-ui, -apple-system, sans-serif;
+  /* Hauteur RÉELLE du header collant (bandeau utilitaire + barre de nav).
+     Mise à jour en continu par le composant Header (ResizeObserver) ; cette valeur
+     ne sert que de repli avant hydratation / si JS indisponible. */
+  --header-h: 116px;
+}
+
+/* Ancre de section décalée sous le header collant : la cible (titre de pôle, sélecteur
+   de profil, champ de recherche…) reste entièrement visible juste sous le header,
+   jamais coupée. Marge = hauteur réelle du header + ~20px de respiration. */
+.scroll-anchor-header {
+  scroll-margin-top: calc(var(--header-h) + 20px);
+}
+
+body {
+  font-family: var(--cap-font-body);
+  color: var(--cap-ink);
+  background: var(--cap-bg);
+  /* Filet de sécurité anti-débordement horizontal (clip ne casse pas position:sticky,
+     contrairement à overflow:hidden). Les vraies causes sont corrigées par ailleurs. */
+  overflow-x: clip;
+}
+
+/* Classe historique de la maquette pour les titres serif. */
+.serif,
+.cap-display {
+  font-family: var(--cap-font-display);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Cible tactile minimale + focus clavier visible (WCAG). */
+:focus-visible {
+  outline: 3px solid var(--cap-focus-ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--cap-accent);
+  color: var(--cap-ink);
+}

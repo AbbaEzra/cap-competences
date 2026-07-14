@@ -1,0 +1,503 @@
+{
+  "meta": {
+    "marque": "Cap Expertises",
+    "titre_catalogue": "Catalogue officiel des formations pour entreprises & particuliers",
+    "modalites_globales": "Présentiel Île-de-France & distanciel",
+    "source": "PROGRAMME_DE_FORMATIONS_Cap-competences.pdf",
+    "avertissement": "Contenu transcrit fidèlement du PDF des programmes de formation. Les durées, intitulés de certification et sessions sont donnés à titre indicatif et restent à vérifier avant mise en ligne."
+  },
+  "cadre_methodologique_commun": {
+    "intro": "Toutes les formations respectent un cadre méthodologique strict garantissant l'excellence pédagogique et la traçabilité du suivi.",
+    "suivi_execution_evaluation": [
+      {
+        "label": "Émargement",
+        "detail": "Feuilles de présence systématiques par demi-journée (physiques ou signature électronique sécurisée)."
+      },
+      {
+        "label": "Contrôle des acquis",
+        "detail": "Questions orales ou écrites (QCM de positionnement et de validation finale)."
+      },
+      {
+        "label": "Évaluation qualité",
+        "detail": "Formulaires d'évaluation de la formation recueillis à chaud et à froid."
+      }
+    ],
+    "ressources_moyens_pedagogiques": [
+      {
+        "label": "Supports",
+        "detail": "Documents, fiches de synthèse et guides pratiques fournis directement par le formateur."
+      },
+      {
+        "label": "Méthodologie",
+        "detail": "Alternance d'exposés théoriques structurés et d'études de cas concrets issus du monde professionnel."
+      },
+      {
+        "label": "Individualisation",
+        "detail": "Séquences d'apprentissage adaptées sur-mesure aux besoins et au niveau de chaque élève."
+      }
+    ]
+  },
+  "poles": [
+    {
+      "id": "langues-etrangeres",
+      "numero": 1,
+      "titre": "Pôle Langues Étrangères",
+      "accroche": "Dans une économie mondialisée, la maîtrise d'une langue étrangère est un levier majeur de compétitivité pour les entreprises et d'employabilité pour les particuliers. Nos programmes sur-mesure sont conçus pour briser la barrière linguistique et vous rendre opérationnel rapidement dans vos échanges internationaux.",
+      "objectifs": [
+        "Développer l'aisance à l'oral et à l'écrit en contexte professionnel.",
+        "Maîtriser le vocabulaire technique spécifique à son secteur d'activité.",
+        "Comprendre et interagir avec des interlocuteurs natifs de manière fluide."
+      ],
+      "modalites_public": {
+        "langues": [
+          "Allemand",
+          "Anglais",
+          "Chinois",
+          "Espagnol",
+          "Italien",
+          "Japonais",
+          "Portugais",
+          "Russe"
+        ],
+        "duree": "Modules intensifs de 21 heures ou extensifs de 30 heures.",
+        "profils": [
+          "Salariés",
+          "Demandeurs d'emploi",
+          "Professionnels",
+          "Particuliers"
+        ],
+        "pre_requis": "Aucun (Niveau Débutant) / Test de positionnement (Niveaux Intermédiaires à Avancés)."
+      },
+      "programme_type": [
+        {
+          "label": "Grammaire et Structures",
+          "detail": "Consolidation des bases grammaticales, syntaxe et conjugaison professionnelle."
+        },
+        {
+          "label": "Communication Orale",
+          "detail": "Mises en situation pratiques, simulations de réunions, d'appels téléphoniques et de négociations."
+        },
+        {
+          "label": "Expression Écrite",
+          "detail": "Rédaction d'emails professionnels, de rapports, de notes de synthèse et de messages clairs."
+        },
+        {
+          "label": "Culture & Usages",
+          "detail": "Compréhension des codes culturels et des pratiques d'affaires spécifiques au pays."
+        }
+      ],
+      "formations": [
+        {
+          "id": "langue-etrangere",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Formation en langue étrangère (8 langues au choix)",
+          "objectif": "Devenir opérationnel à l'oral et à l'écrit dans la langue choisie, en contexte professionnel.",
+          "contenu": "Programme modulable selon le niveau : grammaire et structures, communication orale, expression écrite, culture et usages d'affaires du pays.",
+          "duree": "21 h (intensif) ou 30 h (extensif)",
+          "pre_requis": "Aucun (débutant) ou test de positionnement (intermédiaire à avancé)."
+        }
+      ]
+    },
+    {
+      "id": "management",
+      "numero": 2,
+      "titre": "Pôle Management",
+      "accroche": "Le management ne s'invente pas, il s'apprend et se perfectionne. Face aux nouvelles attentes des collaborateurs et à l'hybridation du travail, nos formations outillent les managers pour concilier performance économique, leadership inspirant et bien-être des équipes au quotidien.",
+      "profil_beneficiaires": "Cadres dirigeants, managers de proximité, managers de managers, chefs de projet, ou collaborateurs en phase de prise de poste managérial.",
+      "pre_requis": "Occuper des fonctions de management ou avoir un projet de transition managériale validé.",
+      "duree_type": "14 à 21 heures par module.",
+      "formations": [
+        {
+          "id": "gestion-de-projets",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Gestion de projets",
+          "objectif": "Maîtriser le cycle complet d'un projet de son cadrage à sa clôture.",
+          "contenu": "Définition des objectifs (SMART), planification opérationnelle (Gantt, méthodes agiles), gestion des risques, animation des réunions de projet et suivi des indicateurs de performance (KPI)."
+        },
+        {
+          "id": "gestion-des-conflits",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Gestion des conflits",
+          "objectif": "Anticiper, identifier et désamorcer les tensions au sein d'une équipe.",
+          "contenu": "Compréhension des mécanismes de crise, cartographie des comportements, techniques de médiation et de sortie de crise positive, et rétablissement d'un climat de confiance durable."
+        },
+        {
+          "id": "communication-non-violente",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "La communication non violente (CNV)",
+          "objectif": "Adopter une communication constructive et bienveillante pour fluidifier les relations de travail.",
+          "contenu": "Les 4 étapes de la méthode CNV : Observation factuelle, expression du Sentiment, identification du Besoin, formulation d'une Demande claire. Écoute empathique et désamorçage de l'agressivité."
+        },
+        {
+          "id": "leadership-manager-equipe",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Leadership & Manager efficacement son équipe",
+          "objectif": "Asseoir sa posture de leader et fédérer les collaborateurs autour de la vision de l'entreprise.",
+          "contenu": "Identification de son style de leadership, les leviers de la motivation individuelle et collective, la délégation responsabilisante, et la conduite du changement auprès de son équipe."
+        },
+        {
+          "id": "management-de-managers-proximite",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Le management de managers & Management de proximité",
+          "objectif": "Piloter des équipes de terrain ou animer des managers intermédiaires avec la juste posture.",
+          "contenu": "Relais de la stratégie globale, animation de rituels managériaux performants, gestion de la distance hiérarchique, développement des compétences et autonomisation des collaborateurs."
+        },
+        {
+          "id": "organiser-son-teletravail",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Organiser son télétravail",
+          "objectif": "Concilier productivité, gestion du temps et maintien du lien d'équipe à distance.",
+          "contenu": "Structuration de ses journées à distance, maîtrise des outils de collaboration synchrone et asynchrone, fixation de limites pro/perso, et techniques de management ou d'automanagement en environnement hybride."
+        }
+      ]
+    },
+    {
+      "id": "bureautique",
+      "numero": 3,
+      "titre": "Pôle Bureautique",
+      "accroche": "La maîtrise des outils informatiques usuels est le premier vecteur d'efficacité professionnelle. Nos formations pragmatiques éliminent les blocages techniques quotidiens pour transformer l'usage intuitif en une utilisation experte, automatisée et hautement productive.",
+      "profil_beneficiaires": "Tout professionnel (secrétaires, comptables, assistants, cadres, indépendants) ou particulier souhaitant fiabiliser l'usage des outils bureautiques.",
+      "pre_requis": "Maîtrise de l'environnement informatique de base (clavier, souris, gestion des fichiers).",
+      "duree_type": "14 à 21 heures par logiciel.",
+      "formations": [
+        {
+          "id": "excel",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Excel (Initiation à Perfectionnement)",
+          "objectif": "Concevoir des tableaux de bord fiables et analyser des données de manière automatisée.",
+          "contenu": "Formules et fonctions essentielles (SI, RECHERCHEV/X), mise en forme conditionnelle, gestion des graphiques, création et exploitation avancée des Tableaux Croisés Dynamiques (TCD)."
+        },
+        {
+          "id": "vba",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "VBA (Visual Basic for Applications)",
+          "objectif": "Automatiser les tâches répétitives et créer des macros personnalisées sous Excel.",
+          "contenu": "Environnement de développement VBE, écriture de procédures et fonctions, variables, boucles (For, Do While), conditions (If, Select Case), et conception de formulaires interactifs (UserForms)."
+        },
+        {
+          "id": "powerpoint",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "PowerPoint",
+          "objectif": "Concevoir des présentations percutantes au service d'un message clair.",
+          "contenu": "Structuration du storytelling, création de masques personnalisés, règles d'impact visuel, intégration de médias, animations professionnelles et techniques d'animation de réunion de présentation."
+        },
+        {
+          "id": "word",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Word",
+          "objectif": "Maîtriser la mise en page de documents longs et la production automatisée.",
+          "contenu": "Utilisation des styles et thèmes, génération automatique de tables des matières, insertion de tableaux et d'illustrations, gestion des sections, et création de publipostages complexes."
+        },
+        {
+          "id": "outlook",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Outlook",
+          "objectif": "Optimiser sa messagerie pour un traitement efficace du flux d'informations.",
+          "contenu": "Organisation des dossiers, règles d'archivage automatique, gestion avancée du calendrier (partage, réunions), création de tâches, suivi des indicateurs et gestion des catégories."
+        }
+      ]
+    },
+    {
+      "id": "ia-automatisation",
+      "numero": 4,
+      "titre": "Pôle Intelligence Artificielle & Automatisation",
+      "accroche": "L'intelligence artificielle n'est plus une option, c'est un accélérateur de compétences incontournable. Nos formations vous guident pas à pas pour intégrer l'IA générative dans votre entreprise, automatiser vos flux de travail répétitifs et produire des livrables de haute qualité de façon éthique et responsable.",
+      "profil_beneficiaires": "Salariés de tous secteurs, dirigeants, créateurs de contenus, responsables de processus opérationnels et indépendants souhaitant augmenter leur productivité grâce à l'IA.",
+      "moyens_formats": "Cours dispensés en présentiel ou distanciel selon le module. Options de parcours individuels sur-mesure (visio) avec accompagnement et suivi en temps réel par un expert.",
+      "formations": [
+        {
+          "id": "workflow-ia-n8n",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Automatiser ses processus métier avec les Workflow IA",
+          "objectif": "Maîtriser l'automatisation avancée des flux opérationnels en connectant des outils grâce à l'IA générative et à l'architecture N8N.",
+          "pre_requis": "Utilisation courante du numérique. Des notions de base sur le fonctionnement des logiciels SaaS sont un plus.",
+          "contenu": "Concepts fondamentaux de l'automatisation : découverte et manipulation des APIs et structures JSON. Prise en main de l'interface visuelle et de l'architecture N8N. Configuration et déploiement de nœuds intelligents (IA générative) et modules de transformation de données. Cas réels d'entreprise : tri, classification et réponse automatisée aux emails, conception de chatbots connectés aux bases de connaissances."
+        },
+        {
+          "id": "ia-generative-contenus",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "L'usage responsable de l'IA générative pour la création de contenus rédactionnels et visuels",
+          "objectif": "Maîtriser l'intelligence artificielle générative au quotidien pour concevoir des contenus éthiques, performants et conformes aux réglementations.",
+          "duree": "30 heures de cours individuels dispensés sur-mesure en visioconférence.",
+          "pre_requis": "Aucun. Parcours individualisé quel que soit le niveau de connaissance de l'IA.",
+          "contenu": "Accompagnement personnalisé pour intégrer l'IA de manière stratégique. Méthodologie avancée de prompt engineering pour la génération de textes (articles, rapports, posts). Techniques de génération visuelle (images, chartes) dans une démarche d'éthique et d'accessibilité. Usage responsable : droit d'auteur, conformité à l'IA Act, lutte contre les biais cognitifs."
+        }
+      ]
+    },
+    {
+      "id": "developpement-personnel",
+      "numero": 5,
+      "titre": "Pôle Développement Personnel",
+      "accroche": "Les compétences comportementales (soft skills) constituent aujourd'hui le socle d'une carrière réussie et épanouie. Nos modules thématiques vous guident dans une meilleure connaissance de vous-même pour surmonter les blocages, renforcer votre impact relationnel et préserver votre équilibre.",
+      "profil_beneficiaires": "Toute personne désireuse d'améliorer son efficacité relationnelle, de gérer ses émotions, ou traversant une transition de vie professionnelle.",
+      "pre_requis": "Aucun.",
+      "duree_type": "14 heures par module d'apprentissage.",
+      "formations": [
+        {
+          "id": "bilan-de-competences",
+          "profils": [
+            "salarie",
+            "demandeur"
+          ],
+          "titre": "Bilan de compétences & Accompagnement au changement",
+          "objectif": "Analyser ses compétences professionnelles et personnelles pour définir un projet d'évolution.",
+          "contenu": "Cartographie des réalisations probantes, identification des valeurs et motivations, confrontation au marché du travail, et construction d'un plan d'action réaliste pour piloter le changement."
+        },
+        {
+          "id": "type-de-personnalite",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Découvrir son type de personnalité",
+          "objectif": "Identifier ses propres leviers de fonctionnement et comprendre ceux d'autrui.",
+          "contenu": "Sensibilisation aux modèles typologiques reconnus (styles MBTI, Process Com ou DISC), décryptage des modes de communication préférentiels, et identification des zones de stress de sa personnalité."
+        },
+        {
+          "id": "gestion-du-stress",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Gestion du stress / Stress et émotion",
+          "objectif": "Comprendre les mécanismes du stress pour en faire un allié de performance et préserver sa santé.",
+          "contenu": "Identification des stresseurs individuels, signaux d'alerte physiques et psychologiques, techniques de régulation émotionnelle à chaud, et mise en place d'une hygiène de vie et de travail équilibrée."
+        },
+        {
+          "id": "prise-de-parole-en-public",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Prise de parole en public / Communication et aisance relationnelle",
+          "objectif": "Capter son auditoire avec assurance lors des interventions orales.",
+          "contenu": "Travail de la voix, de la respiration et de la posture corporelle (le non-verbal), gestion du trac, structuration du discours d'impact, et techniques de gestion des questions complexes ou déstabilisantes."
+        },
+        {
+          "id": "affirmation-de-soi",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Affirmation de soi / Fais-toi confiance",
+          "objectif": "Développer son assertivité pour oser s'exprimer sans agressivité.",
+          "contenu": "Sortie des comportements de fuite ou de manipulation, oser dire non avec diplomatie, lever les freins du syndrome de l'imposteur, et renforcer l'estime de soi par la valorisation de ses succès."
+        },
+        {
+          "id": "pensee-positive",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Développer la pensée positive & l'intelligence relationnelle",
+          "objectif": "Cultiver un état d'esprit constructif pour optimiser les collaborations.",
+          "contenu": "Mécanismes de la psychologie positive, recadrage des pensées limitantes, développement de l'empathie active, gestion constructive du feedback et renforcement de l'intelligence collective."
+        }
+      ]
+    },
+    {
+      "id": "infographie-numerique",
+      "numero": 6,
+      "titre": "Pôle Infographie & Numérique",
+      "accroche": "À l'ère de la digitalisation de l'information, la maîtrise des outils visuels et de l'environnement numérique est un facteur d'indépendance et de rayonnement. Nos parcours forment aux standards du marché pour professionnaliser toute votre communication web et print.",
+      "profil_beneficiaires": "Chargés de communication, créateurs d'entreprise, professionnels de l'immobilier/architecture (AutoCAD), profils en reconversion ou grands débutants.",
+      "pre_requis": "Maîtrise courante de l'outil informatique (sauf initiation).",
+      "duree_type": "21 à 35 heures selon logiciel.",
+      "formations": [
+        {
+          "id": "initiation-numerique",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Apprendre à utiliser un ordinateur (Initiation Numérique)",
+          "objectif": "Devenir autonome sur la configuration et l'usage quotidien d'un PC ou Mac.",
+          "contenu": "Découverte du système d'exploitation, gestion de l'arborescence et des fichiers, navigation sécurisée sur Internet, utilisation des emails et sensibilisation aux cyber-menaces de base."
+        },
+        {
+          "id": "photoshop-illustrator",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Photoshop & Illustrator",
+          "objectif": "Créer et retoucher des visuels professionnels matriciels et vectoriels.",
+          "contenu": "Photoshop : retouche colorimétrique, détourages complexes, utilisation des calques et masques de fusion. Illustrator : dessin vectoriel, création de logos, d'identités visuelles et d'icônes échelonnables."
+        },
+        {
+          "id": "indesign",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "InDesign",
+          "objectif": "Réaliser la mise en page de documents professionnels multi-pages print et digitaux.",
+          "contenu": "Gestion des gabarits, des grilles de mise en page, chaînage de texte, styles de paragraphes et de caractères, préparation des fichiers pour l'impression professionnelle (fonds perdus, CMJN)."
+        },
+        {
+          "id": "autocad",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "AutoCAD",
+          "objectif": "Maîtriser le dessin technique assisté par ordinateur (DAO) en deux dimensions.",
+          "contenu": "Interface de travail, outils de dessin et de modification précis, gestion rigoureuse des calques, cotations, création de blocs dynamiques, et mise en page en vue de l'impression d'un plan à l'échelle."
+        },
+        {
+          "id": "wordpress",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "WordPress",
+          "objectif": "Créer, administrer et animer un site internet vitrine en totale autonomie sans coder.",
+          "contenu": "Choix de l'hébergement, installation de WordPress, configuration, choix et personnalisation d'un thème, utilisation de constructeurs de pages (Elementor), gestion des extensions de sécurité et des sauvegardes."
+        },
+        {
+          "id": "marketing-digital",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Marketing digital et réseaux sociaux",
+          "objectif": "Déployer une stratégie de présence en ligne efficace pour acquérir de nouveaux clients.",
+          "contenu": "Référencement naturel (SEO) et payant (SEA), codes et algorithmes des réseaux sociaux (LinkedIn, Instagram, Facebook), création de calendriers éditoriaux, et pilotage de campagnes publicitaires simples."
+        }
+      ]
+    },
+    {
+      "id": "fle-orthographe",
+      "numero": 7,
+      "titre": "Pôle FLE & Orthographe",
+      "accroche": "La qualité des écrits est la vitrine de la crédibilité d'une organisation ou d'un profil. Nos formations spécialisées consolident la maîtrise de la langue française pour éradiquer les erreurs, fiabiliser les écrits administratifs ou commerciaux, et faciliter l'intégration des personnes non-francophones.",
+      "profil_beneficiaires": "Collaborateurs désireux de sécuriser leurs écrits professionnels, ou personnes d'origine étrangère devant développer leurs compétences en langue française.",
+      "pre_requis": "Évaluation initiale de niveau de langue (CECRL pour le FLE).",
+      "duree_type": "21 à 30 heures de formation.",
+      "formations": [
+        {
+          "id": "fle",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Français Langue Étrangère (FLE)",
+          "objectif": "Développer les compétences de compréhension et d'expression écrite/orale en français.",
+          "contenu": "Acquisition du vocabulaire de la vie courante et du milieu professionnel, structures de phrases, amélioration de la prononciation, et accompagnement progressif selon les niveaux du Cadre Européen (A1 à C1)."
+        },
+        {
+          "id": "remise-a-niveau-orthographe",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Remise à niveau en orthographe",
+          "objectif": "Éliminer durablement les fautes d'orthographe et de grammaire des écrits quotidiens.",
+          "contenu": "Règles d'accords complexes (participes passés), conjugaisons et pièges des temps, distinctions des homophones, et méthodologie d'auto-relecture efficace."
+        },
+        {
+          "id": "francais-ecrits-professionnels",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Français Écrits Professionnels",
+          "objectif": "Rédiger des documents de travail clairs, structurés et adaptés à la charte de l'entreprise.",
+          "contenu": "Techniques de synthèse de l'information, structuration d'un compte-rendu, d'un rapport ou d'une note de service, choix du vocabulaire d'affaires approprié et codes d'impact de la communication par courriel."
+        }
+      ]
+    }
+  ]
+}
