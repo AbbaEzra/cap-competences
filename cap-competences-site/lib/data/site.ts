@@ -36,9 +36,9 @@ export const NAV_LINKS = [
 
 // Liens sociaux (placeholder « # » : à brancher avant mise en ligne).
 export const SOCIALS = [
-  { label: "LinkedIn", short: "in", href: "#" },
+  { label: "LinkedIn", short: "in", href: "https://www.linkedin.com/company/136166381/" },
   { label: "Instagram", short: "ig", href: "#" },
-  { label: "Facebook", short: "f", href: "#" },
+  { label: "Facebook", short: "f", href: "https://www.facebook.com/profile.php?id=61592227673416" },
 ];
 
 // Un lien de footer : soit une URL (href), soit une action « rappel » (ouvre la modale).
