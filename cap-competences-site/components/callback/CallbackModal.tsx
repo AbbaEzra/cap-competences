@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { useCallbackModal } from "@/components/callback/context";
+import { submitToWeb3Forms } from "@/lib/web3forms";
 
 const SUJETS = [
   "Trouver une formation",
@@ -12,16 +13,16 @@ const SUJETS = [
 const SITUATIONS = ["Salarié(e)", "Demandeur d'emploi", "Indépendant / Freelance", "Entreprise"];
 
 /**
- * Modale « Être rappelé » — UI uniquement (aucun envoi : pas de backend).
+ * Modale « Être rappelé » — envoi réel via Web3Forms.
  * Accessible : role dialog, fermeture Échap / clic overlay / bouton, verrou scroll.
  */
 export function CallbackModal() {
   const { open, options, closeCallback } = useCallbackModal();
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "error">("idle");
 
   useEffect(() => {
     if (!open) return;
-    setSent(false);
+    setStatus("idle");
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") closeCallback();
     };
@@ -39,6 +40,19 @@ export function CallbackModal() {
   const title = options.title ?? "Être rappelé sous 24h";
   const subtitle = options.subtitle ?? "Un conseiller fait le point avec vous, à votre rythme.";
   const isSituation = options.field === "situation";
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("loading");
+    const fields = Object.fromEntries(new FormData(e.currentTarget).entries());
+    if (options.contextLabel) fields.contexte = options.contextLabel;
+    try {
+      await submitToWeb3Forms(fields, `Demande de rappel — ${options.contextLabel ?? title}`);
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
+  }
 
   return (
     <div
@@ -72,7 +86,7 @@ export function CallbackModal() {
           )}
         </div>
 
-        {sent ? (
+        {status === "sent" ? (
           <div className="px-6 py-8 text-center">
             <span className="mx-auto mb-4 grid h-16 w-16 place-items-center rounded-full bg-[rgba(46,158,107,.12)]">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E9E6B" strokeWidth="2.4">
@@ -81,8 +95,7 @@ export function CallbackModal() {
             </span>
             <h4 className="serif text-[22px] font-bold text-cap-ink">Demande envoyée&nbsp;!</h4>
             <p className="mx-auto mt-2 max-w-[320px] text-cap-base text-cap-muted">
-              Un conseiller vous rappelle sous 24h. (Démonstration : aucun formulaire n'est réellement
-              envoyé sur ce site statique.)
+              Un conseiller vous rappelle sous 24h.
             </p>
             <button
               onClick={closeCallback}
@@ -92,25 +105,23 @@ export function CallbackModal() {
             </button>
           </div>
         ) : (
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSent(true);
-            }}
-            className="flex flex-col gap-3.5 px-6 py-6"
-          >
+          <form onSubmit={handleSubmit} className="flex flex-col gap-3.5 px-6 py-6">
+            <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
             <div className="grid grid-cols-2 gap-3">
               <label className="flex flex-col gap-1.5 text-cap-sm font-semibold text-cap-ink">
                 Prénom
                 <input
+                  name="prenom"
                   placeholder="Camille"
                   className="rounded-cap-md border border-cap-border px-3 py-2.5 text-[14.5px] outline-none focus-visible:border-cap-navy"
                 />
               </label>
               <label className="flex flex-col gap-1.5 text-cap-sm font-semibold text-cap-ink">
-                Téléphone
+                Téléphone *
                 <input
+                  required
                   type="tel"
+                  name="telephone"
                   placeholder="06 12 34 56 78"
                   className="rounded-cap-md border border-cap-border px-3 py-2.5 text-[14.5px] outline-none focus-visible:border-cap-navy"
                 />
@@ -118,7 +129,10 @@ export function CallbackModal() {
             </div>
             <label className="flex flex-col gap-1.5 text-cap-sm font-semibold text-cap-ink">
               {isSituation ? "Votre situation" : "Sujet"}
-              <select className="rounded-cap-md border border-cap-border bg-white px-3 py-2.5 text-[14.5px] text-cap-ink outline-none focus-visible:border-cap-navy">
+              <select
+                name={isSituation ? "situation" : "sujet"}
+                className="rounded-cap-md border border-cap-border bg-white px-3 py-2.5 text-[14.5px] text-cap-ink outline-none focus-visible:border-cap-navy"
+              >
                 {(isSituation ? SITUATIONS : SUJETS).map((o) => (
                   <option key={o}>{o}</option>
                 ))}
@@ -134,11 +148,17 @@ export function CallbackModal() {
                 .
               </span>
             </label>
+            {status === "error" && (
+              <p className="text-cap-sm font-semibold text-red-600">
+                L'envoi a échoué. Réessayez ou appelez-nous directement.
+              </p>
+            )}
             <button
               type="submit"
-              className="mt-0.5 rounded-cap-md bg-cap-accent py-3.5 text-[15.5px] font-bold text-cap-ink shadow-cap-cta transition hover:brightness-[1.03]"
+              disabled={status === "loading"}
+              className="mt-0.5 rounded-cap-md bg-cap-accent py-3.5 text-[15.5px] font-bold text-cap-ink shadow-cap-cta transition hover:brightness-[1.03] disabled:opacity-60"
             >
-              Demander mon rappel →
+              {status === "loading" ? "Envoi en cours…" : "Demander mon rappel →"}
             </button>
             <p className="flex items-center justify-center gap-1.5 text-center text-[11.5px] text-cap-muted">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2E9E6B" strokeWidth="2">

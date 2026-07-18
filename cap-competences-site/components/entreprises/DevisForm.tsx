@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { devisDomaineOptions, devisSizeOptions } from "@/lib/data/entreprises";
+import { submitToWeb3Forms } from "@/lib/web3forms";
 
 const FORMATS = [
   { k: "presentiel", label: "Présentiel" },
@@ -13,12 +14,24 @@ const inputCls =
   "rounded-cap-md border border-cap-border px-3.5 py-2.5 text-[14.5px] outline-none focus-visible:border-cap-navy";
 const labelCls = "flex flex-col gap-1.5 text-cap-sm font-semibold text-cap-ink";
 
-/** Formulaire de devis entreprise — UI seule (aucun envoi : pas de backend). */
+/** Formulaire de devis entreprise — envoi réel via Web3Forms. */
 export function DevisForm() {
   const [format, setFormat] = useState("mixte");
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "error">("idle");
 
-  if (sent) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("loading");
+    const fields = Object.fromEntries(new FormData(e.currentTarget).entries());
+    try {
+      await submitToWeb3Forms(fields, "Nouvelle demande de devis — Cap Expertises");
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  if (status === "sent") {
     return (
       <div className="rounded-cap-2xl border border-cap-border bg-white p-[clamp(24px,2.6vw,32px)] text-center shadow-cap-card">
         <span className="mx-auto mb-4 grid h-16 w-16 place-items-center rounded-full bg-[rgba(46,158,107,.12)]">
@@ -29,10 +42,9 @@ export function DevisForm() {
         <h3 className="serif text-[24px] font-bold text-cap-ink">Demande envoyée. Cap sur votre projet&nbsp;!</h3>
         <p className="mx-auto mt-2.5 max-w-[340px] text-[15px] leading-[1.55] text-cap-muted">
           Un conseiller revient vers vous sous 24 à 48h avec un programme sur-mesure et un devis détaillé.
-          (Démonstration : aucun formulaire n'est réellement envoyé sur ce site statique.)
         </p>
         <button
-          onClick={() => setSent(false)}
+          onClick={() => setStatus("idle")}
           className="mt-[22px] rounded-cap-md bg-cap-navy px-[22px] py-3 text-[14.5px] font-bold text-white transition hover:brightness-110"
         >
           Envoyer une autre demande
@@ -43,32 +55,31 @@ export function DevisForm() {
 
   return (
     <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSent(true);
-      }}
+      onSubmit={handleSubmit}
       className="flex flex-col gap-[15px] rounded-cap-2xl border border-cap-border bg-white p-[clamp(24px,2.6vw,32px)] shadow-cap-card"
     >
+      <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
       <div className="grid grid-cols-1 gap-[13px] sm:grid-cols-2">
         <label className={labelCls}>
-          Société *<input required placeholder="Nom de l'entreprise" className={inputCls} />
+          Société *<input required name="societe" placeholder="Nom de l'entreprise" className={inputCls} />
         </label>
         <label className={labelCls}>
-          Votre nom *<input required placeholder="Prénom Nom" className={inputCls} />
+          Votre nom *<input required name="nom" placeholder="Prénom Nom" className={inputCls} />
         </label>
       </div>
       <div className="grid grid-cols-1 gap-[13px] sm:grid-cols-2">
         <label className={labelCls}>
-          E-mail professionnel *<input required type="email" placeholder="vous@société.fr" className={inputCls} />
+          E-mail professionnel *
+          <input required type="email" name="email" placeholder="vous@société.fr" className={inputCls} />
         </label>
         <label className={labelCls}>
-          Téléphone<input type="tel" placeholder="01 23 45 67 89" className={inputCls} />
+          Téléphone<input type="tel" name="telephone" placeholder="01 23 45 67 89" className={inputCls} />
         </label>
       </div>
       <div className="grid grid-cols-1 gap-[13px] sm:grid-cols-2">
         <label className={labelCls}>
           Personnes à former
-          <select className={`${inputCls} bg-white text-cap-ink`}>
+          <select name="taille" className={`${inputCls} bg-white text-cap-ink`}>
             {devisSizeOptions.map((o) => (
               <option key={o}>{o}</option>
             ))}
@@ -76,7 +87,7 @@ export function DevisForm() {
         </label>
         <label className={labelCls}>
           Domaine
-          <select className={`${inputCls} bg-white text-cap-ink`}>
+          <select name="domaine" className={`${inputCls} bg-white text-cap-ink`}>
             {devisDomaineOptions.map((o) => (
               <option key={o}>{o}</option>
             ))}
@@ -85,6 +96,7 @@ export function DevisForm() {
       </div>
       <div>
         <span className="mb-2 block text-cap-sm font-semibold text-cap-ink">Format souhaité</span>
+        <input type="hidden" name="format" value={format} />
         <div className="flex flex-wrap gap-2">
           {FORMATS.map((f) => {
             const active = format === f.k;
@@ -107,6 +119,7 @@ export function DevisForm() {
       <label className={labelCls}>
         Votre besoin
         <textarea
+          name="besoin"
           rows={3}
           placeholder="Objectifs, niveau des équipes, échéances…"
           className={`${inputCls} resize-y`}
@@ -122,11 +135,17 @@ export function DevisForm() {
           .
         </span>
       </label>
+      {status === "error" && (
+        <p className="text-cap-sm font-semibold text-red-600">
+          L'envoi a échoué. Vérifiez votre connexion et réessayez, ou appelez-nous directement.
+        </p>
+      )}
       <button
         type="submit"
-        className="rounded-cap-md bg-cap-accent py-3.5 text-[16px] font-bold text-cap-ink shadow-cap-cta transition hover:-translate-y-px hover:brightness-[1.03]"
+        disabled={status === "loading"}
+        className="rounded-cap-md bg-cap-accent py-3.5 text-[16px] font-bold text-cap-ink shadow-cap-cta transition hover:-translate-y-px hover:brightness-[1.03] disabled:opacity-60"
       >
-        Recevoir mon devis →
+        {status === "loading" ? "Envoi en cours…" : "Recevoir mon devis →"}
       </button>
       <p className="flex items-center justify-center gap-1.5 text-center text-[11.5px] text-cap-muted">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2E9E6B" strokeWidth="2">

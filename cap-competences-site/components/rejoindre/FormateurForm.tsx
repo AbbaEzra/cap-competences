@@ -1,39 +1,45 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { CallbackButton } from "@/components/callback/CallbackButton";
+import { submitToWeb3Forms } from "@/lib/web3forms";
 
 // Mêmes classes de champ/label que DevisForm (cohérence du design system).
 const inputCls =
   "rounded-cap-md border border-cap-border px-3.5 py-2.5 text-[14.5px] outline-none focus-visible:border-cap-navy";
 const labelCls = "flex flex-col gap-1.5 text-cap-sm font-semibold text-cap-ink";
 
-/**
- * Formulaire de candidature formateur — UI seule, AUCUN envoi (pas de backend), calqué
- * techniquement sur DevisForm/CallbackModal : champs non contrôlés validés par HTML natif,
- * onSubmit -> preventDefault -> état `sent`. Différence assumée : le panneau de fin est
- * HONNÊTE (il n'affiche pas de faux « message envoyé »).
- */
+/** Formulaire de candidature formateur — envoi réel via Web3Forms. */
 export function FormateurForm({ domaines }: { domaines: { id: string; name: string }[] }) {
   const [selected, setSelected] = useState<string[]>([]);
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "error">("idle");
 
   const toggle = (id: string) =>
     setSelected((cur) => (cur.includes(id) ? cur.filter((x) => x !== id) : [...cur, id]));
 
-  if (sent) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("loading");
+    const fields = Object.fromEntries(new FormData(e.currentTarget).entries());
+    try {
+      await submitToWeb3Forms(fields, "Nouvelle candidature formateur — Cap Expertises");
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  if (status === "sent") {
     return (
       <div className="rounded-cap-2xl border border-cap-border bg-white p-[clamp(24px,2.6vw,32px)] text-center shadow-cap-card">
-        <span className="mx-auto mb-4 grid h-16 w-16 place-items-center rounded-full bg-cap-soft">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0F3D66" strokeWidth="2">
-            <circle cx="12" cy="12" r="9" />
-            <path d="M12 8v4M12 16h.01" />
+        <span className="mx-auto mb-4 grid h-16 w-16 place-items-center rounded-full bg-[rgba(46,158,107,.12)]">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E9E6B" strokeWidth="2.4">
+            <path d="M5 12l4.5 4.5L19 7" />
           </svg>
         </span>
-        <h3 className="serif text-[24px] font-bold text-cap-ink">Le dépôt en ligne arrive bientôt</h3>
+        <h3 className="serif text-[24px] font-bold text-cap-ink">Candidature envoyée&nbsp;!</h3>
         <p className="mx-auto mt-2.5 max-w-[360px] text-[15px] leading-[1.55] text-cap-muted">
-          Ce formulaire n'est pas encore connecté&nbsp;: <strong className="font-semibold text-cap-ink">aucune
-          donnée n'a été transmise.</strong> En attendant, faites-vous rappeler — on étudie chaque candidature.
+          Merci pour votre candidature — on l'étudie et on revient vers vous rapidement.
         </p>
         <div className="mt-[22px] flex flex-wrap justify-center gap-2.5">
           <CallbackButton
@@ -43,7 +49,7 @@ export function FormateurForm({ domaines }: { domaines: { id: string; name: stri
             Être rappelé(e)
           </CallbackButton>
           <button
-            onClick={() => setSent(false)}
+            onClick={() => setStatus("idle")}
             className="rounded-cap-md border border-cap-border bg-white px-[22px] py-3 text-[14.5px] font-bold text-cap-navy transition hover:bg-cap-soft"
           >
             Revenir au formulaire
@@ -55,27 +61,25 @@ export function FormateurForm({ domaines }: { domaines: { id: string; name: stri
 
   return (
     <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSent(true);
-      }}
+      onSubmit={handleSubmit}
       className="flex flex-col gap-[15px] rounded-cap-2xl border border-cap-border bg-white p-[clamp(24px,2.6vw,32px)] shadow-cap-card"
     >
+      <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
       <div className="grid grid-cols-1 gap-[13px] sm:grid-cols-2">
         <label className={labelCls}>
-          Nom complet *<input required placeholder="Prénom Nom" className={inputCls} />
+          Nom complet *<input required name="nom" placeholder="Prénom Nom" className={inputCls} />
         </label>
         <label className={labelCls}>
-          E-mail *<input required type="email" placeholder="vous@exemple.fr" className={inputCls} />
+          E-mail *<input required type="email" name="email" placeholder="vous@exemple.fr" className={inputCls} />
         </label>
       </div>
       <div className="grid grid-cols-1 gap-[13px] sm:grid-cols-2">
         <label className={labelCls}>
-          Téléphone<input type="tel" placeholder="06 12 34 56 78" className={inputCls} />
+          Téléphone<input type="tel" name="telephone" placeholder="06 12 34 56 78" className={inputCls} />
         </label>
         <label className={labelCls}>
           Lien CV / LinkedIn
-          <input type="url" placeholder="https://linkedin.com/in/…" className={inputCls} />
+          <input type="url" name="lien" placeholder="https://linkedin.com/in/…" className={inputCls} />
         </label>
       </div>
 
@@ -83,6 +87,11 @@ export function FormateurForm({ domaines }: { domaines: { id: string; name: stri
         <span className="mb-2 block text-cap-sm font-semibold text-cap-ink">
           Domaine(s) d'expertise
         </span>
+        <input
+          type="hidden"
+          name="domaines"
+          value={selected.map((id) => domaines.find((d) => d.id === id)?.name ?? id).join(", ")}
+        />
         <div className="flex flex-wrap gap-2">
           {domaines.map((d) => {
             const active = selected.includes(d.id);
@@ -110,6 +119,7 @@ export function FormateurForm({ domaines }: { domaines: { id: string; name: stri
         Présentation *
         <textarea
           required
+          name="presentation"
           rows={4}
           placeholder="Votre parcours, vos sujets de prédilection, votre expérience de la formation…"
           className={`${inputCls} resize-y`}
@@ -127,11 +137,17 @@ export function FormateurForm({ domaines }: { domaines: { id: string; name: stri
         </span>
       </label>
 
+      {status === "error" && (
+        <p className="text-cap-sm font-semibold text-red-600">
+          L'envoi a échoué. Vérifiez votre connexion et réessayez, ou faites-vous rappeler ci-dessous.
+        </p>
+      )}
       <button
         type="submit"
-        className="rounded-cap-md bg-cap-accent py-3.5 text-[16px] font-bold text-cap-ink shadow-cap-cta transition hover:-translate-y-px hover:brightness-[1.03]"
+        disabled={status === "loading"}
+        className="rounded-cap-md bg-cap-accent py-3.5 text-[16px] font-bold text-cap-ink shadow-cap-cta transition hover:-translate-y-px hover:brightness-[1.03] disabled:opacity-60"
       >
-        Envoyer ma candidature →
+        {status === "loading" ? "Envoi en cours…" : "Envoyer ma candidature →"}
       </button>
       <p className="flex items-center justify-center gap-1.5 text-center text-[11.5px] text-cap-muted">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2E9E6B" strokeWidth="2">
