@@ -93,6 +93,9 @@ export function Header({ activeHref }: HeaderProps) {
               <span className="h-1.5 w-1.5 rounded-full bg-cap-green shadow-[0_0_0_3px_rgba(46,158,107,.25)]" />
               {SITE.phone} · {SITE.phoneHours}
             </span>
+            <a href={`mailto:${SITE.email}`} className="hidden hover:underline sm:inline">
+              {SITE.email}
+            </a>
           </div>
           <div className="flex items-center gap-3.5">
             <div className="flex gap-[7px]">
