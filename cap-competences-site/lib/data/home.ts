@@ -79,12 +79,6 @@ export const steps = [
   { n: "4", title: "Vous avancez, validez", text: "Formation, suivi de progression, et une compétence reconnue à l'arrivée." },
 ];
 
-export const proofStats = [
-  { value: "96 %", label: "de satisfaction" },
-  { value: "91 %", label: "de réussite" },
-  { value: "4,8/5", label: "note apprenants" },
-];
-
 export const reviews = [
   {
     quote:

@@ -5,7 +5,6 @@ import { Footer } from "@/components/layout/Footer";
 import { CompassNeedle } from "@/components/brand/CompassNeedle";
 import { DevisForm } from "@/components/entreprises/DevisForm";
 import {
-  entHeroStats,
   entValues,
   entSteps,
   devisPerks,
@@ -112,17 +111,6 @@ export default function EntreprisesPage() {
                   Voir les domaines ↓
                 </a>
               </div>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              {entHeroStats.map((hs) => (
-                <div key={hs.label} className="rounded-cap-xl border border-white/15 bg-white/[.07] p-5">
-                  <div className="serif text-[30px] font-bold leading-none text-white">{hs.value}</div>
-                  <div className="mt-1.5 text-[13px] leading-[1.4] text-[#B7CCE0]">{hs.label}</div>
-                </div>
-              ))}
-              <span className="col-span-2 inline-flex items-center gap-1.5 self-start rounded-cap-pill bg-cap-accent px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-[.4px] text-cap-ink">
-                Chiffres d'exemple · à confirmer
-              </span>
             </div>
           </div>
         </section>

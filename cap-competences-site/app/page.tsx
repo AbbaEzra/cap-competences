@@ -5,7 +5,7 @@ import { HomeHero } from "@/components/home/HomeHero";
 import { CompassNeedle } from "@/components/brand/CompassNeedle";
 import { Reveal } from "@/components/ui/Reveal";
 import { CallbackButton } from "@/components/callback/CallbackButton";
-import { steps, proofStats, reviews, heroApprenantsStat } from "@/lib/data/home";
+import { steps, reviews, heroApprenantsStat } from "@/lib/data/home";
 import { getPoleNav, allFormations, poles } from "@/lib/catalogue";
 import { ROUTES } from "@/lib/data/site";
 
@@ -104,33 +104,6 @@ export default function HomePage() {
         {/* Preuves / témoignages */}
         <section className={`${sectionHead} py-[clamp(48px,6vw,84px)]`}>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-stretch gap-5">
-            <Reveal className="flex flex-col justify-center rounded-cap-2xl bg-cap-navy p-[clamp(28px,3vw,40px)] text-white">
-              <div className="flex flex-wrap items-center gap-2.5">
-                <span className="text-[13px] font-bold uppercase tracking-[1.4px] text-cap-accent">
-                  Vos résultats, nos preuves
-                </span>
-                <span className="rounded-cap-pill bg-cap-accent px-2.5 py-[3px] text-[10px] font-extrabold uppercase tracking-[.4px] text-cap-ink">
-                  Chiffres d'exemple · à confirmer
-                </span>
-              </div>
-              <h2 className="serif mt-3 text-[clamp(28px,3vw,38px)] font-bold leading-[1.12]">
-                On mesure tout — parce que votre réussite n'est pas une promesse en l'air.
-              </h2>
-              <div className="mt-7 flex flex-wrap gap-[30px]">
-                {proofStats.map((s) => (
-                  <div key={s.label}>
-                    <div className="serif whitespace-nowrap text-[38px] font-bold leading-none">{s.value}</div>
-                    <div className="mt-1 text-[13px] opacity-80">{s.label}</div>
-                  </div>
-                ))}
-              </div>
-              <a href="#" className="mt-[26px] inline-flex items-center gap-2 text-[14.5px] font-bold text-cap-accent">
-                Voir nos indicateurs de résultats
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                  <path d="M5 12h14M13 6l6 6-6 6" />
-                </svg>
-              </a>
-            </Reveal>
             {reviews.map((rv) => (
               <Reveal key={rv.name} className="flex flex-col rounded-cap-2xl border border-cap-border bg-white p-[clamp(24px,2.6vw,32px)]">
                 <div className="mb-3.5 flex items-center justify-between gap-1">

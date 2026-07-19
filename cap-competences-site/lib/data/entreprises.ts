@@ -1,12 +1,5 @@
 // Données de la page « Entreprises » (B2B intra, organisation gérée de bout en bout).
 
-export const entHeroStats = [
-  { value: "+250", label: "entreprises accompagnées" },
-  { value: "96 %", label: "de satisfaction" },
-  { value: "48 h", label: "pour un devis" },
-  { value: "Intra", label: "sur-mesure & à distance" },
-];
-
 export type EntIcon = "star" | "graduation" | "screen" | "shield";
 
 export const entValues: { icon: EntIcon; title: string; text: string }[] = [
