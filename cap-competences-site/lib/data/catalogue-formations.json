@@ -39,259 +39,8 @@
   },
   "poles": [
     {
-      "id": "langues-etrangeres",
-      "numero": 1,
-      "titre": "Pôle Langues Étrangères",
-      "accroche": "Dans une économie mondialisée, la maîtrise d'une langue étrangère est un levier majeur de compétitivité pour les entreprises et d'employabilité pour les particuliers. Nos programmes sur-mesure sont conçus pour briser la barrière linguistique et vous rendre opérationnel rapidement dans vos échanges internationaux.",
-      "objectifs": [
-        "Développer l'aisance à l'oral et à l'écrit en contexte professionnel.",
-        "Maîtriser le vocabulaire technique spécifique à son secteur d'activité.",
-        "Comprendre et interagir avec des interlocuteurs natifs de manière fluide."
-      ],
-      "modalites_public": {
-        "langues": [
-          "Allemand",
-          "Anglais",
-          "Chinois",
-          "Espagnol",
-          "Italien",
-          "Japonais",
-          "Portugais",
-          "Russe"
-        ],
-        "duree": "Modules intensifs de 21 heures ou extensifs de 30 heures.",
-        "profils": [
-          "Salariés",
-          "Demandeurs d'emploi",
-          "Professionnels",
-          "Particuliers"
-        ],
-        "pre_requis": "Aucun (Niveau Débutant) / Test de positionnement (Niveaux Intermédiaires à Avancés)."
-      },
-      "programme_type": [
-        {
-          "label": "Grammaire et Structures",
-          "detail": "Consolidation des bases grammaticales, syntaxe et conjugaison professionnelle."
-        },
-        {
-          "label": "Communication Orale",
-          "detail": "Mises en situation pratiques, simulations de réunions, d'appels téléphoniques et de négociations."
-        },
-        {
-          "label": "Expression Écrite",
-          "detail": "Rédaction d'emails professionnels, de rapports, de notes de synthèse et de messages clairs."
-        },
-        {
-          "label": "Culture & Usages",
-          "detail": "Compréhension des codes culturels et des pratiques d'affaires spécifiques au pays."
-        }
-      ],
-      "formations": [
-        {
-          "id": "langue-etrangere",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Formation en langue étrangère (8 langues au choix)",
-          "objectif": "Devenir opérationnel à l'oral et à l'écrit dans la langue choisie, en contexte professionnel.",
-          "contenu": "Programme modulable selon le niveau : grammaire et structures, communication orale, expression écrite, culture et usages d'affaires du pays.",
-          "duree": "21 h (intensif) ou 30 h (extensif)",
-          "pre_requis": "Aucun (débutant) ou test de positionnement (intermédiaire à avancé)."
-        }
-      ]
-    },
-    {
-      "id": "management",
-      "numero": 2,
-      "titre": "Pôle Management",
-      "accroche": "Le management ne s'invente pas, il s'apprend et se perfectionne. Face aux nouvelles attentes des collaborateurs et à l'hybridation du travail, nos formations outillent les managers pour concilier performance économique, leadership inspirant et bien-être des équipes au quotidien.",
-      "profil_beneficiaires": "Cadres dirigeants, managers de proximité, managers de managers, chefs de projet, ou collaborateurs en phase de prise de poste managérial.",
-      "pre_requis": "Occuper des fonctions de management ou avoir un projet de transition managériale validé.",
-      "duree_type": "14 à 21 heures par module.",
-      "formations": [
-        {
-          "id": "gestion-de-projets",
-          "profils": [
-            "salarie",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Gestion de projets",
-          "objectif": "Maîtriser le cycle complet d'un projet de son cadrage à sa clôture.",
-          "contenu": "Définition des objectifs (SMART), planification opérationnelle (Gantt, méthodes agiles), gestion des risques, animation des réunions de projet et suivi des indicateurs de performance (KPI)."
-        },
-        {
-          "id": "gestion-des-conflits",
-          "profils": [
-            "salarie",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Gestion des conflits",
-          "objectif": "Anticiper, identifier et désamorcer les tensions au sein d'une équipe.",
-          "contenu": "Compréhension des mécanismes de crise, cartographie des comportements, techniques de médiation et de sortie de crise positive, et rétablissement d'un climat de confiance durable."
-        },
-        {
-          "id": "communication-non-violente",
-          "profils": [
-            "salarie",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "La communication non violente (CNV)",
-          "objectif": "Adopter une communication constructive et bienveillante pour fluidifier les relations de travail.",
-          "contenu": "Les 4 étapes de la méthode CNV : Observation factuelle, expression du Sentiment, identification du Besoin, formulation d'une Demande claire. Écoute empathique et désamorçage de l'agressivité."
-        },
-        {
-          "id": "leadership-manager-equipe",
-          "profils": [
-            "salarie",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Leadership & Manager efficacement son équipe",
-          "objectif": "Asseoir sa posture de leader et fédérer les collaborateurs autour de la vision de l'entreprise.",
-          "contenu": "Identification de son style de leadership, les leviers de la motivation individuelle et collective, la délégation responsabilisante, et la conduite du changement auprès de son équipe."
-        },
-        {
-          "id": "management-de-managers-proximite",
-          "profils": [
-            "salarie",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Le management de managers & Management de proximité",
-          "objectif": "Piloter des équipes de terrain ou animer des managers intermédiaires avec la juste posture.",
-          "contenu": "Relais de la stratégie globale, animation de rituels managériaux performants, gestion de la distance hiérarchique, développement des compétences et autonomisation des collaborateurs."
-        },
-        {
-          "id": "organiser-son-teletravail",
-          "profils": [
-            "salarie",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Organiser son télétravail",
-          "objectif": "Concilier productivité, gestion du temps et maintien du lien d'équipe à distance.",
-          "contenu": "Structuration de ses journées à distance, maîtrise des outils de collaboration synchrone et asynchrone, fixation de limites pro/perso, et techniques de management ou d'automanagement en environnement hybride."
-        }
-      ]
-    },
-    {
-      "id": "bureautique",
-      "numero": 3,
-      "titre": "Pôle Bureautique",
-      "accroche": "La maîtrise des outils informatiques usuels est le premier vecteur d'efficacité professionnelle. Nos formations pragmatiques éliminent les blocages techniques quotidiens pour transformer l'usage intuitif en une utilisation experte, automatisée et hautement productive.",
-      "profil_beneficiaires": "Tout professionnel (secrétaires, comptables, assistants, cadres, indépendants) ou particulier souhaitant fiabiliser l'usage des outils bureautiques.",
-      "pre_requis": "Maîtrise de l'environnement informatique de base (clavier, souris, gestion des fichiers).",
-      "duree_type": "14 à 21 heures par logiciel.",
-      "formations": [
-        {
-          "id": "word",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Word — Documents Longs & Automatisation",
-          "objectif": "Structurer et automatiser la mise en forme de documents longs professionnels (rapports, manuels, contrats, thèses).",
-          "duree": "14 h",
-          "pre_requis": "Maîtrise des bases Word (saisie, mise en page simple).",
-          "contenu": "Objectifs opérationnels\n• Structurer et automatiser la mise en forme de documents longs professionnels\n• Créer des modèles réutilisables avec styles, sections et champs automatiques\n• Maîtriser les outils de révision collaboratifs (suivi des modifications, commentaires)\n\nCompétences visées\n• Appliquer des styles hiérarchiques et générer une table des matières automatique\n• Insérer et gérer champs, renvois croisés, index et notes de bas de page\n• Créer un publipostage complet (lettres, étiquettes, emails) depuis une source de données\n\nProgramme\nModule 1 – Styles et structure\n• Styles de titres, corps de texte et personnalisation\n• Table des matières et table des illustrations automatiques\n• Sections, sauts de page et numérotation avancée\n\nModule 2 – Champs et automatisation\n• Champs automatiques : date, auteur, numéro de page\n• Renvois croisés, signets et liens internes\n• Formulaires Word et zones de contenu\n\nModule 3 – Collaboration et fusion\n• Suivi des modifications et gestion des commentaires\n• Comparaison et fusion de documents\n• Publipostage : lettres, étiquettes, enveloppes\n\nMéthodes pédagogiques\n• Exercices sur des documents professionnels réels\n• Supports remis : modèles Word prêts à l'emploi\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• QCM et exercices pratiques\n• Évaluation finale : document long mis en forme et publipostage opérationnel\n• Attestation de fin de formation"
-        },
-        {
-          "id": "excel",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Excel — Initiation à Perfectionnement",
-          "objectif": "Créer des tableaux de données fiables, exploiter les fonctions avancées et automatiser la production de tableaux de bord dynamiques.",
-          "duree": "14 à 21 h (modulable selon niveau)",
-          "pre_requis": "Maîtrise de l'informatique de base. Notions Excel appréciées pour le niveau perfectionnement.",
-          "contenu": "Objectifs opérationnels\n• Créer et mettre en forme des tableaux de données fiables et lisibles\n• Exploiter les fonctions avancées pour analyser et croiser des données\n• Automatiser la production de rapports et tableaux de bord dynamiques\n\nCompétences visées\n• Utiliser les fonctions RECHERCHEV/X, SI imbriqués, SOMME.SI, NB.SI\n• Créer des tableaux croisés dynamiques (TCD) et graphiques croisés\n• Mettre en forme conditionnelle et produire des tableaux de bord lisibles\n\nProgramme\nModule 1 – Fondamentaux (Initiation)\n• Interface, saisie, recopie, mise en forme\n• Formules de base : SOMME, MOYENNE, NB, MIN, MAX\n• Graphiques simples et impression\n\nModule 2 – Fonctions avancées\n• Fonctions logiques : SI, ET, OU, SIERREUR\n• Fonctions de recherche : RECHERCHEV, RECHERCHEX, INDEX/EQUIV\n• Fonctions texte et date\n\nModule 3 – Analyse et tableaux de bord\n• Tableaux croisés dynamiques : création, filtres, segments\n• Mise en forme conditionnelle et graphiques sparklines\n• Tableau de bord interactif avec segments et chronologies\n\nMéthodes pédagogiques\n• Exercices progressifs sur des données métier réelles\n• Supports remis : classeurs Excel annotés\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial (test de niveau)\n• Exercices pratiques à chaque module\n• Évaluation finale : tableau de bord opérationnel\n• Attestation de fin de formation"
-        },
-        {
-          "id": "vba",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "VBA Excel — Automatisation & Macros",
-          "objectif": "Automatiser les traitements répétitifs et gagner en productivité en écrivant des macros et fonctions VBA personnalisées.",
-          "duree": "21 h",
-          "pre_requis": "Bonne maîtrise d'Excel (fonctions, TCD). Aucune connaissance en programmation requise.",
-          "contenu": "Objectifs opérationnels\n• Enregistrer, modifier et exécuter des macros pour automatiser des tâches répétitives\n• Écrire des procédures et fonctions VBA personnalisées\n• Manipuler les objets Excel (classeurs, feuilles, plages) par le code\n• Concevoir des formulaires interactifs de saisie (UserForms)\n\nCompétences visées\n• Déclarer et utiliser variables, constantes et structures de contrôle (If, For, Do While)\n• Manipuler les objets Workbook, Worksheet, Range et Cells par le code\n• Créer des fonctions personnalisées et des procédures événementielles\n• Déboguer un code VBA (points d'arrêt, espion, gestion d'erreurs)\n\nProgramme\nModule 1 – Environnement VBA\n• Éditeur VBE : fenêtres, modules, débogueur\n• Enregistrer, exécuter et modifier une macro\n• Structure d'une procédure Sub et d'une fonction Function\n• Sécurité des macros : niveaux et signatures\n\nModule 2 – Variables et structures de contrôle\n• Types de données : Integer, Long, String, Double, Boolean\n• Déclaration et portée (Dim, Public, Private, Const)\n• Conditions : If/Then/Else, Select Case\n• Boucles : For/Next, For Each, Do While/Until\n\nModule 3 – Manipulation des objets Excel\n• Modèle objet : Application, Workbook, Worksheet, Range, Cells\n• Copier, trier, filtrer, supprimer par code\n• Procédures événementielles (Workbook_Open, Worksheet_Change)\n• Gestion des erreurs : On Error GoTo, Err.Number\n\nModule 4 – Fonctions personnalisées & UserForms\n• Créer une Function utilisable dans une feuille\n• Conception d'un UserForm : TextBox, ComboBox, ListBox, CommandButton\n• Validation et messages d'alerte (MsgBox, InputBox)\n• Projet fil rouge : automatisation d'un processus complet\n\nMéthodes pédagogiques\n• Apprentissage par la pratique sur des cas concrets\n• Supports : classeurs VBA annotés, aide-mémoire\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : macro complète déployée sur un cas réel\n• Attestation de fin de formation"
-        },
-        {
-          "id": "power-bi",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Power BI — Tableaux de Bord & Analyse de Données",
-          "objectif": "Connecter, transformer et modéliser des données pour créer des tableaux de bord décisionnels interactifs et les partager en entreprise.",
-          "duree": "21 h",
-          "pre_requis": "Bonne maîtrise d'Excel. Notions de bases de données appréciées.",
-          "contenu": "Objectifs opérationnels\n• Connecter, transformer et modéliser des données issues de sources variées\n• Créer des visualisations interactives et des tableaux de bord décisionnels\n• Publier et partager des rapports Power BI au sein d'une organisation\n\nCompétences visées\n• Importer et nettoyer des données avec Power Query\n• Créer des mesures DAX pour calculer des KPI métiers\n• Concevoir un tableau de bord interactif avec filtres, segments et exploration\n\nProgramme\nModule 1 – Prise en main & connexion aux données\n• Interface Power BI Desktop : vues Rapport, Données, Modèle\n• Connexion aux sources : Excel, CSV, SQL, web\n• Power Query : nettoyage, transformation, fusion de tables\n\nModule 2 – Modélisation des données\n• Modèle en étoile : tables de faits et de dimensions\n• Relations entre tables et cardinalité\n• Introduction au DAX : mesures de base (SUM, COUNT, CALCULATE, FILTER)\n\nModule 3 – Visualisation & tableaux de bord\n• Visuels natifs : histogrammes, courbes, cartes, matrices, jauges\n• Segments, chronologies et filtres croisés\n• Mise en page responsive et expérience utilisateur\n\nModule 4 – Publication & partage\n• Publication sur Power BI Service\n• Espaces de travail, rôles et sécurité des données (RLS)\n• Planification d'actualisations automatiques\n\nMéthodes pédagogiques\n• Exercices sur des jeux de données métier réels\n• Chaque module aboutit à un livrable opérationnel\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : rapport Power BI complet publié et partagé\n• Attestation de fin de formation"
-        },
-        {
-          "id": "powerpoint",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "PowerPoint — Présentations Percutantes",
-          "objectif": "Concevoir des présentations claires, visuellement attractives et adaptées à l'audience, en maîtrisant animations et narration visuelle.",
-          "duree": "14 h",
-          "pre_requis": "Maîtrise courante de l'informatique.",
-          "contenu": "Objectifs opérationnels\n• Concevoir des présentations claires, visuellement attractives et adaptées à l'audience\n• Maîtriser les outils avancés de mise en page, d'animation et de narration visuelle\n\nCompétences visées\n• Appliquer un masque de diapositives cohérent avec l'identité visuelle\n• Créer des animations et transitions fluides adaptées au message\n• Intégrer graphiques, SmartArt, vidéos et liens hypertexte dans une présentation\n\nProgramme\nModule 1 – Design et structure\n• Masque de diapositives et thèmes personnalisés\n• Mise en page : règle des tiers, hiérarchie visuelle, couleurs\n• SmartArt, graphiques et tableaux\n\nModule 2 – Animation et interactivité\n• Animations d'objets : apparition, trajectoire, emphase\n• Transitions et chronométrage\n• Liens hypertexte, boutons d'action et présentation non linéaire\n\nModule 3 – Finalisation et diffusion\n• Mode présentateur : notes et minuteur\n• Export en PDF, vidéo et format web\n• Conseils de prise de parole et storytelling visuel\n\nMéthodes pédagogiques\n• Exercices sur des présentations professionnelles réelles\n• Supports : modèles PowerPoint personnalisables\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques\n• Évaluation finale : présentation complète réalisée en autonomie\n• Attestation de fin de formation"
-        },
-        {
-          "id": "outlook",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Outlook — Gestion Efficace de la Messagerie",
-          "objectif": "Organiser et automatiser sa messagerie, son agenda et ses tâches pour gagner en productivité au quotidien.",
-          "duree": "14 h",
-          "pre_requis": "Maîtrise courante de l'informatique.",
-          "contenu": "Objectifs opérationnels\n• Organiser et automatiser sa messagerie pour gagner en productivité\n• Maîtriser la gestion de l'agenda, des contacts et des tâches dans Outlook\n\nCompétences visées\n• Créer des règles, catégories et dossiers pour trier automatiquement ses emails\n• Planifier des réunions, gérer les invitations et partager son agenda\n• Utiliser les tâches et rappels pour un suivi rigoureux de ses actions\n\nProgramme\nModule 1 – Messagerie avancée\n• Règles de tri automatique, catégories et indicateurs de suivi\n• Modèles d'emails et réponses rapides\n• Gestion des indésirables et des pièces jointes\n\nModule 2 – Agenda et planification\n• Création et partage de calendriers\n• Planification de réunions, sondages et ressources\n• Délégation et gestion de l'agenda d'un responsable\n\nModule 3 – Contacts et tâches\n• Carnet d'adresses : création, groupes de contacts\n• Tâches, rappels et suivi des actions\n• Intégration Outlook / Teams / SharePoint\n\nMéthodes pédagogiques\n• Exercices sur scénarios professionnels réels\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques\n• Évaluation finale : configuration complète d'un environnement Outlook optimisé\n• Attestation de fin de formation"
-        },
-        {
-          "id": "communication-digitale",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Stratégie et Communication Digitale",
-          "objectif": "Construire une stratégie de communication digitale, animer une présence sur les réseaux sociaux et optimiser son référencement naturel.",
-          "duree": "21 h",
-          "pre_requis": "Maîtrise courante d'Internet et des outils bureautiques.",
-          "contenu": "Objectifs opérationnels\n• Construire une stratégie de communication digitale adaptée à son activité\n• Créer et animer une présence professionnelle sur les réseaux sociaux\n• Concevoir des campagnes email marketing et optimiser son référencement naturel (SEO)\n\nCompétences visées\n• Définir une ligne éditoriale et un calendrier de publication\n• Créer des contenus engageants sur LinkedIn, Instagram et Facebook\n• Concevoir une campagne email (segmentation, objet, CTA)\n• Réaliser un diagnostic SEO de base et optimiser les pages clés de son site\n\nProgramme\nModule 1 – Stratégie digitale\n• Panorama des canaux : réseaux sociaux, email, SEO, publicité\n• Définir ses objectifs, cibles et indicateurs de succès\n• Ligne éditoriale et calendrier de contenu\n\nModule 2 – Réseaux sociaux & community management\n• Spécificités : LinkedIn (B2B), Instagram (visuel), Facebook (communauté)\n• Création de contenus engageants : formats, fréquence, storytelling\n• Gestion de l'e-réputation et interaction avec la communauté\n\nModule 3 – Email marketing\n• Outils : Brevo, Mailchimp — prise en main\n• Concevoir un email efficace : objet, contenu, call-to-action\n• Segmentation, scénarios automatisés et conformité RGPD\n\nModule 4 – SEO & analyse des performances\n• Fondamentaux du SEO : contenu, technique, liens\n• Optimisation on-page (balises, métadescriptions, titres)\n• Google Analytics et Search Console — indicateurs clés\n\nMéthodes pédagogiques\n• Études de cas concrets\n• Ateliers de création et mises en situation\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : stratégie digitale complète présentée\n• Attestation de fin de formation"
-        }
-      ]
-    },
-    {
       "id": "ia-automatisation",
-      "numero": 4,
+      "numero": 1,
       "titre": "Pôle Intelligence Artificielle & Automatisation",
       "accroche": "L'intelligence artificielle n'est plus une option, c'est un accélérateur de compétences incontournable. Nos formations vous guident pas à pas pour intégrer l'IA générative dans votre entreprise, automatiser vos flux de travail répétitifs et produire des livrables de haute qualité de façon éthique et responsable.",
       "profil_beneficiaires": "Salariés de tous secteurs, dirigeants, créateurs de contenus, responsables de processus opérationnels et indépendants souhaitant augmenter leur productivité grâce à l'IA.",
@@ -412,8 +161,395 @@
       ]
     },
     {
-      "id": "developpement-personnel",
+      "id": "infographie-numerique",
+      "numero": 2,
+      "titre": "Pôle Infographie & Numérique",
+      "accroche": "À l'ère de la digitalisation de l'information, la maîtrise des outils visuels et de l'environnement numérique est un facteur d'indépendance et de rayonnement. Nos parcours forment aux standards du marché pour professionnaliser toute votre communication web et print.",
+      "profil_beneficiaires": "Chargés de communication, créateurs d'entreprise, professionnels de l'immobilier/architecture (AutoCAD), profils en reconversion ou grands débutants.",
+      "pre_requis": "Maîtrise courante de l'outil informatique (sauf initiation).",
+      "duree_type": "21 à 35 heures selon logiciel.",
+      "formations": [
+        {
+          "id": "initiation-numerique",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Apprendre à utiliser un ordinateur (Initiation Numérique)",
+          "objectif": "Devenir autonome sur la configuration et l'usage quotidien d'un PC ou Mac.",
+          "contenu": "Découverte du système d'exploitation, gestion de l'arborescence et des fichiers, navigation sécurisée sur Internet, utilisation des emails et sensibilisation aux cyber-menaces de base."
+        },
+        {
+          "id": "photoshop-illustrator",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Photoshop — Retouche & Création Graphique (+ Illustrator)",
+          "objectif": "Maîtriser la retouche photo et la composition graphique sous Photoshop, avec une ouverture vectorielle sous Illustrator (logos, identités visuelles).",
+          "duree": "21 h",
+          "pre_requis": "Maîtrise courante de l'informatique. Notions Photoshop ou Illustrator appréciées.",
+          "contenu": "Objectifs opérationnels\n• Maîtriser l'interface et les outils fondamentaux de Photoshop\n• Retoucher et optimiser des photographies pour le web et l'impression\n• Créer des compositions graphiques et des visuels de communication\n\nCompétences visées\n• Sélectionner, masquer et extraire des éléments avec précision\n• Corriger les couleurs, l'exposition et les imperfections d'une photo\n• Créer un visuel multi-calques adapté au web ou à l'impression\n\nProgramme\nModule 1 – Interface et fondamentaux\n• Espace de travail, calques et panneaux\n• Modes colorimétriques : RVB vs CMJN\n• Outils de sélection et de recadrage\n\nModule 2 – Retouche photo\n• Correction colorimétrique : niveaux, courbes, teinte/saturation\n• Retouche de portrait : outil correcteur, tampon, fréquence de séparation\n• Recadrage, redressement et perspective\n\nModule 3 – Composition graphique\n• Calques d'ajustement et masques de fusion\n• Effets de calque : ombre, lueur, biseau\n• Typographie et intégration de texte dans une composition\n\nModule 4 – Export et optimisation\n• Export web : JPEG, PNG, WebP, GIF\n• Export pression : PDF haute résolution\n• Actions Photoshop : automatiser les exports répétitifs\n\nModule 5 – Ouverture Illustrator\n• Dessin vectoriel et outils de tracé\n• Création de logos, d'identités visuelles et d'icônes échelonnables\n• Export vectoriel pour le web et l'impression\n\nMéthodes pédagogiques\n• Exercices progressifs sur des cas graphiques réels\n• Environnement réel Adobe Photoshop (et Illustrator)\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : composition graphique professionnelle réalisée en autonomie\n• Attestation de fin de formation"
+        },
+        {
+          "id": "indesign",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "InDesign — Mise en Page Professionnelle",
+          "objectif": "Créer des mises en page professionnelles pour le print et le digital, en maîtrisant typographie, couleur et gabarits.",
+          "duree": "21 h",
+          "pre_requis": "Maîtrise courante de l'informatique. Notions de design appréciées.",
+          "contenu": "Objectifs opérationnels\n• Créer des mises en page professionnelles pour le print et le digital\n• Maîtriser la typographie, la couleur et les gabarits pour une production efficace\n• Exporter des documents dans les formats adaptés à l'impression ou au web\n\nCompétences visées\n• Paramétrer un document (marges, colonnes, fond perdu) pour l'impression\n• Créer et appliquer des styles de caractère et de paragraphe\n• Assembler textes, images et graphiques dans une mise en page harmonieuse\n\nProgramme\nModule 1 – Fondamentaux InDesign\n• Interface et espace de travail\n• Création de document : format, marges, colonnes, fond perdu\n• Blocs texte et blocs image : placement et liaison\n\nModule 2 – Typographie et couleur\n• Styles de caractère et de paragraphe\n• Nuancier, gestion des couleurs et profils ICC\n• Gabarits : création et application\n\nModule 3 – Documents longs\n• Tables des matières automatique\n• Numérotation des pages et sections\n• Bibliothèques et gestion des ressources\n\nModule 4 – Export et prépresse\n• Export PDF impression (fond perdu, traits de coupe, profil ICC)\n• Export PDF interactif et EPUB\n• Contrôle en amont (Illustrator, Acrobat)\n\nMéthodes pédagogiques\n• Exercices sur des supports de communication réels (plaquettes, brochures)\n• Environnement réel Adobe InDesign\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : réalisation complète d'un support de communication imprimable\n• Attestation de fin de formation"
+        },
+        {
+          "id": "autocad",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "AutoCAD — Dessin Technique Assisté par Ordinateur",
+          "objectif": "Maîtriser l'interface et les outils de dessin fondamentaux d'AutoCAD pour créer, modifier et annoter des plans techniques 2D professionnels.",
+          "duree": "35 h",
+          "pre_requis": "Maîtrise courante de l'outil informatique. Disposer du logiciel AutoCAD installé (version 2019 ou ultérieure recommandée).",
+          "contenu": "Objectifs opérationnels\n• Maîtriser l'interface et les outils de dessin fondamentaux d'AutoCAD\n• Créer, modifier et annoter des plans techniques 2D professionnels\n• Organiser ses dessins avec les calques, blocs et mises en page pour l'impression\n\nCompétences visées\n• Tracer des entités géométriques précises (lignes, arcs, polylignes, hachures)\n• Modifier des objets avec les commandes d'édition (déplacer, copier, étirer, ajuster)\n• Annoter un dessin : cotation, textes, repères et cartouche\n• Préparer et exporter une mise en page papier ou PDF\n\nProgramme\nModule 1 – Prise en main d'AutoCAD\n• Interface, navigation, raccourcis clavier essentiels\n• Paramétrage de l'environnement de travail\n• Saisie de coordonnées absolues, relatives et polaires\n\nModule 2 – Dessin et modification\n• Outils de dessin : ligne, cercle, arc, ellipse, polyligne, hachure\n• Outils de modification : déplacer, copier, pivoter, mettre à l'échelle, ajuster, étirer\n• Accrochages aux objets et modes de repérage\n\nModule 3 – Organisation et annotation\n• Calques : création, propriétés, gestion\n• Cotation : styles, paramétrage et annotations\n• Textes et tableaux ; blocs et attributs\n\nModule 4 – Mise en page et impression\n• Espaces objet et papier : onglets de mise en page\n• Fenêtres de présentation et échelles de visualisation\n• Tracé en PDF et impression multi-formats\n\nMéthodes pédagogiques\n• Exercices sur des plans techniques progressifs\n• Environnement réel AutoCAD\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : production d'un plan technique annoté complet\n• Attestation de fin de formation"
+        },
+        {
+          "id": "wordpress",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "WordPress",
+          "objectif": "Créer, administrer et animer un site internet vitrine en totale autonomie sans coder.",
+          "contenu": "Choix de l'hébergement, installation de WordPress, configuration, choix et personnalisation d'un thème, utilisation de constructeurs de pages (Elementor), gestion des extensions de sécurité et des sauvegardes."
+        },
+        {
+          "id": "marketing-digital",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Marketing digital et réseaux sociaux",
+          "objectif": "Déployer une stratégie de présence en ligne efficace pour acquérir de nouveaux clients.",
+          "contenu": "Référencement naturel (SEO) et payant (SEA), codes et algorithmes des réseaux sociaux (LinkedIn, Instagram, Facebook), création de calendriers éditoriaux, et pilotage de campagnes publicitaires simples."
+        }
+      ]
+    },
+    {
+      "id": "fle-orthographe",
+      "numero": 3,
+      "titre": "Pôle FLE & Orthographe",
+      "accroche": "La qualité des écrits est la vitrine de la crédibilité d'une organisation ou d'un profil. Nos formations spécialisées consolident la maîtrise de la langue française pour éradiquer les erreurs, fiabiliser les écrits administratifs ou commerciaux, et faciliter l'intégration des personnes non-francophones.",
+      "profil_beneficiaires": "Collaborateurs désireux de sécuriser leurs écrits professionnels, ou personnes d'origine étrangère devant développer leurs compétences en langue française.",
+      "pre_requis": "Évaluation initiale de niveau de langue (CECRL pour le FLE).",
+      "duree_type": "21 à 30 heures de formation.",
+      "formations": [
+        {
+          "id": "fle",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Français Langue Étrangère (FLE)",
+          "objectif": "Développer les compétences de compréhension et d'expression écrite/orale en français.",
+          "contenu": "Acquisition du vocabulaire de la vie courante et du milieu professionnel, structures de phrases, amélioration de la prononciation, et accompagnement progressif selon les niveaux du Cadre Européen (A1 à C1)."
+        },
+        {
+          "id": "remise-a-niveau-orthographe",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Remise à niveau en orthographe",
+          "objectif": "Éliminer durablement les fautes d'orthographe et de grammaire des écrits quotidiens.",
+          "contenu": "Règles d'accords complexes (participes passés), conjugaisons et pièges des temps, distinctions des homophones, et méthodologie d'auto-relecture efficace."
+        },
+        {
+          "id": "francais-ecrits-professionnels",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Français Écrits Professionnels",
+          "objectif": "Rédiger des documents de travail clairs, structurés et adaptés à la charte de l'entreprise.",
+          "contenu": "Techniques de synthèse de l'information, structuration d'un compte-rendu, d'un rapport ou d'une note de service, choix du vocabulaire d'affaires approprié et codes d'impact de la communication par courriel."
+        }
+      ]
+    },
+    {
+      "id": "langues-etrangeres",
+      "numero": 4,
+      "titre": "Pôle Langues Étrangères",
+      "accroche": "Dans une économie mondialisée, la maîtrise d'une langue étrangère est un levier majeur de compétitivité pour les entreprises et d'employabilité pour les particuliers. Nos programmes sur-mesure sont conçus pour briser la barrière linguistique et vous rendre opérationnel rapidement dans vos échanges internationaux.",
+      "objectifs": [
+        "Développer l'aisance à l'oral et à l'écrit en contexte professionnel.",
+        "Maîtriser le vocabulaire technique spécifique à son secteur d'activité.",
+        "Comprendre et interagir avec des interlocuteurs natifs de manière fluide."
+      ],
+      "modalites_public": {
+        "langues": [
+          "Allemand",
+          "Anglais",
+          "Chinois",
+          "Espagnol",
+          "Italien",
+          "Japonais",
+          "Portugais",
+          "Russe"
+        ],
+        "duree": "Modules intensifs de 21 heures ou extensifs de 30 heures.",
+        "profils": [
+          "Salariés",
+          "Demandeurs d'emploi",
+          "Professionnels",
+          "Particuliers"
+        ],
+        "pre_requis": "Aucun (Niveau Débutant) / Test de positionnement (Niveaux Intermédiaires à Avancés)."
+      },
+      "programme_type": [
+        {
+          "label": "Grammaire et Structures",
+          "detail": "Consolidation des bases grammaticales, syntaxe et conjugaison professionnelle."
+        },
+        {
+          "label": "Communication Orale",
+          "detail": "Mises en situation pratiques, simulations de réunions, d'appels téléphoniques et de négociations."
+        },
+        {
+          "label": "Expression Écrite",
+          "detail": "Rédaction d'emails professionnels, de rapports, de notes de synthèse et de messages clairs."
+        },
+        {
+          "label": "Culture & Usages",
+          "detail": "Compréhension des codes culturels et des pratiques d'affaires spécifiques au pays."
+        }
+      ],
+      "formations": [
+        {
+          "id": "langue-etrangere",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Formation en langue étrangère (8 langues au choix)",
+          "objectif": "Devenir opérationnel à l'oral et à l'écrit dans la langue choisie, en contexte professionnel.",
+          "contenu": "Programme modulable selon le niveau : grammaire et structures, communication orale, expression écrite, culture et usages d'affaires du pays.",
+          "duree": "21 h (intensif) ou 30 h (extensif)",
+          "pre_requis": "Aucun (débutant) ou test de positionnement (intermédiaire à avancé)."
+        }
+      ]
+    },
+    {
+      "id": "management",
       "numero": 5,
+      "titre": "Pôle Management",
+      "accroche": "Le management ne s'invente pas, il s'apprend et se perfectionne. Face aux nouvelles attentes des collaborateurs et à l'hybridation du travail, nos formations outillent les managers pour concilier performance économique, leadership inspirant et bien-être des équipes au quotidien.",
+      "profil_beneficiaires": "Cadres dirigeants, managers de proximité, managers de managers, chefs de projet, ou collaborateurs en phase de prise de poste managérial.",
+      "pre_requis": "Occuper des fonctions de management ou avoir un projet de transition managériale validé.",
+      "duree_type": "14 à 21 heures par module.",
+      "formations": [
+        {
+          "id": "gestion-de-projets",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Gestion de projets",
+          "objectif": "Maîtriser le cycle complet d'un projet de son cadrage à sa clôture.",
+          "contenu": "Définition des objectifs (SMART), planification opérationnelle (Gantt, méthodes agiles), gestion des risques, animation des réunions de projet et suivi des indicateurs de performance (KPI)."
+        },
+        {
+          "id": "gestion-des-conflits",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Gestion des conflits",
+          "objectif": "Anticiper, identifier et désamorcer les tensions au sein d'une équipe.",
+          "contenu": "Compréhension des mécanismes de crise, cartographie des comportements, techniques de médiation et de sortie de crise positive, et rétablissement d'un climat de confiance durable."
+        },
+        {
+          "id": "communication-non-violente",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "La communication non violente (CNV)",
+          "objectif": "Adopter une communication constructive et bienveillante pour fluidifier les relations de travail.",
+          "contenu": "Les 4 étapes de la méthode CNV : Observation factuelle, expression du Sentiment, identification du Besoin, formulation d'une Demande claire. Écoute empathique et désamorçage de l'agressivité."
+        },
+        {
+          "id": "leadership-manager-equipe",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Leadership & Manager efficacement son équipe",
+          "objectif": "Asseoir sa posture de leader et fédérer les collaborateurs autour de la vision de l'entreprise.",
+          "contenu": "Identification de son style de leadership, les leviers de la motivation individuelle et collective, la délégation responsabilisante, et la conduite du changement auprès de son équipe."
+        },
+        {
+          "id": "management-de-managers-proximite",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Le management de managers & Management de proximité",
+          "objectif": "Piloter des équipes de terrain ou animer des managers intermédiaires avec la juste posture.",
+          "contenu": "Relais de la stratégie globale, animation de rituels managériaux performants, gestion de la distance hiérarchique, développement des compétences et autonomisation des collaborateurs."
+        },
+        {
+          "id": "organiser-son-teletravail",
+          "profils": [
+            "salarie",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Organiser son télétravail",
+          "objectif": "Concilier productivité, gestion du temps et maintien du lien d'équipe à distance.",
+          "contenu": "Structuration de ses journées à distance, maîtrise des outils de collaboration synchrone et asynchrone, fixation de limites pro/perso, et techniques de management ou d'automanagement en environnement hybride."
+        }
+      ]
+    },
+    {
+      "id": "bureautique",
+      "numero": 6,
+      "titre": "Pôle Bureautique",
+      "accroche": "La maîtrise des outils informatiques usuels est le premier vecteur d'efficacité professionnelle. Nos formations pragmatiques éliminent les blocages techniques quotidiens pour transformer l'usage intuitif en une utilisation experte, automatisée et hautement productive.",
+      "profil_beneficiaires": "Tout professionnel (secrétaires, comptables, assistants, cadres, indépendants) ou particulier souhaitant fiabiliser l'usage des outils bureautiques.",
+      "pre_requis": "Maîtrise de l'environnement informatique de base (clavier, souris, gestion des fichiers).",
+      "duree_type": "14 à 21 heures par logiciel.",
+      "formations": [
+        {
+          "id": "word",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Word — Documents Longs & Automatisation",
+          "objectif": "Structurer et automatiser la mise en forme de documents longs professionnels (rapports, manuels, contrats, thèses).",
+          "duree": "14 h",
+          "pre_requis": "Maîtrise des bases Word (saisie, mise en page simple).",
+          "contenu": "Objectifs opérationnels\n• Structurer et automatiser la mise en forme de documents longs professionnels\n• Créer des modèles réutilisables avec styles, sections et champs automatiques\n• Maîtriser les outils de révision collaboratifs (suivi des modifications, commentaires)\n\nCompétences visées\n• Appliquer des styles hiérarchiques et générer une table des matières automatique\n• Insérer et gérer champs, renvois croisés, index et notes de bas de page\n• Créer un publipostage complet (lettres, étiquettes, emails) depuis une source de données\n\nProgramme\nModule 1 – Styles et structure\n• Styles de titres, corps de texte et personnalisation\n• Table des matières et table des illustrations automatiques\n• Sections, sauts de page et numérotation avancée\n\nModule 2 – Champs et automatisation\n• Champs automatiques : date, auteur, numéro de page\n• Renvois croisés, signets et liens internes\n• Formulaires Word et zones de contenu\n\nModule 3 – Collaboration et fusion\n• Suivi des modifications et gestion des commentaires\n• Comparaison et fusion de documents\n• Publipostage : lettres, étiquettes, enveloppes\n\nMéthodes pédagogiques\n• Exercices sur des documents professionnels réels\n• Supports remis : modèles Word prêts à l'emploi\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• QCM et exercices pratiques\n• Évaluation finale : document long mis en forme et publipostage opérationnel\n• Attestation de fin de formation"
+        },
+        {
+          "id": "excel",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Excel — Initiation à Perfectionnement",
+          "objectif": "Créer des tableaux de données fiables, exploiter les fonctions avancées et automatiser la production de tableaux de bord dynamiques.",
+          "duree": "14 à 21 h (modulable selon niveau)",
+          "pre_requis": "Maîtrise de l'informatique de base. Notions Excel appréciées pour le niveau perfectionnement.",
+          "contenu": "Objectifs opérationnels\n• Créer et mettre en forme des tableaux de données fiables et lisibles\n• Exploiter les fonctions avancées pour analyser et croiser des données\n• Automatiser la production de rapports et tableaux de bord dynamiques\n\nCompétences visées\n• Utiliser les fonctions RECHERCHEV/X, SI imbriqués, SOMME.SI, NB.SI\n• Créer des tableaux croisés dynamiques (TCD) et graphiques croisés\n• Mettre en forme conditionnelle et produire des tableaux de bord lisibles\n\nProgramme\nModule 1 – Fondamentaux (Initiation)\n• Interface, saisie, recopie, mise en forme\n• Formules de base : SOMME, MOYENNE, NB, MIN, MAX\n• Graphiques simples et impression\n\nModule 2 – Fonctions avancées\n• Fonctions logiques : SI, ET, OU, SIERREUR\n• Fonctions de recherche : RECHERCHEV, RECHERCHEX, INDEX/EQUIV\n• Fonctions texte et date\n\nModule 3 – Analyse et tableaux de bord\n• Tableaux croisés dynamiques : création, filtres, segments\n• Mise en forme conditionnelle et graphiques sparklines\n• Tableau de bord interactif avec segments et chronologies\n\nMéthodes pédagogiques\n• Exercices progressifs sur des données métier réelles\n• Supports remis : classeurs Excel annotés\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial (test de niveau)\n• Exercices pratiques à chaque module\n• Évaluation finale : tableau de bord opérationnel\n• Attestation de fin de formation"
+        },
+        {
+          "id": "vba",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "VBA Excel — Automatisation & Macros",
+          "objectif": "Automatiser les traitements répétitifs et gagner en productivité en écrivant des macros et fonctions VBA personnalisées.",
+          "duree": "21 h",
+          "pre_requis": "Bonne maîtrise d'Excel (fonctions, TCD). Aucune connaissance en programmation requise.",
+          "contenu": "Objectifs opérationnels\n• Enregistrer, modifier et exécuter des macros pour automatiser des tâches répétitives\n• Écrire des procédures et fonctions VBA personnalisées\n• Manipuler les objets Excel (classeurs, feuilles, plages) par le code\n• Concevoir des formulaires interactifs de saisie (UserForms)\n\nCompétences visées\n• Déclarer et utiliser variables, constantes et structures de contrôle (If, For, Do While)\n• Manipuler les objets Workbook, Worksheet, Range et Cells par le code\n• Créer des fonctions personnalisées et des procédures événementielles\n• Déboguer un code VBA (points d'arrêt, espion, gestion d'erreurs)\n\nProgramme\nModule 1 – Environnement VBA\n• Éditeur VBE : fenêtres, modules, débogueur\n• Enregistrer, exécuter et modifier une macro\n• Structure d'une procédure Sub et d'une fonction Function\n• Sécurité des macros : niveaux et signatures\n\nModule 2 – Variables et structures de contrôle\n• Types de données : Integer, Long, String, Double, Boolean\n• Déclaration et portée (Dim, Public, Private, Const)\n• Conditions : If/Then/Else, Select Case\n• Boucles : For/Next, For Each, Do While/Until\n\nModule 3 – Manipulation des objets Excel\n• Modèle objet : Application, Workbook, Worksheet, Range, Cells\n• Copier, trier, filtrer, supprimer par code\n• Procédures événementielles (Workbook_Open, Worksheet_Change)\n• Gestion des erreurs : On Error GoTo, Err.Number\n\nModule 4 – Fonctions personnalisées & UserForms\n• Créer une Function utilisable dans une feuille\n• Conception d'un UserForm : TextBox, ComboBox, ListBox, CommandButton\n• Validation et messages d'alerte (MsgBox, InputBox)\n• Projet fil rouge : automatisation d'un processus complet\n\nMéthodes pédagogiques\n• Apprentissage par la pratique sur des cas concrets\n• Supports : classeurs VBA annotés, aide-mémoire\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : macro complète déployée sur un cas réel\n• Attestation de fin de formation"
+        },
+        {
+          "id": "power-bi",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Power BI — Tableaux de Bord & Analyse de Données",
+          "objectif": "Connecter, transformer et modéliser des données pour créer des tableaux de bord décisionnels interactifs et les partager en entreprise.",
+          "duree": "21 h",
+          "pre_requis": "Bonne maîtrise d'Excel. Notions de bases de données appréciées.",
+          "contenu": "Objectifs opérationnels\n• Connecter, transformer et modéliser des données issues de sources variées\n• Créer des visualisations interactives et des tableaux de bord décisionnels\n• Publier et partager des rapports Power BI au sein d'une organisation\n\nCompétences visées\n• Importer et nettoyer des données avec Power Query\n• Créer des mesures DAX pour calculer des KPI métiers\n• Concevoir un tableau de bord interactif avec filtres, segments et exploration\n\nProgramme\nModule 1 – Prise en main & connexion aux données\n• Interface Power BI Desktop : vues Rapport, Données, Modèle\n• Connexion aux sources : Excel, CSV, SQL, web\n• Power Query : nettoyage, transformation, fusion de tables\n\nModule 2 – Modélisation des données\n• Modèle en étoile : tables de faits et de dimensions\n• Relations entre tables et cardinalité\n• Introduction au DAX : mesures de base (SUM, COUNT, CALCULATE, FILTER)\n\nModule 3 – Visualisation & tableaux de bord\n• Visuels natifs : histogrammes, courbes, cartes, matrices, jauges\n• Segments, chronologies et filtres croisés\n• Mise en page responsive et expérience utilisateur\n\nModule 4 – Publication & partage\n• Publication sur Power BI Service\n• Espaces de travail, rôles et sécurité des données (RLS)\n• Planification d'actualisations automatiques\n\nMéthodes pédagogiques\n• Exercices sur des jeux de données métier réels\n• Chaque module aboutit à un livrable opérationnel\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : rapport Power BI complet publié et partagé\n• Attestation de fin de formation"
+        },
+        {
+          "id": "powerpoint",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "PowerPoint — Présentations Percutantes",
+          "objectif": "Concevoir des présentations claires, visuellement attractives et adaptées à l'audience, en maîtrisant animations et narration visuelle.",
+          "duree": "14 h",
+          "pre_requis": "Maîtrise courante de l'informatique.",
+          "contenu": "Objectifs opérationnels\n• Concevoir des présentations claires, visuellement attractives et adaptées à l'audience\n• Maîtriser les outils avancés de mise en page, d'animation et de narration visuelle\n\nCompétences visées\n• Appliquer un masque de diapositives cohérent avec l'identité visuelle\n• Créer des animations et transitions fluides adaptées au message\n• Intégrer graphiques, SmartArt, vidéos et liens hypertexte dans une présentation\n\nProgramme\nModule 1 – Design et structure\n• Masque de diapositives et thèmes personnalisés\n• Mise en page : règle des tiers, hiérarchie visuelle, couleurs\n• SmartArt, graphiques et tableaux\n\nModule 2 – Animation et interactivité\n• Animations d'objets : apparition, trajectoire, emphase\n• Transitions et chronométrage\n• Liens hypertexte, boutons d'action et présentation non linéaire\n\nModule 3 – Finalisation et diffusion\n• Mode présentateur : notes et minuteur\n• Export en PDF, vidéo et format web\n• Conseils de prise de parole et storytelling visuel\n\nMéthodes pédagogiques\n• Exercices sur des présentations professionnelles réelles\n• Supports : modèles PowerPoint personnalisables\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques\n• Évaluation finale : présentation complète réalisée en autonomie\n• Attestation de fin de formation"
+        },
+        {
+          "id": "outlook",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Outlook — Gestion Efficace de la Messagerie",
+          "objectif": "Organiser et automatiser sa messagerie, son agenda et ses tâches pour gagner en productivité au quotidien.",
+          "duree": "14 h",
+          "pre_requis": "Maîtrise courante de l'informatique.",
+          "contenu": "Objectifs opérationnels\n• Organiser et automatiser sa messagerie pour gagner en productivité\n• Maîtriser la gestion de l'agenda, des contacts et des tâches dans Outlook\n\nCompétences visées\n• Créer des règles, catégories et dossiers pour trier automatiquement ses emails\n• Planifier des réunions, gérer les invitations et partager son agenda\n• Utiliser les tâches et rappels pour un suivi rigoureux de ses actions\n\nProgramme\nModule 1 – Messagerie avancée\n• Règles de tri automatique, catégories et indicateurs de suivi\n• Modèles d'emails et réponses rapides\n• Gestion des indésirables et des pièces jointes\n\nModule 2 – Agenda et planification\n• Création et partage de calendriers\n• Planification de réunions, sondages et ressources\n• Délégation et gestion de l'agenda d'un responsable\n\nModule 3 – Contacts et tâches\n• Carnet d'adresses : création, groupes de contacts\n• Tâches, rappels et suivi des actions\n• Intégration Outlook / Teams / SharePoint\n\nMéthodes pédagogiques\n• Exercices sur scénarios professionnels réels\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques\n• Évaluation finale : configuration complète d'un environnement Outlook optimisé\n• Attestation de fin de formation"
+        },
+        {
+          "id": "communication-digitale",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Stratégie et Communication Digitale",
+          "objectif": "Construire une stratégie de communication digitale, animer une présence sur les réseaux sociaux et optimiser son référencement naturel.",
+          "duree": "21 h",
+          "pre_requis": "Maîtrise courante d'Internet et des outils bureautiques.",
+          "contenu": "Objectifs opérationnels\n• Construire une stratégie de communication digitale adaptée à son activité\n• Créer et animer une présence professionnelle sur les réseaux sociaux\n• Concevoir des campagnes email marketing et optimiser son référencement naturel (SEO)\n\nCompétences visées\n• Définir une ligne éditoriale et un calendrier de publication\n• Créer des contenus engageants sur LinkedIn, Instagram et Facebook\n• Concevoir une campagne email (segmentation, objet, CTA)\n• Réaliser un diagnostic SEO de base et optimiser les pages clés de son site\n\nProgramme\nModule 1 – Stratégie digitale\n• Panorama des canaux : réseaux sociaux, email, SEO, publicité\n• Définir ses objectifs, cibles et indicateurs de succès\n• Ligne éditoriale et calendrier de contenu\n\nModule 2 – Réseaux sociaux & community management\n• Spécificités : LinkedIn (B2B), Instagram (visuel), Facebook (communauté)\n• Création de contenus engageants : formats, fréquence, storytelling\n• Gestion de l'e-réputation et interaction avec la communauté\n\nModule 3 – Email marketing\n• Outils : Brevo, Mailchimp — prise en main\n• Concevoir un email efficace : objet, contenu, call-to-action\n• Segmentation, scénarios automatisés et conformité RGPD\n\nModule 4 – SEO & analyse des performances\n• Fondamentaux du SEO : contenu, technique, liens\n• Optimisation on-page (balises, métadescriptions, titres)\n• Google Analytics et Search Console — indicateurs clés\n\nMéthodes pédagogiques\n• Études de cas concrets\n• Ateliers de création et mises en situation\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : stratégie digitale complète présentée\n• Attestation de fin de formation"
+        }
+      ]
+    },
+    {
+      "id": "developpement-personnel",
+      "numero": 7,
       "titre": "Pôle Développement Personnel",
       "accroche": "Les compétences comportementales (soft skills) constituent aujourd'hui le socle d'une carrière réussie et épanouie. Nos modules thématiques vous guident dans une meilleure connaissance de vous-même pour surmonter les blocages, renforcer votre impact relationnel et préserver votre équilibre.",
       "profil_beneficiaires": "Toute personne désireuse d'améliorer son efficacité relationnelle, de gérer ses émotions, ou traversant une transition de vie professionnelle.",
@@ -505,142 +641,6 @@
           "titre": "Développer la pensée positive & l'intelligence relationnelle",
           "objectif": "Cultiver un état d'esprit constructif pour optimiser les collaborations.",
           "contenu": "Mécanismes de la psychologie positive, recadrage des pensées limitantes, développement de l'empathie active, gestion constructive du feedback et renforcement de l'intelligence collective."
-        }
-      ]
-    },
-    {
-      "id": "infographie-numerique",
-      "numero": 6,
-      "titre": "Pôle Infographie & Numérique",
-      "accroche": "À l'ère de la digitalisation de l'information, la maîtrise des outils visuels et de l'environnement numérique est un facteur d'indépendance et de rayonnement. Nos parcours forment aux standards du marché pour professionnaliser toute votre communication web et print.",
-      "profil_beneficiaires": "Chargés de communication, créateurs d'entreprise, professionnels de l'immobilier/architecture (AutoCAD), profils en reconversion ou grands débutants.",
-      "pre_requis": "Maîtrise courante de l'outil informatique (sauf initiation).",
-      "duree_type": "21 à 35 heures selon logiciel.",
-      "formations": [
-        {
-          "id": "initiation-numerique",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Apprendre à utiliser un ordinateur (Initiation Numérique)",
-          "objectif": "Devenir autonome sur la configuration et l'usage quotidien d'un PC ou Mac.",
-          "contenu": "Découverte du système d'exploitation, gestion de l'arborescence et des fichiers, navigation sécurisée sur Internet, utilisation des emails et sensibilisation aux cyber-menaces de base."
-        },
-        {
-          "id": "photoshop-illustrator",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Photoshop — Retouche & Création Graphique (+ Illustrator)",
-          "objectif": "Maîtriser la retouche photo et la composition graphique sous Photoshop, avec une ouverture vectorielle sous Illustrator (logos, identités visuelles).",
-          "duree": "21 h",
-          "pre_requis": "Maîtrise courante de l'informatique. Notions Photoshop ou Illustrator appréciées.",
-          "contenu": "Objectifs opérationnels\n• Maîtriser l'interface et les outils fondamentaux de Photoshop\n• Retoucher et optimiser des photographies pour le web et l'impression\n• Créer des compositions graphiques et des visuels de communication\n\nCompétences visées\n• Sélectionner, masquer et extraire des éléments avec précision\n• Corriger les couleurs, l'exposition et les imperfections d'une photo\n• Créer un visuel multi-calques adapté au web ou à l'impression\n\nProgramme\nModule 1 – Interface et fondamentaux\n• Espace de travail, calques et panneaux\n• Modes colorimétriques : RVB vs CMJN\n• Outils de sélection et de recadrage\n\nModule 2 – Retouche photo\n• Correction colorimétrique : niveaux, courbes, teinte/saturation\n• Retouche de portrait : outil correcteur, tampon, fréquence de séparation\n• Recadrage, redressement et perspective\n\nModule 3 – Composition graphique\n• Calques d'ajustement et masques de fusion\n• Effets de calque : ombre, lueur, biseau\n• Typographie et intégration de texte dans une composition\n\nModule 4 – Export et optimisation\n• Export web : JPEG, PNG, WebP, GIF\n• Export pression : PDF haute résolution\n• Actions Photoshop : automatiser les exports répétitifs\n\nModule 5 – Ouverture Illustrator\n• Dessin vectoriel et outils de tracé\n• Création de logos, d'identités visuelles et d'icônes échelonnables\n• Export vectoriel pour le web et l'impression\n\nMéthodes pédagogiques\n• Exercices progressifs sur des cas graphiques réels\n• Environnement réel Adobe Photoshop (et Illustrator)\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : composition graphique professionnelle réalisée en autonomie\n• Attestation de fin de formation"
-        },
-        {
-          "id": "indesign",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "InDesign — Mise en Page Professionnelle",
-          "objectif": "Créer des mises en page professionnelles pour le print et le digital, en maîtrisant typographie, couleur et gabarits.",
-          "duree": "21 h",
-          "pre_requis": "Maîtrise courante de l'informatique. Notions de design appréciées.",
-          "contenu": "Objectifs opérationnels\n• Créer des mises en page professionnelles pour le print et le digital\n• Maîtriser la typographie, la couleur et les gabarits pour une production efficace\n• Exporter des documents dans les formats adaptés à l'impression ou au web\n\nCompétences visées\n• Paramétrer un document (marges, colonnes, fond perdu) pour l'impression\n• Créer et appliquer des styles de caractère et de paragraphe\n• Assembler textes, images et graphiques dans une mise en page harmonieuse\n\nProgramme\nModule 1 – Fondamentaux InDesign\n• Interface et espace de travail\n• Création de document : format, marges, colonnes, fond perdu\n• Blocs texte et blocs image : placement et liaison\n\nModule 2 – Typographie et couleur\n• Styles de caractère et de paragraphe\n• Nuancier, gestion des couleurs et profils ICC\n• Gabarits : création et application\n\nModule 3 – Documents longs\n• Tables des matières automatique\n• Numérotation des pages et sections\n• Bibliothèques et gestion des ressources\n\nModule 4 – Export et prépresse\n• Export PDF impression (fond perdu, traits de coupe, profil ICC)\n• Export PDF interactif et EPUB\n• Contrôle en amont (Illustrator, Acrobat)\n\nMéthodes pédagogiques\n• Exercices sur des supports de communication réels (plaquettes, brochures)\n• Environnement réel Adobe InDesign\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : réalisation complète d'un support de communication imprimable\n• Attestation de fin de formation"
-        },
-        {
-          "id": "autocad",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "AutoCAD — Dessin Technique Assisté par Ordinateur",
-          "objectif": "Maîtriser l'interface et les outils de dessin fondamentaux d'AutoCAD pour créer, modifier et annoter des plans techniques 2D professionnels.",
-          "duree": "35 h",
-          "pre_requis": "Maîtrise courante de l'outil informatique. Disposer du logiciel AutoCAD installé (version 2019 ou ultérieure recommandée).",
-          "contenu": "Objectifs opérationnels\n• Maîtriser l'interface et les outils de dessin fondamentaux d'AutoCAD\n• Créer, modifier et annoter des plans techniques 2D professionnels\n• Organiser ses dessins avec les calques, blocs et mises en page pour l'impression\n\nCompétences visées\n• Tracer des entités géométriques précises (lignes, arcs, polylignes, hachures)\n• Modifier des objets avec les commandes d'édition (déplacer, copier, étirer, ajuster)\n• Annoter un dessin : cotation, textes, repères et cartouche\n• Préparer et exporter une mise en page papier ou PDF\n\nProgramme\nModule 1 – Prise en main d'AutoCAD\n• Interface, navigation, raccourcis clavier essentiels\n• Paramétrage de l'environnement de travail\n• Saisie de coordonnées absolues, relatives et polaires\n\nModule 2 – Dessin et modification\n• Outils de dessin : ligne, cercle, arc, ellipse, polyligne, hachure\n• Outils de modification : déplacer, copier, pivoter, mettre à l'échelle, ajuster, étirer\n• Accrochages aux objets et modes de repérage\n\nModule 3 – Organisation et annotation\n• Calques : création, propriétés, gestion\n• Cotation : styles, paramétrage et annotations\n• Textes et tableaux ; blocs et attributs\n\nModule 4 – Mise en page et impression\n• Espaces objet et papier : onglets de mise en page\n• Fenêtres de présentation et échelles de visualisation\n• Tracé en PDF et impression multi-formats\n\nMéthodes pédagogiques\n• Exercices sur des plans techniques progressifs\n• Environnement réel AutoCAD\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : production d'un plan technique annoté complet\n• Attestation de fin de formation"
-        },
-        {
-          "id": "wordpress",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "WordPress",
-          "objectif": "Créer, administrer et animer un site internet vitrine en totale autonomie sans coder.",
-          "contenu": "Choix de l'hébergement, installation de WordPress, configuration, choix et personnalisation d'un thème, utilisation de constructeurs de pages (Elementor), gestion des extensions de sécurité et des sauvegardes."
-        },
-        {
-          "id": "marketing-digital",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Marketing digital et réseaux sociaux",
-          "objectif": "Déployer une stratégie de présence en ligne efficace pour acquérir de nouveaux clients.",
-          "contenu": "Référencement naturel (SEO) et payant (SEA), codes et algorithmes des réseaux sociaux (LinkedIn, Instagram, Facebook), création de calendriers éditoriaux, et pilotage de campagnes publicitaires simples."
-        }
-      ]
-    },
-    {
-      "id": "fle-orthographe",
-      "numero": 7,
-      "titre": "Pôle FLE & Orthographe",
-      "accroche": "La qualité des écrits est la vitrine de la crédibilité d'une organisation ou d'un profil. Nos formations spécialisées consolident la maîtrise de la langue française pour éradiquer les erreurs, fiabiliser les écrits administratifs ou commerciaux, et faciliter l'intégration des personnes non-francophones.",
-      "profil_beneficiaires": "Collaborateurs désireux de sécuriser leurs écrits professionnels, ou personnes d'origine étrangère devant développer leurs compétences en langue française.",
-      "pre_requis": "Évaluation initiale de niveau de langue (CECRL pour le FLE).",
-      "duree_type": "21 à 30 heures de formation.",
-      "formations": [
-        {
-          "id": "fle",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Français Langue Étrangère (FLE)",
-          "objectif": "Développer les compétences de compréhension et d'expression écrite/orale en français.",
-          "contenu": "Acquisition du vocabulaire de la vie courante et du milieu professionnel, structures de phrases, amélioration de la prononciation, et accompagnement progressif selon les niveaux du Cadre Européen (A1 à C1)."
-        },
-        {
-          "id": "remise-a-niveau-orthographe",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Remise à niveau en orthographe",
-          "objectif": "Éliminer durablement les fautes d'orthographe et de grammaire des écrits quotidiens.",
-          "contenu": "Règles d'accords complexes (participes passés), conjugaisons et pièges des temps, distinctions des homophones, et méthodologie d'auto-relecture efficace."
-        },
-        {
-          "id": "francais-ecrits-professionnels",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Français Écrits Professionnels",
-          "objectif": "Rédiger des documents de travail clairs, structurés et adaptés à la charte de l'entreprise.",
-          "contenu": "Techniques de synthèse de l'information, structuration d'un compte-rendu, d'un rapport ou d'une note de service, choix du vocabulaire d'affaires approprié et codes d'impact de la communication par courriel."
         }
       ]
     }
