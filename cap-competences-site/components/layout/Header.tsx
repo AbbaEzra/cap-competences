@@ -195,10 +195,13 @@ export function Header({ activeHref }: HeaderProps) {
             </button>
             {login.open && (
               <div className="absolute right-0 top-[calc(100%+8px)] z-[85] w-[280px] rounded-cap-2xl border border-cap-border bg-white p-2 shadow-cap-pop">
-                <a
-                  href="#"
-                  onClick={login.close}
-                  className="flex items-start gap-3 rounded-cap-md p-3 hover:bg-cap-surface-2"
+                <button
+                  type="button"
+                  onClick={() => {
+                    openCallback({ title: "Accéder à l'espace apprenant", contextLabel: "Espace apprenant" });
+                    login.close();
+                  }}
+                  className="flex w-full items-start gap-3 rounded-cap-md p-3 text-left hover:bg-cap-surface-2"
                 >
                   <span className="grid h-10 w-10 flex-shrink-0 place-items-center rounded-cap-md bg-cap-soft">
                     <UserIcon stroke="#0F3D66" />
@@ -209,11 +212,14 @@ export function Header({ activeHref }: HeaderProps) {
                       Vos formations & votre progression
                     </span>
                   </span>
-                </a>
-                <a
-                  href="#"
-                  onClick={login.close}
-                  className="flex items-start gap-3 rounded-cap-md p-3 hover:bg-cap-surface-2"
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    openCallback({ title: "Accéder à l'espace formateur", contextLabel: "Espace formateur" });
+                    login.close();
+                  }}
+                  className="flex w-full items-start gap-3 rounded-cap-md p-3 text-left hover:bg-cap-surface-2"
                 >
                   <span className="grid h-10 w-10 flex-shrink-0 place-items-center rounded-cap-md bg-[rgba(46,158,107,.12)]">
                     <GradIcon />
@@ -224,7 +230,7 @@ export function Header({ activeHref }: HeaderProps) {
                       Connexion réservée aux formateurs
                     </span>
                   </span>
-                </a>
+                </button>
               </div>
             )}
           </div>
@@ -293,12 +299,26 @@ export function Header({ activeHref }: HeaderProps) {
             </Link>
           ))}
           <div className="mt-3 flex gap-2.5">
-            <a href="#" className="flex-1 rounded-cap-md border border-cap-border p-3 text-center text-[14px] font-bold text-cap-navy">
+            <button
+              type="button"
+              onClick={() => {
+                openCallback({ title: "Accéder à l'espace apprenant", contextLabel: "Espace apprenant" });
+                setMenuOpen(false);
+              }}
+              className="flex-1 rounded-cap-md border border-cap-border p-3 text-center text-[14px] font-bold text-cap-navy"
+            >
               Espace apprenant
-            </a>
-            <a href="#" className="flex-1 rounded-cap-md border border-cap-border p-3 text-center text-[14px] font-bold text-cap-green">
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                openCallback({ title: "Accéder à l'espace formateur", contextLabel: "Espace formateur" });
+                setMenuOpen(false);
+              }}
+              className="flex-1 rounded-cap-md border border-cap-border p-3 text-center text-[14px] font-bold text-cap-green"
+            >
               Espace formateur
-            </a>
+            </button>
           </div>
         </div>
       )}
