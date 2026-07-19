@@ -17,7 +17,7 @@ import {
 } from "@/lib/catalogue";
 import { ROUTES } from "@/lib/data/site";
 
-// Export statique : un fichier HTML par slug (29), généré depuis le JSON catalogue.
+// Export statique : un fichier HTML par slug (38), généré depuis le JSON catalogue.
 export const dynamicParams = false;
 
 export function generateStaticParams() {

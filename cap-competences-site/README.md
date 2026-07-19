@@ -85,14 +85,14 @@ app/                      Routes (App Router)
 components/               Composants partagés et par page
 lib/catalogue.ts          Loader/typage du catalogue (lit le JSON, projette le public)
 lib/data/
-  catalogue-formations.json  SOURCE DE VÉRITÉ : 7 pôles, 29 formations
+  catalogue-formations.json  SOURCE DE VÉRITÉ : 7 pôles, 38 formations
   site.ts, home.ts, entreprises.ts, designSystem.ts  Contenu des autres pages
 public/assets/            SVG (logo, boussole, icônes) + image Open Graph
 ```
 
 ## Choix d'implémentation notables
 
-- **Source de vérité du catalogue : `lib/data/catalogue-formations.json`** (7 pôles, 29 formations).
+- **Source de vérité du catalogue : `lib/data/catalogue-formations.json`** (7 pôles, 38 formations).
   Le loader typé `lib/catalogue.ts` lit + normalise ce JSON ; aucune donnée de formation n'est
   codée en dur. Chaque champ de pôle est traité comme **optionnel** (n'est affiché que s'il
   existe), avec résolution de repli `formation → pôle` pour `durée` et `pré-requis`.

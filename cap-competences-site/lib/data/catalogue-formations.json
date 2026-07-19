@@ -190,6 +190,20 @@
       "duree_type": "14 à 21 heures par logiciel.",
       "formations": [
         {
+          "id": "word",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Word — Documents Longs & Automatisation",
+          "objectif": "Structurer et automatiser la mise en forme de documents longs professionnels (rapports, manuels, contrats, thèses).",
+          "duree": "14 h",
+          "pre_requis": "Maîtrise des bases Word (saisie, mise en page simple).",
+          "contenu": "Objectifs opérationnels\n• Structurer et automatiser la mise en forme de documents longs professionnels\n• Créer des modèles réutilisables avec styles, sections et champs automatiques\n• Maîtriser les outils de révision collaboratifs (suivi des modifications, commentaires)\n\nCompétences visées\n• Appliquer des styles hiérarchiques et générer une table des matières automatique\n• Insérer et gérer champs, renvois croisés, index et notes de bas de page\n• Créer un publipostage complet (lettres, étiquettes, emails) depuis une source de données\n\nProgramme\nModule 1 – Styles et structure\n• Styles de titres, corps de texte et personnalisation\n• Table des matières et table des illustrations automatiques\n• Sections, sauts de page et numérotation avancée\n\nModule 2 – Champs et automatisation\n• Champs automatiques : date, auteur, numéro de page\n• Renvois croisés, signets et liens internes\n• Formulaires Word et zones de contenu\n\nModule 3 – Collaboration et fusion\n• Suivi des modifications et gestion des commentaires\n• Comparaison et fusion de documents\n• Publipostage : lettres, étiquettes, enveloppes\n\nMéthodes pédagogiques\n• Exercices sur des documents professionnels réels\n• Supports remis : modèles Word prêts à l'emploi\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• QCM et exercices pratiques\n• Évaluation finale : document long mis en forme et publipostage opérationnel\n• Attestation de fin de formation"
+        },
+        {
           "id": "excel",
           "profils": [
             "salarie",
@@ -197,9 +211,11 @@
             "independant",
             "entreprise"
           ],
-          "titre": "Excel (Initiation à Perfectionnement)",
-          "objectif": "Concevoir des tableaux de bord fiables et analyser des données de manière automatisée.",
-          "contenu": "Formules et fonctions essentielles (SI, RECHERCHEV/X), mise en forme conditionnelle, gestion des graphiques, création et exploitation avancée des Tableaux Croisés Dynamiques (TCD)."
+          "titre": "Excel — Initiation à Perfectionnement",
+          "objectif": "Créer des tableaux de données fiables, exploiter les fonctions avancées et automatiser la production de tableaux de bord dynamiques.",
+          "duree": "14 à 21 h (modulable selon niveau)",
+          "pre_requis": "Maîtrise de l'informatique de base. Notions Excel appréciées pour le niveau perfectionnement.",
+          "contenu": "Objectifs opérationnels\n• Créer et mettre en forme des tableaux de données fiables et lisibles\n• Exploiter les fonctions avancées pour analyser et croiser des données\n• Automatiser la production de rapports et tableaux de bord dynamiques\n\nCompétences visées\n• Utiliser les fonctions RECHERCHEV/X, SI imbriqués, SOMME.SI, NB.SI\n• Créer des tableaux croisés dynamiques (TCD) et graphiques croisés\n• Mettre en forme conditionnelle et produire des tableaux de bord lisibles\n\nProgramme\nModule 1 – Fondamentaux (Initiation)\n• Interface, saisie, recopie, mise en forme\n• Formules de base : SOMME, MOYENNE, NB, MIN, MAX\n• Graphiques simples et impression\n\nModule 2 – Fonctions avancées\n• Fonctions logiques : SI, ET, OU, SIERREUR\n• Fonctions de recherche : RECHERCHEV, RECHERCHEX, INDEX/EQUIV\n• Fonctions texte et date\n\nModule 3 – Analyse et tableaux de bord\n• Tableaux croisés dynamiques : création, filtres, segments\n• Mise en forme conditionnelle et graphiques sparklines\n• Tableau de bord interactif avec segments et chronologies\n\nMéthodes pédagogiques\n• Exercices progressifs sur des données métier réelles\n• Supports remis : classeurs Excel annotés\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial (test de niveau)\n• Exercices pratiques à chaque module\n• Évaluation finale : tableau de bord opérationnel\n• Attestation de fin de formation"
         },
         {
           "id": "vba",
@@ -209,9 +225,25 @@
             "independant",
             "entreprise"
           ],
-          "titre": "VBA (Visual Basic for Applications)",
-          "objectif": "Automatiser les tâches répétitives et créer des macros personnalisées sous Excel.",
-          "contenu": "Environnement de développement VBE, écriture de procédures et fonctions, variables, boucles (For, Do While), conditions (If, Select Case), et conception de formulaires interactifs (UserForms)."
+          "titre": "VBA Excel — Automatisation & Macros",
+          "objectif": "Automatiser les traitements répétitifs et gagner en productivité en écrivant des macros et fonctions VBA personnalisées.",
+          "duree": "21 h",
+          "pre_requis": "Bonne maîtrise d'Excel (fonctions, TCD). Aucune connaissance en programmation requise.",
+          "contenu": "Objectifs opérationnels\n• Enregistrer, modifier et exécuter des macros pour automatiser des tâches répétitives\n• Écrire des procédures et fonctions VBA personnalisées\n• Manipuler les objets Excel (classeurs, feuilles, plages) par le code\n• Concevoir des formulaires interactifs de saisie (UserForms)\n\nCompétences visées\n• Déclarer et utiliser variables, constantes et structures de contrôle (If, For, Do While)\n• Manipuler les objets Workbook, Worksheet, Range et Cells par le code\n• Créer des fonctions personnalisées et des procédures événementielles\n• Déboguer un code VBA (points d'arrêt, espion, gestion d'erreurs)\n\nProgramme\nModule 1 – Environnement VBA\n• Éditeur VBE : fenêtres, modules, débogueur\n• Enregistrer, exécuter et modifier une macro\n• Structure d'une procédure Sub et d'une fonction Function\n• Sécurité des macros : niveaux et signatures\n\nModule 2 – Variables et structures de contrôle\n• Types de données : Integer, Long, String, Double, Boolean\n• Déclaration et portée (Dim, Public, Private, Const)\n• Conditions : If/Then/Else, Select Case\n• Boucles : For/Next, For Each, Do While/Until\n\nModule 3 – Manipulation des objets Excel\n• Modèle objet : Application, Workbook, Worksheet, Range, Cells\n• Copier, trier, filtrer, supprimer par code\n• Procédures événementielles (Workbook_Open, Worksheet_Change)\n• Gestion des erreurs : On Error GoTo, Err.Number\n\nModule 4 – Fonctions personnalisées & UserForms\n• Créer une Function utilisable dans une feuille\n• Conception d'un UserForm : TextBox, ComboBox, ListBox, CommandButton\n• Validation et messages d'alerte (MsgBox, InputBox)\n• Projet fil rouge : automatisation d'un processus complet\n\nMéthodes pédagogiques\n• Apprentissage par la pratique sur des cas concrets\n• Supports : classeurs VBA annotés, aide-mémoire\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : macro complète déployée sur un cas réel\n• Attestation de fin de formation"
+        },
+        {
+          "id": "power-bi",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Power BI — Tableaux de Bord & Analyse de Données",
+          "objectif": "Connecter, transformer et modéliser des données pour créer des tableaux de bord décisionnels interactifs et les partager en entreprise.",
+          "duree": "21 h",
+          "pre_requis": "Bonne maîtrise d'Excel. Notions de bases de données appréciées.",
+          "contenu": "Objectifs opérationnels\n• Connecter, transformer et modéliser des données issues de sources variées\n• Créer des visualisations interactives et des tableaux de bord décisionnels\n• Publier et partager des rapports Power BI au sein d'une organisation\n\nCompétences visées\n• Importer et nettoyer des données avec Power Query\n• Créer des mesures DAX pour calculer des KPI métiers\n• Concevoir un tableau de bord interactif avec filtres, segments et exploration\n\nProgramme\nModule 1 – Prise en main & connexion aux données\n• Interface Power BI Desktop : vues Rapport, Données, Modèle\n• Connexion aux sources : Excel, CSV, SQL, web\n• Power Query : nettoyage, transformation, fusion de tables\n\nModule 2 – Modélisation des données\n• Modèle en étoile : tables de faits et de dimensions\n• Relations entre tables et cardinalité\n• Introduction au DAX : mesures de base (SUM, COUNT, CALCULATE, FILTER)\n\nModule 3 – Visualisation & tableaux de bord\n• Visuels natifs : histogrammes, courbes, cartes, matrices, jauges\n• Segments, chronologies et filtres croisés\n• Mise en page responsive et expérience utilisateur\n\nModule 4 – Publication & partage\n• Publication sur Power BI Service\n• Espaces de travail, rôles et sécurité des données (RLS)\n• Planification d'actualisations automatiques\n\nMéthodes pédagogiques\n• Exercices sur des jeux de données métier réels\n• Chaque module aboutit à un livrable opérationnel\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : rapport Power BI complet publié et partagé\n• Attestation de fin de formation"
         },
         {
           "id": "powerpoint",
@@ -221,21 +253,11 @@
             "independant",
             "entreprise"
           ],
-          "titre": "PowerPoint",
-          "objectif": "Concevoir des présentations percutantes au service d'un message clair.",
-          "contenu": "Structuration du storytelling, création de masques personnalisés, règles d'impact visuel, intégration de médias, animations professionnelles et techniques d'animation de réunion de présentation."
-        },
-        {
-          "id": "word",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Word",
-          "objectif": "Maîtriser la mise en page de documents longs et la production automatisée.",
-          "contenu": "Utilisation des styles et thèmes, génération automatique de tables des matières, insertion de tableaux et d'illustrations, gestion des sections, et création de publipostages complexes."
+          "titre": "PowerPoint — Présentations Percutantes",
+          "objectif": "Concevoir des présentations claires, visuellement attractives et adaptées à l'audience, en maîtrisant animations et narration visuelle.",
+          "duree": "14 h",
+          "pre_requis": "Maîtrise courante de l'informatique.",
+          "contenu": "Objectifs opérationnels\n• Concevoir des présentations claires, visuellement attractives et adaptées à l'audience\n• Maîtriser les outils avancés de mise en page, d'animation et de narration visuelle\n\nCompétences visées\n• Appliquer un masque de diapositives cohérent avec l'identité visuelle\n• Créer des animations et transitions fluides adaptées au message\n• Intégrer graphiques, SmartArt, vidéos et liens hypertexte dans une présentation\n\nProgramme\nModule 1 – Design et structure\n• Masque de diapositives et thèmes personnalisés\n• Mise en page : règle des tiers, hiérarchie visuelle, couleurs\n• SmartArt, graphiques et tableaux\n\nModule 2 – Animation et interactivité\n• Animations d'objets : apparition, trajectoire, emphase\n• Transitions et chronométrage\n• Liens hypertexte, boutons d'action et présentation non linéaire\n\nModule 3 – Finalisation et diffusion\n• Mode présentateur : notes et minuteur\n• Export en PDF, vidéo et format web\n• Conseils de prise de parole et storytelling visuel\n\nMéthodes pédagogiques\n• Exercices sur des présentations professionnelles réelles\n• Supports : modèles PowerPoint personnalisables\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques\n• Évaluation finale : présentation complète réalisée en autonomie\n• Attestation de fin de formation"
         },
         {
           "id": "outlook",
@@ -245,9 +267,25 @@
             "independant",
             "entreprise"
           ],
-          "titre": "Outlook",
-          "objectif": "Optimiser sa messagerie pour un traitement efficace du flux d'informations.",
-          "contenu": "Organisation des dossiers, règles d'archivage automatique, gestion avancée du calendrier (partage, réunions), création de tâches, suivi des indicateurs et gestion des catégories."
+          "titre": "Outlook — Gestion Efficace de la Messagerie",
+          "objectif": "Organiser et automatiser sa messagerie, son agenda et ses tâches pour gagner en productivité au quotidien.",
+          "duree": "14 h",
+          "pre_requis": "Maîtrise courante de l'informatique.",
+          "contenu": "Objectifs opérationnels\n• Organiser et automatiser sa messagerie pour gagner en productivité\n• Maîtriser la gestion de l'agenda, des contacts et des tâches dans Outlook\n\nCompétences visées\n• Créer des règles, catégories et dossiers pour trier automatiquement ses emails\n• Planifier des réunions, gérer les invitations et partager son agenda\n• Utiliser les tâches et rappels pour un suivi rigoureux de ses actions\n\nProgramme\nModule 1 – Messagerie avancée\n• Règles de tri automatique, catégories et indicateurs de suivi\n• Modèles d'emails et réponses rapides\n• Gestion des indésirables et des pièces jointes\n\nModule 2 – Agenda et planification\n• Création et partage de calendriers\n• Planification de réunions, sondages et ressources\n• Délégation et gestion de l'agenda d'un responsable\n\nModule 3 – Contacts et tâches\n• Carnet d'adresses : création, groupes de contacts\n• Tâches, rappels et suivi des actions\n• Intégration Outlook / Teams / SharePoint\n\nMéthodes pédagogiques\n• Exercices sur scénarios professionnels réels\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques\n• Évaluation finale : configuration complète d'un environnement Outlook optimisé\n• Attestation de fin de formation"
+        },
+        {
+          "id": "communication-digitale",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Stratégie et Communication Digitale",
+          "objectif": "Construire une stratégie de communication digitale, animer une présence sur les réseaux sociaux et optimiser son référencement naturel.",
+          "duree": "21 h",
+          "pre_requis": "Maîtrise courante d'Internet et des outils bureautiques.",
+          "contenu": "Objectifs opérationnels\n• Construire une stratégie de communication digitale adaptée à son activité\n• Créer et animer une présence professionnelle sur les réseaux sociaux\n• Concevoir des campagnes email marketing et optimiser son référencement naturel (SEO)\n\nCompétences visées\n• Définir une ligne éditoriale et un calendrier de publication\n• Créer des contenus engageants sur LinkedIn, Instagram et Facebook\n• Concevoir une campagne email (segmentation, objet, CTA)\n• Réaliser un diagnostic SEO de base et optimiser les pages clés de son site\n\nProgramme\nModule 1 – Stratégie digitale\n• Panorama des canaux : réseaux sociaux, email, SEO, publicité\n• Définir ses objectifs, cibles et indicateurs de succès\n• Ligne éditoriale et calendrier de contenu\n\nModule 2 – Réseaux sociaux & community management\n• Spécificités : LinkedIn (B2B), Instagram (visuel), Facebook (communauté)\n• Création de contenus engageants : formats, fréquence, storytelling\n• Gestion de l'e-réputation et interaction avec la communauté\n\nModule 3 – Email marketing\n• Outils : Brevo, Mailchimp — prise en main\n• Concevoir un email efficace : objet, contenu, call-to-action\n• Segmentation, scénarios automatisés et conformité RGPD\n\nModule 4 – SEO & analyse des performances\n• Fondamentaux du SEO : contenu, technique, liens\n• Optimisation on-page (balises, métadescriptions, titres)\n• Google Analytics et Search Console — indicateurs clés\n\nMéthodes pédagogiques\n• Études de cas concrets\n• Ateliers de création et mises en situation\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : stratégie digitale complète présentée\n• Attestation de fin de formation"
         }
       ]
     },
@@ -260,19 +298,6 @@
       "moyens_formats": "Cours dispensés en présentiel ou distanciel selon le module. Options de parcours individuels sur-mesure (visio) avec accompagnement et suivi en temps réel par un expert.",
       "formations": [
         {
-          "id": "workflow-ia-n8n",
-          "profils": [
-            "salarie",
-            "demandeur",
-            "independant",
-            "entreprise"
-          ],
-          "titre": "Automatiser ses processus métier avec les Workflow IA",
-          "objectif": "Maîtriser l'automatisation avancée des flux opérationnels en connectant des outils grâce à l'IA générative et à l'architecture N8N.",
-          "pre_requis": "Utilisation courante du numérique. Des notions de base sur le fonctionnement des logiciels SaaS sont un plus.",
-          "contenu": "Concepts fondamentaux de l'automatisation : découverte et manipulation des APIs et structures JSON. Prise en main de l'interface visuelle et de l'architecture N8N. Configuration et déploiement de nœuds intelligents (IA générative) et modules de transformation de données. Cas réels d'entreprise : tri, classification et réponse automatisée aux emails, conception de chatbots connectés aux bases de connaissances."
-        },
-        {
           "id": "ia-generative-contenus",
           "profils": [
             "salarie",
@@ -280,11 +305,109 @@
             "independant",
             "entreprise"
           ],
-          "titre": "L'usage responsable de l'IA générative pour la création de contenus rédactionnels et visuels",
-          "objectif": "Maîtriser l'intelligence artificielle générative au quotidien pour concevoir des contenus éthiques, performants et conformes aux réglementations.",
-          "duree": "30 heures de cours individuels dispensés sur-mesure en visioconférence.",
-          "pre_requis": "Aucun. Parcours individualisé quel que soit le niveau de connaissance de l'IA.",
-          "contenu": "Accompagnement personnalisé pour intégrer l'IA de manière stratégique. Méthodologie avancée de prompt engineering pour la génération de textes (articles, rapports, posts). Techniques de génération visuelle (images, chartes) dans une démarche d'éthique et d'accessibilité. Usage responsable : droit d'auteur, conformité à l'IA Act, lutte contre les biais cognitifs."
+          "titre": "IA Générative — Création de Contenus ✦ Préparation à la certification INKREA",
+          "objectif": "Maîtriser les outils d'IA générative pour créer des contenus rédactionnels et visuels professionnels, et se préparer à la certification INKREA.",
+          "duree": "35 h",
+          "pre_requis": "Maîtrise courante d'Internet et des outils bureautiques de base.",
+          "contenu": "Objectifs opérationnels\n• Maîtriser les outils d'IA générative pour créer des contenus rédactionnels et visuels professionnels\n• Construire et optimiser des prompts adaptés à chaque usage (texte, image, vidéo)\n• Intégrer l'IA générative dans un flux de production éditorial existant\n• Se préparer à l'examen de certification INKREA\n\nCompétences visées\n• Rédiger des prompts structurés pour générer textes, visuels et vidéos courtes\n• Sélectionner l'outil IA adapté au format de contenu attendu\n• Vérifier, reformuler et valider les productions IA selon des critères éditoriaux\n• Appliquer les règles éthiques et légales liées aux contenus générés par IA\n\nProgramme\nModule 1 – Fondamentaux de l'IA générative\n• Fonctionnement des LLM : comprendre sans coder\n• Tour d'horizon des outils : ChatGPT, Claude, Mistral, Gemini, Midjourney, DALL-E, Runway\n• Notions clés : hallucination, tokens, température, contexte\n\nModule 2 – Prompt Engineering\n• Structure d'un prompt efficace : rôle, contexte, tâche, format, contraintes\n• Techniques avancées : chain-of-thought, few-shot, persona prompting\n• Atelier : bibliothèque de prompts métiers personnalisée\n\nModule 3 – Création de contenus rédactionnels\n• Articles, posts réseaux sociaux, newsletters, scripts vidéo\n• Adaptation du ton, de la voix de marque et du niveau de lecture\n• Révision et détection des biais dans les productions IA\n\nModule 4 – Création de contenus visuels & multimédias\n• Génération d'images avec Midjourney, DALL-E, Adobe Firefly\n• Vidéos courtes et motion design assistés par IA (Runway, Pika)\n• Cohérence visuelle de marque dans les productions IA\n\nModule 5 – Éthique, RGPD & préparation à la certification\n• Droits d'auteur, propriété intellectuelle et IA Act européen\n• Révision des blocs de compétences INKREA\n• Entraînement sur cas pratiques type examen\n\nMéthodes pédagogiques\n• Alternance d'apports théoriques et d'ateliers pratiques sur les outils IA\n• Mise en situation immédiate sur les contenus de l'apprenant\n• Supports remis : bibliothèque de prompts, fiches outils, guide éthique\n• Distanciel synchrone ou présentiel\n\nSuivi & évaluation\n• Questionnaire de positionnement initial\n• Évaluations formatives continues : exercices, QCM, mises en situation\n• Évaluation finale : production complète de contenus soumise au jury INKREA\n• Attestation de fin de formation + accompagnement à la certification INKREA"
+        },
+        {
+          "id": "ia-rh-formation",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "IA pour les RH et la Formation",
+          "objectif": "Identifier et déployer les applications concrètes de l'IA dans les processus RH, le recrutement et la conception de parcours de formation.",
+          "duree": "21 h",
+          "pre_requis": "Maîtrise courante des outils bureautiques et connaissance des processus RH de base.",
+          "contenu": "Objectifs opérationnels\n• Identifier les applications concrètes de l'IA dans les processus RH et formation\n• Automatiser les tâches administratives RH chronophages grâce à l'IA\n• Concevoir des parcours de formation personnalisés avec l'appui des outils IA\n• Intégrer l'IA dans le recrutement, l'onboarding et la GPEC de manière éthique\n\nCompétences visées\n• Utiliser l'IA pour rédiger offres d'emploi, grilles d'entretien et bilans de compétences\n• Mettre en place un chatbot RH pour répondre aux questions courantes des collaborateurs\n• Créer des modules e-learning et quiz automatisés avec des outils IA\n• Analyser des données RH avec l'IA pour éclairer les décisions stratégiques\n\nProgramme\nModule 1 – IA et transformation des fonctions RH\n• Panorama des outils IA applicables aux RH : recrutement, formation, GPEC, paie\n• Automatisation des tâches à faible valeur ajoutée (tri de CV, planification, reporting)\n• Cadre légal : RGPD, IA Act, biais algorithmiques dans le recrutement\n\nModule 2 – IA dans le recrutement et l'onboarding\n• Rédaction d'offres d'emploi inclusives et optimisées SEO avec l'IA\n• Analyse de CV et scoring candidats : outils et limites\n• Parcours d'onboarding personnalisé assisté par IA\n\nModule 3 – IA au service de la formation\n• Conception de modules e-learning avec l'IA (plans, quiz, scénarios)\n• LMS intelligents et recommandations de parcours personnalisés\n• Chatbots pédagogiques et tuteurs virtuels : mise en place et limites\n\nModule 4 – IA et pilotage RH\n• Analyse prédictive : turnover, absentéisme, compétences clés\n• Tableaux de bord RH enrichis par l'IA\n• Projet fil rouge : automatisation d'un processus RH de A à Z\n\nMéthodes pédagogiques\n• Études de cas issus du secteur RH\n• Ateliers pratiques sur des outils IA réels (ChatGPT, Notion IA, outils LMS)\n• Individualisation selon le secteur et la taille de l'organisation\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Questionnaire de positionnement initial\n• Mises en situation et exercices pratiques tout au long du parcours\n• Évaluation finale : présentation d'un projet d'intégration IA dans un processus RH\n• Attestation de fin de formation"
+        },
+        {
+          "id": "developper-activite-ia",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Développer son activité avec l'Intelligence Artificielle",
+          "objectif": "Identifier les opportunités de l'IA générative pour développer son activité, créer ses contenus marketing et automatiser sa prospection.",
+          "duree": "21 h",
+          "pre_requis": "Maîtrise courante d'Internet et des outils bureautiques de base.",
+          "contenu": "Objectifs opérationnels\n• Identifier les opportunités de l'IA générative pour développer son activité\n• Créer et diffuser des contenus marketing performants avec l'IA\n• Automatiser ses tâches de prospection, suivi client et communication digitale\n• Intégrer l'IA de manière éthique et responsable dans sa stratégie commerciale\n\nCompétences visées\n• Choisir les bons outils IA selon ses objectifs (génération de leads, fidélisation, notoriété)\n• Rédiger des prompts pour générer offres, posts, emails de prospection et fiches produits\n• Créer des visuels et contenus multimédias IA pour ses réseaux sociaux et son site\n• Construire un mini-système d'automatisation pour ses prises de contact et relances\n\nProgramme\nModule 1 – Panorama de l'IA au service du commerce\n• Tour d'horizon des outils IA accessibles sans code : ChatGPT, Claude, Canva IA, Runway\n• Identifier les cas d'usage IA adaptés à son secteur et sa taille d'activité\n• Notions essentielles : LLM, prompt, hallucination, tokens\n\nModule 2 – Créer ses contenus marketing avec l'IA\n• Prompt engineering appliqué : offre, post, email, fiche produit\n• Visuels professionnels avec Canva IA, DALL-E ou Adobe Firefly\n• Adapter les productions IA à sa voix de marque\n\nModule 3 – Automatiser prospection et relation client\n• Séquences d'emails de prospection et relance générées par IA\n• Chatbots IA pour répondre aux demandes clients 24h/24\n• Mini-automatisation no-code : connecter CRM, agenda, email via workflows IA\n\nModule 4 – Visibilité en ligne & éthique\n• SEO assisté par IA : optimiser son site et ses contenus\n• RGPD, IA Act, propriété intellectuelle : obligations du chef d'entreprise\n• Plan d'action IA personnalisé pour les 3 prochains mois\n\nMéthodes pédagogiques\n• Mise en pratique immédiate sur les cas concrets de l'apprenant\n• Supports : bibliothèque de prompts métiers, fiches outils, guide éthique IA\n• Individualisation complète selon le secteur et les objectifs\n• Distanciel synchrone ou présentiel\n\nSuivi & évaluation\n• Questionnaire de positionnement initial\n• Exercices pratiques et mises en situation tout au long du parcours\n• Évaluation finale : livrable — plan d'action IA personnalisé présenté au formateur\n• Attestation de fin de formation"
+        },
+        {
+          "id": "workflow-ia-n8n",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Automatisation No Code & Agents IA",
+          "objectif": "Concevoir et déployer des workflows automatisés et des agents IA sans écrire de code, en connectant ses outils métiers (CRM, email, agenda).",
+          "duree": "21 h",
+          "pre_requis": "Maîtrise courante d'Internet et des outils bureautiques.",
+          "contenu": "Objectifs opérationnels\n• Concevoir et déployer des workflows automatisés sans écrire de code\n• Créer des agents IA capables d'exécuter des tâches complexes en autonomie\n• Connecter ses outils métiers (CRM, email, agenda, GED) via des automatisations IA\n• Optimiser ses processus internes grâce au no code et à l'IA générative\n\nCompétences visées\n• Modéliser un processus métier et le traduire en workflow automatisé\n• Paramétrer des automatisations sur N8N, Make ou Zapier\n• Créer un agent IA personnalisé capable de rechercher, analyser et agir\n• Tester, déboguer et maintenir ses workflows en autonomie\n\nProgramme\nModule 1 – Fondamentaux du no code et de l'automatisation\n• Panorama des plateformes : N8N, Make, Zapier — comparatif et cas d'usage\n• Modéliser un processus métier sous forme de workflow\n• Connecteurs, webhooks et API sans code : démystification\n\nModule 2 – Créer ses premiers workflows\n• Automatiser la gestion des emails et notifications\n• Synchroniser ses outils (CRM, agenda, formulaires, sheets)\n• Atelier : workflow de traitement automatique des demandes entrantes\n\nModule 3 – Agents IA : conception et déploiement\n• Qu'est-ce qu'un agent IA ? Architecture, mémoire, outils, planificateur\n• Créer un agent avec ChatGPT, Claude ou des frameworks no code (Voiceflow, Botpress)\n• Cas d'usage : agent de prospection, agent de veille, agent support client\n\nModule 4 – Projet intégrateur\n• Conception d'une automatisation complète de bout en bout\n• Tests, gestion des erreurs et maintenance\n• Bonnes pratiques : sécurité, RGPD, documentation\n\nMéthodes pédagogiques\n• Apprentissage par la pratique : chaque module aboutit à un livrable opérationnel\n• Environnements réels (N8N, Make, Zapier, ChatGPT)\n• Individualisation selon les outils et processus de l'apprenant\n• Distanciel synchrone ou présentiel\n\nSuivi & évaluation\n• Questionnaire de positionnement initial\n• Livrables pratiques à chaque module\n• Évaluation finale : présentation d'un workflow complet déployé en conditions réelles\n• Attestation de fin de formation"
+        },
+        {
+          "id": "strategie-marketing-communication-ia",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Stratégie Marketing, Communication & IA",
+          "objectif": "Construire une stratégie marketing et communication augmentée par l'IA, et automatiser la production de contenus multicanaux.",
+          "duree": "21 h",
+          "pre_requis": "Expérience en marketing ou communication digitale appréciée. Maîtrise d'Internet et des réseaux sociaux.",
+          "contenu": "Objectifs opérationnels\n• Construire une stratégie marketing et communication augmentée par l'IA\n• Automatiser la production de contenus multicanaux (social, email, SEO, pub)\n• Exploiter les données et insights IA pour affiner son ciblage et ses messages\n• Mesurer la performance de ses actions et piloter par la donnée\n\nCompétences visées\n• Déployer une stratégie de contenu multicanal soutenue par des outils IA\n• Produire et planifier des campagnes email, social et SEO en temps réduit\n• Analyser les performances et adapter sa stratégie grâce aux tableaux de bord IA\n• Gérer une e-réputation et animer une communauté avec l'appui de l'IA\n\nProgramme\nModule 1 – IA et stratégie marketing\n• Audit de l'existant et diagnostic IA : où gagner du temps ?\n• Cartographie des outils IA marketing (HubSpot IA, Jasper, Copy.ai, Canva IA)\n• Construire une stratégie de contenu augmentée par l'IA\n\nModule 2 – Création et automatisation de contenus\n• Social media : génération de posts, légendes, hashtags et visuels avec l'IA\n• Email marketing : rédaction, segmentation et personnalisation automatisée\n• SEO : recherche de mots-clés, rédaction d'articles optimisés IA\n\nModule 3 – Publicité et ciblage augmentés\n• IA et publicité digitale (Google Ads, Meta Ads) : automatisation et optimisation\n• Personnalisation à grande échelle : segmentation fine et messages dynamiques\n• A/B testing automatisé et optimisation continue\n\nModule 4 – Pilotage, performance & éthique\n• Tableaux de bord marketing alimentés par l'IA (Google Analytics 4, Looker Studio)\n• Gestion de la e-réputation et veille concurrentielle avec l'IA\n• Éthique publicitaire, transparence algorithmique, RGPD et IA Act\n\nMéthodes pédagogiques\n• Études de cas réels issus du secteur marketing\n• Ateliers pratiques sur des outils IA marketing concrets\n• Supports : templates, bibliothèque de prompts marketing, guide éthique\n• Distanciel synchrone ou présentiel\n\nSuivi & évaluation\n• Questionnaire de positionnement initial\n• Exercices pratiques et mises en situation après chaque module\n• Évaluation finale : présentation d'une stratégie marketing IA appliquée à l'activité du stagiaire\n• Attestation de fin de formation"
+        },
+        {
+          "id": "big-data-ia",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Big Data & IA",
+          "objectif": "Comprendre les architectures Big Data et appliquer des modèles d'IA pour extraire de la valeur de grands volumes de données.",
+          "duree": "28 h",
+          "pre_requis": "Notions de base en informatique. Familiarité avec les tableurs (Excel/Sheets). Aucune compétence en programmation requise.",
+          "contenu": "Objectifs opérationnels\n• Comprendre les architectures Big Data et leur articulation avec l'IA\n• Collecter, nettoyer et structurer des données pour les rendre exploitables par l'IA\n• Appliquer des modèles d'IA pour extraire de la valeur de grands volumes de données\n• Construire des visualisations et tableaux de bord décisionnels alimentés par l'IA\n\nCompétences visées\n• Identifier les sources de données pertinentes et les collecter de façon structurée\n• Nettoyer et préparer un jeu de données pour une analyse IA\n• Utiliser des outils no code / low code pour appliquer des modèles IA sur ses données\n• Présenter des insights data à des décideurs via des visualisations claires\n\nProgramme\nModule 1 – Big Data : fondamentaux et écosystème\n• Définition, volumes, vélocité, variété : les 5 V du Big Data\n• Panorama des architectures data : data lake, data warehouse, data mesh\n• Articulation Big Data / Machine Learning / IA générative\n\nModule 2 – Collecte et préparation des données\n• Sources de données : APIs, scraping, bases de données, flux temps réel\n• Nettoyage, normalisation et enrichissement de données\n• Outils no code : Airtable, Google Sheets IA, Talend Open Studio\n\nModule 3 – Analyse et modèles IA appliqués à la data\n• Analyse prédictive : principes et cas d'usage métiers\n• Clustering, classification, détection d'anomalies : approche no code\n• LLM appliqués à la data : interroger ses données en langage naturel\n\nModule 4 – Visualisation et pilotage par la donnée\n• Tableaux de bord avec Power BI et Looker Studio\n• Narration de données (data storytelling) pour décideurs\n• Projet fil rouge : analyse complète d'un jeu de données réel\n\nMéthodes pédagogiques\n• Alternance théorie/pratique sur des jeux de données réels\n• Outils utilisés : Google Sheets IA, Power BI, Looker Studio, outils no code\n• Accompagnement individualisé selon le secteur et les données de l'apprenant\n• Distanciel synchrone ou présentiel\n\nSuivi & évaluation\n• Questionnaire de positionnement initial\n• Exercices pratiques et analyses guidées à chaque module\n• Évaluation finale : présentation d'un tableau de bord data IA opérationnel\n• Attestation de fin de formation"
+        },
+        {
+          "id": "chef-de-projet-ia",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Chef de Projet IA — Méthodologie et Bonnes Pratiques",
+          "objectif": "Cadrer, planifier et piloter un projet IA de bout en bout, en gérant risques, parties prenantes et enjeux éthiques.",
+          "duree": "21 h",
+          "pre_requis": "Expérience en gestion de projet. Connaissance de base des enjeux IA appréciée.",
+          "contenu": "Objectifs opérationnels\n• Cadrer, planifier et piloter un projet IA de bout en bout\n• Choisir les méthodologies adaptées aux projets IA (Agile, Design Thinking, MLOps)\n• Gérer les parties prenantes, les risques et les enjeux éthiques d'un projet IA\n• Mesurer la valeur créée par un projet IA et communiquer les résultats\n\nCompétences visées\n• Rédiger un cahier des charges IA et définir des critères de succès mesurables\n• Constituer et animer une équipe projet pluridisciplinaire (data, métier, IT)\n• Identifier et mitiger les risques techniques, éthiques et réglementaires\n• Déployer et industrialiser une solution IA en conditions réelles\n\nProgramme\nModule 1 – Comprendre les projets IA\n• Spécificités des projets IA vs projets IT classiques : incertitude, itération, données\n• Cycle de vie d'un projet IA : de la détection du besoin au déploiement\n• Rôles clés : data scientist, data engineer, product owner IA, éthicien\n\nModule 2 – Cadrage et planification\n• Définir le périmètre, les objectifs et les KPI d'un projet IA\n• Cartographie des données disponibles et évaluation de la faisabilité\n• Choix méthodologique : Agile, Scrum adapté IA, Design Thinking\n\nModule 3 – Pilotage et gestion des risques\n• Tableaux de bord de suivi d'un projet IA\n• Gestion des risques : biais, dérive des modèles, dépendances fournisseurs\n• Conformité : RGPD, IA Act, gouvernance de la donnée\n\nModule 4 – Déploiement, mesure de valeur & communication\n• Industrialisation et MLOps : du prototype au produit en production\n• Mesure de la valeur créée : ROI, gains de productivité, impact utilisateur\n• Communication et conduite du changement autour d'un projet IA\n\nMéthodes pédagogiques\n• Études de cas réels de projets IA en entreprise (succès et échecs)\n• Ateliers de travail en équipe sur des scénarios de projets IA\n• Supports : grilles d'évaluation, templates de cadrage, checklist conformité\n• Distanciel synchrone ou présentiel\n\nSuivi & évaluation\n• Questionnaire de positionnement initial\n• Travaux pratiques et mises en situation après chaque module\n• Évaluation finale : présentation d'un plan de projet IA complet\n• Attestation de fin de formation"
+        },
+        {
+          "id": "maitriser-outils-ia",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Automatiser et Maîtriser les Concepts et Outils IA",
+          "objectif": "Comprendre le fonctionnement des principaux outils d'IA, les utiliser au quotidien et automatiser des tâches récurrentes sans code.",
+          "duree": "21 h",
+          "pre_requis": "Maîtrise courante d'Internet et des outils bureautiques. Curiosité pour les nouvelles technologies.",
+          "contenu": "Objectifs opérationnels\n• Comprendre le fonctionnement des principaux outils d'IA et savoir les utiliser au quotidien\n• Automatiser des tâches récurrentes grâce à des outils no code accessibles\n• Évaluer la pertinence d'un outil IA selon son usage professionnel\n• Développer une culture IA et une posture d'apprentissage continu face aux évolutions technologiques\n\nCompétences visées\n• Utiliser les principaux assistants IA (ChatGPT, Claude, Gemini, Copilot) de façon autonome\n• Créer des automatisations simples sans code (Zapier, Make, N8N)\n• Identifier les outils IA adaptés à son métier et les intégrer dans sa pratique\n• Adopter une posture critique face aux productions IA (vérification, biais, limites)\n\nProgramme\nModule 1 – Comprendre l'IA sans jargon\n• Comment fonctionne une IA ? Apprentissage automatique, LLM, IA générative\n• Panorama des outils IA par domaine : texte, image, audio, vidéo, code, data\n• Mythes et réalités de l'IA : ce qu'elle peut et ne peut pas faire\n\nModule 2 – Maîtriser les assistants IA au quotidien\n• Prise en main de ChatGPT, Claude, Gemini, Microsoft Copilot\n• Prompt engineering de base : obtenir des réponses précises et utiles\n• Cas d'usage concrets : rédaction, résumé, traduction, analyse, brainstorming\n\nModule 3 – Automatiser sans code\n• Introduction à l'automatisation : qu'est-ce qu'un workflow ?\n• Prise en main de Zapier ou Make : créer son premier scénario automatisé\n• Automatisations utiles : emails, notifications, formulaires, reports\n\nModule 4 – Intégrer l'IA dans sa pratique professionnelle\n• Cartographie des gains potentiels dans son métier\n• Éthique, RGPD et bonnes pratiques : ce qu'il faut savoir avant d'utiliser l'IA\n• Plan de montée en compétence personnalisé et veille IA\n\nMéthodes pédagogiques\n• Pédagogie active : découverte guidée puis pratique autonome\n• Accès aux outils réels pendant toute la formation\n• Supports : fiches outils, bibliothèque de prompts, guide de veille IA\n• Distanciel synchrone ou présentiel — accessible à tous les niveaux\n\nSuivi & évaluation\n• Questionnaire de positionnement initial\n• Exercices pratiques et quiz à chaque module\n• Évaluation finale : démonstration d'un cas d'usage IA appliqué à son activité\n• Attestation de fin de formation"
         }
       ]
     },
@@ -339,9 +462,25 @@
             "independant",
             "entreprise"
           ],
-          "titre": "Prise de parole en public / Communication et aisance relationnelle",
-          "objectif": "Capter son auditoire avec assurance lors des interventions orales.",
-          "contenu": "Travail de la voix, de la respiration et de la posture corporelle (le non-verbal), gestion du trac, structuration du discours d'impact, et techniques de gestion des questions complexes ou déstabilisantes."
+          "titre": "Prise de Parole en Public",
+          "objectif": "Gérer son stress, structurer un discours percutant et utiliser sa voix, sa posture et son regard comme leviers de conviction.",
+          "duree": "14 h",
+          "pre_requis": "Aucun.",
+          "contenu": "Objectifs opérationnels\n• Gérer le stress et les émotions liés à la prise de parole en public\n• Structurer un discours clair, percutant et adapté à son audience\n• Utiliser sa voix, sa posture et son regard comme leviers de conviction\n\nCompétences visées\n• Préparer et délivrer une présentation orale structurée et convaincante\n• Gérer les questions et objections avec assurance\n• Adapter son discours au contexte : réunion, conférence, entretien\n\nProgramme\nModule 1 – Fondamentaux et gestion du stress\n• Comprendre le trac : mécanismes physiologiques et psychologiques\n• Techniques de respiration, ancrage et visualisation\n• Posture, regard et gestion de l'espace\n\nModule 2 – Structure et contenu\n• Méthode PEPS et storytelling professionnel\n• Accroche, développement, conclusion mémorable\n• Supports visuels : comment les utiliser sans en dépendre\n\nModule 3 – Mises en situation et feedback\n• Exercices filmés et analyse des points de progrès\n• Gestion des questions, contradictions et silences\n• Simulation de réunion, conférence et entretien\n\nMéthodes pédagogiques\n• Pédagogie active : exercices pratiques filmés et feedback individualisé\n• Groupes de max. 8 personnes pour favoriser la prise de parole\n• Présentiel recommandé (distanciel possible)\n\nSuivi & évaluation\n• Auto-évaluation initiale et grille de positionnement\n• Exercices oraux filmés et debriefs\n• Évaluation finale : présentation de 10 minutes devant le groupe\n• Attestation de fin de formation"
+        },
+        {
+          "id": "gestion-du-temps-organisation",
+          "profils": [
+            "salarie",
+            "demandeur",
+            "independant",
+            "entreprise"
+          ],
+          "titre": "Gestion du Temps & Organisation",
+          "objectif": "Identifier ses voleurs de temps, maîtriser les méthodes de priorisation et adopter des outils numériques adaptés à son fonctionnement.",
+          "duree": "14 h",
+          "pre_requis": "Aucun.",
+          "contenu": "Objectifs opérationnels\n• Identifier ses voleurs de temps et ses habitudes contre-productives\n• Maîtriser les méthodes d'organisation et de priorisation efficaces\n• Adopter des outils numériques adaptés à son mode de fonctionnement\n\nCompétences visées\n• Planifier sa semaine avec des méthodes éprouvées (GTD, Eisenhower, Time blocking)\n• Déléguer efficacement et dire non avec diplomatie\n• Mettre en place un système d'organisation personnel durable\n\nProgramme\nModule 1 – Diagnostic et prise de conscience\n• Identifier ses chronotypes et pics d'énergie\n• Audit de ses sources de perte de temps\n• Procrastination : comprendre et agir\n\nModule 2 – Méthodes et outils\n• Matrice d'Eisenhower et méthode GTD\n• Time blocking et Pomodoro\n• Outils numériques : Notion, Trello, Microsoft To Do\n\nModule 3 – Plan d'action personnel\n• Définir ses priorités à court et long terme\n• Délégation et communication assertive\n• Construire un système d'organisation durable\n\nMéthodes pédagogiques\n• Alternance d'apports théoriques et d'exercices d'auto-diagnostic\n• Outils numériques testés pendant la formation\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Auto-évaluation initiale\n• Exercices pratiques\n• Évaluation finale : plan d'organisation personnalisé présenté\n• Attestation de fin de formation"
         },
         {
           "id": "affirmation-de-soi",
@@ -398,9 +537,11 @@
             "independant",
             "entreprise"
           ],
-          "titre": "Photoshop & Illustrator",
-          "objectif": "Créer et retoucher des visuels professionnels matriciels et vectoriels.",
-          "contenu": "Photoshop : retouche colorimétrique, détourages complexes, utilisation des calques et masques de fusion. Illustrator : dessin vectoriel, création de logos, d'identités visuelles et d'icônes échelonnables."
+          "titre": "Photoshop — Retouche & Création Graphique (+ Illustrator)",
+          "objectif": "Maîtriser la retouche photo et la composition graphique sous Photoshop, avec une ouverture vectorielle sous Illustrator (logos, identités visuelles).",
+          "duree": "21 h",
+          "pre_requis": "Maîtrise courante de l'informatique. Notions Photoshop ou Illustrator appréciées.",
+          "contenu": "Objectifs opérationnels\n• Maîtriser l'interface et les outils fondamentaux de Photoshop\n• Retoucher et optimiser des photographies pour le web et l'impression\n• Créer des compositions graphiques et des visuels de communication\n\nCompétences visées\n• Sélectionner, masquer et extraire des éléments avec précision\n• Corriger les couleurs, l'exposition et les imperfections d'une photo\n• Créer un visuel multi-calques adapté au web ou à l'impression\n\nProgramme\nModule 1 – Interface et fondamentaux\n• Espace de travail, calques et panneaux\n• Modes colorimétriques : RVB vs CMJN\n• Outils de sélection et de recadrage\n\nModule 2 – Retouche photo\n• Correction colorimétrique : niveaux, courbes, teinte/saturation\n• Retouche de portrait : outil correcteur, tampon, fréquence de séparation\n• Recadrage, redressement et perspective\n\nModule 3 – Composition graphique\n• Calques d'ajustement et masques de fusion\n• Effets de calque : ombre, lueur, biseau\n• Typographie et intégration de texte dans une composition\n\nModule 4 – Export et optimisation\n• Export web : JPEG, PNG, WebP, GIF\n• Export pression : PDF haute résolution\n• Actions Photoshop : automatiser les exports répétitifs\n\nModule 5 – Ouverture Illustrator\n• Dessin vectoriel et outils de tracé\n• Création de logos, d'identités visuelles et d'icônes échelonnables\n• Export vectoriel pour le web et l'impression\n\nMéthodes pédagogiques\n• Exercices progressifs sur des cas graphiques réels\n• Environnement réel Adobe Photoshop (et Illustrator)\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : composition graphique professionnelle réalisée en autonomie\n• Attestation de fin de formation"
         },
         {
           "id": "indesign",
@@ -410,9 +551,11 @@
             "independant",
             "entreprise"
           ],
-          "titre": "InDesign",
-          "objectif": "Réaliser la mise en page de documents professionnels multi-pages print et digitaux.",
-          "contenu": "Gestion des gabarits, des grilles de mise en page, chaînage de texte, styles de paragraphes et de caractères, préparation des fichiers pour l'impression professionnelle (fonds perdus, CMJN)."
+          "titre": "InDesign — Mise en Page Professionnelle",
+          "objectif": "Créer des mises en page professionnelles pour le print et le digital, en maîtrisant typographie, couleur et gabarits.",
+          "duree": "21 h",
+          "pre_requis": "Maîtrise courante de l'informatique. Notions de design appréciées.",
+          "contenu": "Objectifs opérationnels\n• Créer des mises en page professionnelles pour le print et le digital\n• Maîtriser la typographie, la couleur et les gabarits pour une production efficace\n• Exporter des documents dans les formats adaptés à l'impression ou au web\n\nCompétences visées\n• Paramétrer un document (marges, colonnes, fond perdu) pour l'impression\n• Créer et appliquer des styles de caractère et de paragraphe\n• Assembler textes, images et graphiques dans une mise en page harmonieuse\n\nProgramme\nModule 1 – Fondamentaux InDesign\n• Interface et espace de travail\n• Création de document : format, marges, colonnes, fond perdu\n• Blocs texte et blocs image : placement et liaison\n\nModule 2 – Typographie et couleur\n• Styles de caractère et de paragraphe\n• Nuancier, gestion des couleurs et profils ICC\n• Gabarits : création et application\n\nModule 3 – Documents longs\n• Tables des matières automatique\n• Numérotation des pages et sections\n• Bibliothèques et gestion des ressources\n\nModule 4 – Export et prépresse\n• Export PDF impression (fond perdu, traits de coupe, profil ICC)\n• Export PDF interactif et EPUB\n• Contrôle en amont (Illustrator, Acrobat)\n\nMéthodes pédagogiques\n• Exercices sur des supports de communication réels (plaquettes, brochures)\n• Environnement réel Adobe InDesign\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : réalisation complète d'un support de communication imprimable\n• Attestation de fin de formation"
         },
         {
           "id": "autocad",
@@ -422,9 +565,11 @@
             "independant",
             "entreprise"
           ],
-          "titre": "AutoCAD",
-          "objectif": "Maîtriser le dessin technique assisté par ordinateur (DAO) en deux dimensions.",
-          "contenu": "Interface de travail, outils de dessin et de modification précis, gestion rigoureuse des calques, cotations, création de blocs dynamiques, et mise en page en vue de l'impression d'un plan à l'échelle."
+          "titre": "AutoCAD — Dessin Technique Assisté par Ordinateur",
+          "objectif": "Maîtriser l'interface et les outils de dessin fondamentaux d'AutoCAD pour créer, modifier et annoter des plans techniques 2D professionnels.",
+          "duree": "35 h",
+          "pre_requis": "Maîtrise courante de l'outil informatique. Disposer du logiciel AutoCAD installé (version 2019 ou ultérieure recommandée).",
+          "contenu": "Objectifs opérationnels\n• Maîtriser l'interface et les outils de dessin fondamentaux d'AutoCAD\n• Créer, modifier et annoter des plans techniques 2D professionnels\n• Organiser ses dessins avec les calques, blocs et mises en page pour l'impression\n\nCompétences visées\n• Tracer des entités géométriques précises (lignes, arcs, polylignes, hachures)\n• Modifier des objets avec les commandes d'édition (déplacer, copier, étirer, ajuster)\n• Annoter un dessin : cotation, textes, repères et cartouche\n• Préparer et exporter une mise en page papier ou PDF\n\nProgramme\nModule 1 – Prise en main d'AutoCAD\n• Interface, navigation, raccourcis clavier essentiels\n• Paramétrage de l'environnement de travail\n• Saisie de coordonnées absolues, relatives et polaires\n\nModule 2 – Dessin et modification\n• Outils de dessin : ligne, cercle, arc, ellipse, polyligne, hachure\n• Outils de modification : déplacer, copier, pivoter, mettre à l'échelle, ajuster, étirer\n• Accrochages aux objets et modes de repérage\n\nModule 3 – Organisation et annotation\n• Calques : création, propriétés, gestion\n• Cotation : styles, paramétrage et annotations\n• Textes et tableaux ; blocs et attributs\n\nModule 4 – Mise en page et impression\n• Espaces objet et papier : onglets de mise en page\n• Fenêtres de présentation et échelles de visualisation\n• Tracé en PDF et impression multi-formats\n\nMéthodes pédagogiques\n• Exercices sur des plans techniques progressifs\n• Environnement réel AutoCAD\n• Présentiel ou distanciel synchrone\n\nSuivi & évaluation\n• Positionnement initial\n• Exercices pratiques à chaque module\n• Évaluation finale : production d'un plan technique annoté complet\n• Attestation de fin de formation"
         },
         {
           "id": "wordpress",

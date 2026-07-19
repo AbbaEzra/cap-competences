@@ -7,7 +7,7 @@
 - **Key tech**: Next.js 14 (App Router), TypeScript, Tailwind CSS, React 18
 - **Build target**: 100% static export (`next build` → `out/` folder)
 - **Hosting**: OVH mutualisé (Apache + DirectoryIndex)
-- **Source of truth**: [`lib/data/catalogue-formations.json`](cap-competences-site/lib/data/catalogue-formations.json) (7 pôles, 29 formations)
+- **Source of truth**: [`lib/data/catalogue-formations.json`](cap-competences-site/lib/data/catalogue-formations.json) (7 pôles, 38 formations)
 
 ## Quick Start
 
@@ -66,7 +66,7 @@ components/                        Shared + page-specific components
 lib/                              Data & utilities
   catalogue.ts                     Types + loader (reads JSON, normalizes)
   data/
-    catalogue-formations.json      ← SOURCE OF TRUTH: 7 poles, 29 formations
+    catalogue-formations.json      ← SOURCE OF TRUTH: 7 poles, 38 formations
     site.ts, home.ts, entreprises.ts, designSystem.ts   Static content (text, links, etc.)
     rejoindre.ts
 

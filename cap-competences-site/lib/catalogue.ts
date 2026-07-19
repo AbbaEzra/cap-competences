@@ -1,5 +1,5 @@
 // Loader du catalogue — SOURCE DE VÉRITÉ : lib/data/catalogue-formations.json
-// (7 pôles, 29 formations). Aucune donnée de formation n'est codée en dur ici.
+// (7 pôles, 38 formations). Aucune donnée de formation n'est codée en dur ici.
 import catalogueData from "@/lib/data/catalogue-formations.json";
 import { ROUTES } from "@/lib/data/site";
 
