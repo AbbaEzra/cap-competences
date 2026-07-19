@@ -101,5 +101,3 @@ export const reviews = [
     initials: "KB",
   },
 ];
-
-export const clients = ["NORDICA", "Atelier Vialli", "Groupe Méridien", "Studio Klein", "Verdier & Co"];

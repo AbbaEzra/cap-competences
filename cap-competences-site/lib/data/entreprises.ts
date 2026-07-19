@@ -40,8 +40,6 @@ export const entSteps = [
   { n: "5", title: "On mesure les résultats", text: "Évaluations, attestations et bilan : vous gardez la preuve de la montée en compétences." },
 ];
 
-export const entClients = ["NORDICA", "Atelier Vialli", "Groupe Méridien", "Studio Klein", "Verdier & Co"];
-
 export const devisPerks = [
   "Réponse sous 24 à 48h",
   "Programme adapté à vos métiers",

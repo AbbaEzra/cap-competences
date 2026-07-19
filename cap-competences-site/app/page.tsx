@@ -5,7 +5,7 @@ import { HomeHero } from "@/components/home/HomeHero";
 import { CompassNeedle } from "@/components/brand/CompassNeedle";
 import { Reveal } from "@/components/ui/Reveal";
 import { CallbackButton } from "@/components/callback/CallbackButton";
-import { steps, proofStats, reviews, clients, heroApprenantsStat } from "@/lib/data/home";
+import { steps, proofStats, reviews, heroApprenantsStat } from "@/lib/data/home";
 import { getPoleNav, allFormations, poles } from "@/lib/catalogue";
 import { ROUTES } from "@/lib/data/site";
 
@@ -32,21 +32,6 @@ export default function HomePage() {
       <Header activeHref={ROUTES.catalogue} />
       <main>
         <HomeHero stats={heroStats} />
-
-        {/* Bandeau confiance */}
-        <div className="border-b border-cap-border bg-white">
-          <div className="mx-auto flex max-w-cap-container flex-wrap items-center justify-center gap-x-[clamp(20px,4vw,48px)] gap-y-4 px-cap-gutter py-5">
-            <span className="text-[12.5px] font-bold uppercase tracking-[1px] text-cap-muted">
-              Ils nous font confiance
-            </span>
-            <ExampleBadge>Logos d'exemple · à confirmer</ExampleBadge>
-            {clients.map((c) => (
-              <span key={c} className="serif text-[19px] font-bold tracking-[.3px] text-cap-muted opacity-60">
-                {c}
-              </span>
-            ))}
-          </div>
-        </div>
 
         {/* Catégories */}
         <section className={`${sectionHead} py-[clamp(48px,6vw,84px)]`}>

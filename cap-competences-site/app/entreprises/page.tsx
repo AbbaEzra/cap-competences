@@ -8,7 +8,6 @@ import {
   entHeroStats,
   entValues,
   entSteps,
-  entClients,
   devisPerks,
   entTestimonial,
   type EntIcon,
@@ -240,19 +239,6 @@ export default function EntreprisesPage() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-[clamp(20px,4vw,46px)] gap-y-3">
-            <span className="text-[12.5px] font-bold uppercase tracking-[1px] text-cap-muted">
-              Ils forment leurs équipes avec nous
-            </span>
-            <span className="rounded-cap-pill border border-[rgba(246,196,69,.5)] bg-[rgba(246,196,69,.2)] px-2.5 py-[3px] text-[10px] font-extrabold uppercase tracking-[.4px] text-cap-accent-ink">
-              Logos d'exemple · à confirmer
-            </span>
-            {entClients.map((c) => (
-              <span key={c} className="serif text-[19px] font-bold text-cap-muted opacity-60">
-                {c}
-              </span>
-            ))}
           </div>
         </section>
 
