@@ -88,7 +88,7 @@ export function Footer() {
         {/* Bas de page */}
         <div className="mt-[46px] flex flex-wrap items-center justify-between gap-4 border-t border-white/15 py-[22px]">
           <span className="text-[12.5px] text-[#A9C2D9]">
-            © {SITE.legalYear} {SITE.name} · SIRET {SITE.siret} · NDA 00 00 00000 00
+            © {SITE.legalYear} {SITE.name} · SIRET {SITE.siret}
           </span>
           <div className="flex flex-wrap gap-[18px]">
             {LEGAL_LINKS.map((l) => (

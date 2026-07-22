@@ -54,8 +54,7 @@ export type FooterLink = {
 // Colonnes du footer.
 // - Formations -> ancres de pôle réelles du catalogue (+ fiche Bilan).
 // - Contact / Devenir formateur -> modale de rappel (seul canal de contact du site statique).
-// - Liens « # » = pages standard non encore créées (à fournir avant mise en ligne,
-//   au même titre que le SIRET / NDA encore fictifs).
+// - Liens « # » = pages standard non encore créées (à fournir avant mise en ligne).
 export const FOOTER_COLUMNS: { title: string; links: FooterLink[] }[] = [
   {
     title: "Formations",
